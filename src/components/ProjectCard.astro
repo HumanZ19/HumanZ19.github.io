@@ -32,13 +32,13 @@ const testimonialText = project.testimonial ? localized(project.testimonial.text
   data-id={project.id}
 >
   <!-- Project image / gradient header -->
-  <div class="relative -mx-4 -mt-4 mb-4 rounded-t-xl overflow-hidden h-44">
+  <div class="relative -mx-6 -mt-6 mb-5 rounded-t-xl overflow-hidden h-52">
     <ImageWithFallback
       src={project.image ? `/${project.image}` : undefined}
       alt={title}
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
       width={400}
-      height={176}
+      height={208}
       fallbackText={initials}
       gradient={gradient}
     />
@@ -59,17 +59,17 @@ const testimonialText = project.testimonial ? localized(project.testimonial.text
   <!-- Content -->
   <div class="flex flex-col flex-1">
     <!-- Title + Status -->
-    <div class="flex items-start justify-between gap-2 mb-2">
-      <h3 class="font-bold text-slate-900 dark:text-white text-base leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+    <div class="flex items-start justify-between gap-2 mb-3">
+      <h3 class="font-bold text-slate-900 dark:text-white text-lg leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
         {title}
       </h3>
-      <span class={`flex-shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full ${statusColor}`}>
+      <span class={`flex-shrink-0 text-xs font-semibold px-2.5 py-1 rounded-full ${statusColor}`}>
         {status}
       </span>
     </div>
 
     <!-- Client -->
-    <p class="text-xs text-slate-500 dark:text-slate-400 mb-3 flex items-center gap-1">
+    <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 flex items-center gap-1.5">
       <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
@@ -77,12 +77,12 @@ const testimonialText = project.testimonial ? localized(project.testimonial.text
     </p>
 
     <!-- Description -->
-    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1">
+    <p class="text-sm text-slate-600 dark:text-slate-300 leading-loose mb-5 flex-1">
       {description}
     </p>
 
     <!-- Technologies -->
-    <div class="flex flex-wrap gap-1.5 mb-4">
+    <div class="flex flex-wrap gap-2 mb-5">
       {project.technologies.slice(0, 6).map((tech) => (
         <span class="tech-tag">{tech}</span>
       ))}

@@ -112,13 +112,39 @@ const summary = localized(basics.summary, lang);
     </section>
   )}
 
-  <!-- Print button (not printed) -->
-  <div class="no-print" style="position:fixed;top:16pt;right:16pt;">
-    <button
-      onclick="window.print()"
-      style="background:#4f46e5;color:#fff;border:none;padding:8pt 14pt;border-radius:6pt;font-size:10pt;font-weight:600;cursor:pointer;"
-    >
-      Imprimer / Enregistrer PDF
-    </button>
+  <!-- Print toolbar (not printed) -->
+  <div class="no-print" style="position:fixed;top:0;left:0;right:0;background:#1e293b;padding:10pt 16pt;display:flex;align-items:center;justify-content:space-between;z-index:100;">
+    <span style="color:#94a3b8;font-size:9pt;">CV — Karim AIT HAMMOU</span>
+    <div style="display:flex;gap:8pt;">
+      <button
+        onclick="window.print()"
+        style="background:#4f46e5;color:#fff;border:none;padding:7pt 16pt;border-radius:6pt;font-size:10pt;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6pt;"
+      >
+        ⬇ Enregistrer en PDF
+      </button>
+      <button
+        onclick="window.close()"
+        style="background:transparent;color:#94a3b8;border:1px solid #475569;padding:7pt 12pt;border-radius:6pt;font-size:10pt;cursor:pointer;"
+      >
+        ✕ Fermer
+      </button>
+    </div>
   </div>
+
+  <!-- Spacer for fixed toolbar -->
+  <div class="no-print" style="height:44pt;"></div>
+
+  <!-- Auto-print script: triggers print dialog when page is opened from the CV button -->
+  <script>
+    // Auto-open print dialog after fonts and layout are fully rendered
+    window.addEventListener('load', () => {
+      // Only auto-print if referred from the portfolio (not direct navigation or Puppeteer)
+      const isAutoprint = document.referrer.includes('humanz19.github.io') ||
+                          window.location.search.includes('print=1') ||
+                          (document.referrer !== '' && !document.referrer.includes('cv-print'));
+      if (isAutoprint) {
+        setTimeout(() => window.print(), 800);
+      }
+    });
+  </script>
 </CVPrintLayout>
