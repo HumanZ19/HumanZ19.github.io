@@ -1,0 +1,320 @@
+{
+  "basics": {
+    "name": "Karim AIT HAMMOU",
+    "label": {
+      "fr": "Solutions Architect & Chef de Projet Technique",
+      "en": "Solutions Architect & Technical Project Manager"
+    },
+    "email": "aithammoukarim@gmail.com",
+    "phone": "+212 6 15-80-76-63",
+    "summary": {
+      "fr": "Avec 16 années d'expérience, j'ai évolué avec succès dans des secteurs variés : éducation supérieure, finance, e-commerce, recherche scientifique et trading algorithmique. Mon parcours illustre une capacité d'adaptation remarquable : du management d'équipes internationales (21 personnes sur 3 zones horaires) aux développements de bots de trading sophistiqués, en passant par la migration de systèmes critiques d'établissements d'enseignement supérieur. Passionné par les défis techniques, je transforme les contraintes en opportunités d'innovation.",
+      "en": "With 16 years of experience, I have successfully evolved across diverse sectors: higher education, finance, e-commerce, scientific research and algorithmic trading. My career demonstrates remarkable adaptability: from managing international teams (21 people across 3 time zones) to developing sophisticated trading bots and migrating critical systems for higher education institutions. Passionate about technical challenges, I transform constraints into opportunities for innovation."
+    },
+    "location": {
+      "city": "Rabat",
+      "country": {
+        "fr": "Maroc",
+        "en": "Morocco"
+      }
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/karimaithammou",
+        "icon": "linkedin"
+      },
+      {
+        "network": "GitHub",
+        "url": "https://github.com/HumanZ19",
+        "icon": "github"
+      }
+    ],
+    "yearsOfExperience": 16,
+    "availability": {
+      "fr": "Disponible pour missions freelance & CDI",
+      "en": "Available for freelance & permanent positions"
+    }
+  },
+  "experience": [
+    {
+      "company": "Freelance Independent",
+      "position": {
+        "fr": "Solutions Architect & Full-Stack Developer",
+        "en": "Solutions Architect & Full-Stack Developer"
+      },
+      "startDate": "2021-01",
+      "endDate": "Present",
+      "summary": {
+        "fr": "Développement de solutions techniques complexes pour des clients internationaux, de la conception architecturale à la livraison en production.",
+        "en": "Development of complex technical solutions for international clients, from architectural design to production delivery."
+      },
+      "highlights": {
+        "fr": [
+          "KMB Trader — Bot de trading automatisé sur Binance avec stratégies propriétaires",
+          "WorldWide Team — Plateforme Django de géolocalisation temps réel pour équipes distribuées",
+          "Sci-X & Hydrogène Vert — Plateforme IA de synthèse d'articles scientifiques (NLP/OpenAI)",
+          "Ateliers d'Art de France — Refonte complète Django/Wagtail, 6000+ professionnels, +150% trafic organique",
+          "Assabil ERP Extractor — Application Python d'intégration ERP/Comptabilité avec dashboard",
+          "ALMA.ma — Site institutionnel Drupal 8, leader branchement eau potable Maroc"
+        ],
+        "en": [
+          "KMB Trader — Automated trading bot on Binance with proprietary strategies",
+          "WorldWide Team — Django real-time geolocation platform for distributed teams",
+          "Sci-X & Green Hydrogen — AI platform for scientific article synthesis (NLP/OpenAI)",
+          "Ateliers d'Art de France — Complete Django/Wagtail redesign, 6000+ professionals, +150% organic traffic",
+          "Assabil ERP Extractor — Python ERP/Accounting integration application with dashboard",
+          "ALMA.ma — Drupal 8 institutional site, Morocco's drinking water connection market leader"
+        ]
+      },
+      "stack": ["Python", "Django", "Wagtail CMS", "Drupal 8", "PostgreSQL", "Redis", "WebSocket", "TensorFlow", "NLP", "OpenAI API", "Docker", "Elasticsearch"]
+    },
+    {
+      "company": "Institut HEM — Groupe LCI Education",
+      "position": {
+        "fr": "Directeur Système d'Information (DSI)",
+        "en": "Director of Information Systems (CIO)"
+      },
+      "startDate": "2017-01",
+      "endDate": "2020-12",
+      "summary": {
+        "fr": "Direction du système d'information d'une grande école de management marocaine (6 campus) avec supervision de l'infrastructure réseau et management d'une équipe de 21 collaborateurs.",
+        "en": "Leadership of the information system for a major Moroccan business school (6 campuses) with network infrastructure supervision and management of a 21-person team."
+      },
+      "highlights": {
+        "fr": [
+          "Migration critique SIHEM → Konosys (budget 1M DH, zéro interruption de service)",
+          "Management de 21 collaborateurs sur 3 zones horaires",
+          "Formation de 300+ utilisateurs",
+          "Supervision infrastructure réseau multi-campus (Casablanca, Rabat, Fès, Marrakech, Tanger, Oujda)",
+          "Gestion budgets IT et négociation avec la direction générale"
+        ],
+        "en": [
+          "Critical migration SIHEM → Konosys (1M DH budget, zero service interruption)",
+          "Management of 21 collaborators across 3 time zones",
+          "Training of 300+ users",
+          "Multi-campus network infrastructure supervision (Casablanca, Rabat, Fès, Marrakech, Tanger, Oujda)",
+          "IT budget management and executive negotiation"
+        ]
+      },
+      "stack": ["Konosys", "Linux", "Windows Server", "Microsoft 365", "VPN", "Network Infrastructure", "IT Project Management"]
+    },
+    {
+      "company": "Consultant Freelance",
+      "position": {
+        "fr": "Drupal Solutions Architect",
+        "en": "Drupal Solutions Architect"
+      },
+      "startDate": "2015-01",
+      "endDate": "Present",
+      "summary": {
+        "fr": "Architecture et développement de plateformes Drupal complexes pour des clients institutionnels, académiques et professionnels.",
+        "en": "Architecture and development of complex Drupal platforms for institutional, academic and professional clients."
+      },
+      "highlights": {
+        "fr": [
+          "MedMétiers.ac.ma — Institut Supérieur des Métiers Industriels (Groupe HEM / IFC Banque Mondiale)",
+          "HEM.ac.ma Refonte 2015 — Architecture Drupal 7 multilingue, version internationale",
+          "ECIS 2020/2021 — Plateforme de gestion de conférences scientifiques internationales",
+          "Economia.ma — Revue académique CESEM, plateforme publications scientifiques"
+        ],
+        "en": [
+          "MedMétiers.ac.ma — Higher Institute of Industrial Trades (HEM Group / IFC World Bank)",
+          "HEM.ac.ma Redesign 2015 — Multilingual Drupal 7 architecture, international version",
+          "ECIS 2020/2021 — International scientific conference management platform",
+          "Economia.ma — CESEM academic journal, scientific publications platform"
+        ]
+      },
+      "stack": ["Drupal 7", "Drupal 8", "PHP", "MySQL", "JavaScript", "Bootstrap", "SEO", "Responsive Design"]
+    },
+    {
+      "company": "Institut HEM",
+      "position": {
+        "fr": "Senior Webmaster",
+        "en": "Senior Webmaster"
+      },
+      "startDate": "2010-01",
+      "endDate": "2015-12",
+      "summary": {
+        "fr": "Gestion de l'écosystème web institutionnel de HEM et management d'une équipe web de 10 collaborateurs. Production multimédia professionnelle et développement de la présence digitale.",
+        "en": "Management of HEM's institutional web ecosystem and a 10-person web team. Professional multimedia production and digital presence development."
+      },
+      "highlights": {
+        "fr": [
+          "Gestion écosystème web institutionnel (hem.ac.ma, cesem.ma, economia.ma, medmetiers.ac.ma)",
+          "Management équipe web de 10 collaborateurs",
+          "Production multimédia professionnelle (centaines de vidéos institutionnelles, événements)",
+          "Chaîne YouTube HEM officielle (première école business Maroc) + 6 pages Facebook campus",
+          "Community management multi-campus coordonné"
+        ],
+        "en": [
+          "Management of HEM institutional web ecosystem (hem.ac.ma, cesem.ma, economia.ma, medmetiers.ac.ma)",
+          "Management of 10-person web team",
+          "Professional multimedia production (hundreds of institutional videos, events)",
+          "Official HEM YouTube channel (first business school Morocco) + 6 campus Facebook pages",
+          "Coordinated multi-campus community management"
+        ]
+      },
+      "stack": ["Drupal 6", "PHP", "MySQL", "Adobe Premiere Pro", "After Effects", "YouTube", "Facebook Business", "Community Management"]
+    },
+    {
+      "company": "Sunlight Systems SARL",
+      "position": {
+        "fr": "Gérant & Technical Manager",
+        "en": "CEO & Technical Manager"
+      },
+      "startDate": "2007-01",
+      "endDate": "2010-12",
+      "summary": {
+        "fr": "Création et gestion d'une société de solutions informatiques au Maroc. Développement de produits innovants pour le secteur agricole (AgriTech pionnière) et les médias (streaming audio).",
+        "en": "Creation and management of an IT solutions company in Morocco. Development of innovative products for the agricultural sector (pioneering AgriTech) and media (audio streaming)."
+      },
+      "highlights": {
+        "fr": [
+          "SoussAgri.com — 2ème Prix INNOFEL 2008, premier portail agricole régional du Maroc",
+          "RadioPlus.ma — Première radio marocaine avec streaming internet continu",
+          "Solutions B2B agricoles innovantes : Amfel.ma (5000+ adresses), FellahConseil, Eriser.net",
+          "Développement solution streaming propriétaire 'Maroc Streaming'",
+          "Clients majeurs : Radio Plus Agadir, Huissiers de Justice du Maroc"
+        ],
+        "en": [
+          "SoussAgri.com — 2nd Prize INNOFEL 2008, Morocco's first regional agricultural portal",
+          "RadioPlus.ma — Morocco's first radio with continuous internet streaming",
+          "Innovative B2B agricultural solutions: Amfel.ma (5000+ addresses), FellahConseil, Eriser.net",
+          "Development of proprietary 'Maroc Streaming' solution",
+          "Major clients: Radio Plus Agadir, Huissiers de Justice du Maroc"
+        ]
+      },
+      "stack": ["PHP", "MySQL", "JavaScript", "CSS", "RealPlayer Streaming", "Adobe Suite"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Institut HEM — Hautes Études de Management",
+      "area": {
+        "fr": "Management & Systèmes d'Information",
+        "en": "Management & Information Systems"
+      },
+      "studyType": "Formation & Expertise",
+      "startDate": "2007",
+      "endDate": "2020"
+    }
+  ],
+  "certifications": [],
+  "skills": {
+    "technical": [
+      {
+        "category": {
+          "fr": "Leadership & Management",
+          "en": "Leadership & Management"
+        },
+        "items": [
+          { "name": "Gestion d'équipes techniques", "level": 95, "icon": "users" },
+          { "name": "Gestion de projets IT", "level": 92, "icon": "project-diagram" },
+          { "name": "Formation utilisateurs", "level": 90, "icon": "graduation-cap" },
+          { "name": "Conduite du changement", "level": 88, "icon": "sync" },
+          { "name": "Coordination multi-campus", "level": 90, "icon": "globe" },
+          { "name": "Gestion budgétaire IT", "level": 85, "icon": "chart-bar" },
+          { "name": "Négociation stakeholders", "level": 88, "icon": "handshake" },
+          { "name": "Leadership bienveillant", "level": 95, "icon": "heart" }
+        ]
+      },
+      {
+        "category": {
+          "fr": "Architecture & Développement",
+          "en": "Architecture & Development"
+        },
+        "items": [
+          { "name": "Python", "level": 92, "icon": "python" },
+          { "name": "Django", "level": 90, "icon": "django" },
+          { "name": "PHP", "level": 88, "icon": "php" },
+          { "name": "JavaScript", "level": 82, "icon": "javascript" },
+          { "name": "PostgreSQL", "level": 88, "icon": "postgresql" },
+          { "name": "MySQL", "level": 85, "icon": "mysql" },
+          { "name": "MongoDB", "level": 75, "icon": "mongodb" },
+          { "name": "Drupal 7/8/9", "level": 90, "icon": "drupal" },
+          { "name": "WordPress", "level": 80, "icon": "wordpress" },
+          { "name": "Wagtail CMS", "level": 85, "icon": "wagtail" },
+          { "name": "REST APIs", "level": 90, "icon": "api" },
+          { "name": "GraphQL", "level": 75, "icon": "graphql" },
+          { "name": "Docker", "level": 80, "icon": "docker" },
+          { "name": "Linux", "level": 88, "icon": "linux" },
+          { "name": "Git & CI/CD", "level": 85, "icon": "git" },
+          { "name": "AWS / DigitalOcean", "level": 78, "icon": "cloud" },
+          { "name": "Redis", "level": 78, "icon": "redis" },
+          { "name": "Elasticsearch", "level": 75, "icon": "elasticsearch" },
+          { "name": "SEO Expert", "level": 88, "icon": "search" },
+          { "name": "Performance Web", "level": 85, "icon": "tachometer" },
+          { "name": "Sécurité Web", "level": 80, "icon": "shield" },
+          { "name": "VPS Management", "level": 82, "icon": "server" }
+        ]
+      },
+      {
+        "category": {
+          "fr": "Intelligence Artificielle & Data",
+          "en": "Artificial Intelligence & Data"
+        },
+        "items": [
+          { "name": "TensorFlow", "level": 78, "icon": "tensorflow" },
+          { "name": "PyTorch", "level": 72, "icon": "pytorch" },
+          { "name": "scikit-learn", "level": 80, "icon": "sklearn" },
+          { "name": "OpenCV", "level": 75, "icon": "opencv" },
+          { "name": "Computer Vision", "level": 75, "icon": "eye" },
+          { "name": "NLP", "level": 78, "icon": "language" },
+          { "name": "Machine Learning", "level": 80, "icon": "brain" },
+          { "name": "Pandas", "level": 85, "icon": "pandas" },
+          { "name": "NumPy", "level": 83, "icon": "numpy" },
+          { "name": "Jupyter", "level": 82, "icon": "jupyter" },
+          { "name": "Trading Bots", "level": 85, "icon": "trading" },
+          { "name": "Financial APIs", "level": 82, "icon": "finance" },
+          { "name": "Real-time Analytics", "level": 80, "icon": "analytics" },
+          { "name": "Time Series Analysis", "level": 78, "icon": "timeline" },
+          { "name": "OpenAI API", "level": 80, "icon": "openai" },
+          { "name": "Data Visualization", "level": 82, "icon": "chart-line" },
+          { "name": "Algorithmic Trading", "level": 85, "icon": "chart" },
+          { "name": "Deep Learning", "level": 72, "icon": "network" }
+        ]
+      }
+    ],
+    "soft": {
+      "fr": [
+        "Architecture de solutions complexes",
+        "Gestion de projet et coordination",
+        "Communication technique et non-technique",
+        "Leadership bienveillant orienté résultats",
+        "Adaptabilité multi-sectorielle",
+        "Conduite du changement",
+        "Négociation et gestion des parties prenantes",
+        "Mentorat et formation d'équipes"
+      ],
+      "en": [
+        "Complex solutions architecture",
+        "Project management and coordination",
+        "Technical and non-technical communication",
+        "Results-oriented and empathetic leadership",
+        "Multi-sector adaptability",
+        "Change management",
+        "Negotiation and stakeholder management",
+        "Team mentoring and training"
+      ]
+    }
+  },
+  "languages": [
+    {
+      "language": { "fr": "Français", "en": "French" },
+      "fluency": { "fr": "Bilingue", "en": "Bilingual" }
+    },
+    {
+      "language": { "fr": "Anglais", "en": "English" },
+      "fluency": { "fr": "Professionnel", "en": "Professional" }
+    },
+    {
+      "language": { "fr": "Arabe", "en": "Arabic" },
+      "fluency": { "fr": "Natif", "en": "Native" }
+    },
+    {
+      "language": { "fr": "Amazigh", "en": "Amazigh" },
+      "fluency": { "fr": "Natif", "en": "Native" }
+    }
+  ]
+}

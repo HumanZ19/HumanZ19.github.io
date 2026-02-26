@@ -1,0 +1,1033 @@
+{
+  "projects": [
+    {
+      "id": "kmb-trader",
+      "title": "KMB Trader",
+      "category": {
+        "fr": "Trading Algorithmique",
+        "en": "Algorithmic Trading"
+      },
+      "description": {
+        "fr": "Bot de trading automatisé sur Binance avec stratégies propriétaires et interface de monitoring temps réel. Système complet avec backtesting, gestion des risques et alertes automatiques.",
+        "en": "Automated trading bot on Binance with proprietary strategies and real-time monitoring interface. Complete system with backtesting, risk management and automatic alerts."
+      },
+      "technologies": ["Python", "Binance API", "Django", "PostgreSQL", "Redis", "WebSocket"],
+      "image": "images/projects/kmb-trader.jpg",
+      "features": {
+        "fr": [
+          "Stratégies de trading automatisées",
+          "Interface de monitoring temps réel",
+          "Système de backtesting avancé",
+          "Gestion automatique des risques",
+          "Alertes et notifications"
+        ],
+        "en": [
+          "Automated trading strategies",
+          "Real-time monitoring interface",
+          "Advanced backtesting system",
+          "Automatic risk management",
+          "Alerts and notifications"
+        ]
+      },
+      "status": {
+        "fr": "En production",
+        "en": "In Production"
+      },
+      "date": "2023-2024",
+      "client": {
+        "fr": "Projet personnel",
+        "en": "Personal Project"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Système robuste et performant qui a automatisé mes stratégies de trading",
+          "en": "Robust and high-performance system that automated my trading strategies"
+        },
+        "author": "Usage personnel / Personal Use"
+      }
+    },
+    {
+      "id": "worldwide-team",
+      "title": "WorldWide Team Platform",
+      "category": {
+        "fr": "Géolocalisation & Management",
+        "en": "Geolocation & Management"
+      },
+      "description": {
+        "fr": "Plateforme Django de géolocalisation temps réel avec cartographie interactive pour la gestion d'équipes distribuées. Solution complète pour le suivi des équipes internationales.",
+        "en": "Django real-time geolocation platform with interactive mapping for distributed team management. Complete solution for international team tracking with advanced analytics."
+      },
+      "technologies": ["Python", "Django", "PostgreSQL", "Leaflet.js", "WebSocket", "REST API"],
+      "image": "images/projects/worldwide-team.png",
+      "features": {
+        "fr": [
+          "Géolocalisation temps réel",
+          "Cartographie interactive",
+          "Gestion d'équipes distribuées",
+          "Tableaux de bord analytiques",
+          "API REST complète"
+        ],
+        "en": [
+          "Real-time geolocation",
+          "Interactive team mapping",
+          "Advanced analytics dashboard",
+          "Multi-timezone support",
+          "Performance reporting"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "2022-2023",
+      "client": {
+        "fr": "Client international",
+        "en": "International Client"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Built my Python-based product single-handedly while being a great communicator for progress and blockers. I'll certainly hire him again.",
+          "en": "Built my Python-based product single-handedly while being a great communicator for progress and blockers. I'll certainly hire him again."
+        },
+        "author": "Client Upwork — Constellation World Map"
+      }
+    },
+    {
+      "id": "assabil-extractor",
+      "title": "Assabil ERP Extractor",
+      "category": {
+        "fr": "Intégration ERP",
+        "en": "ERP Integration"
+      },
+      "description": {
+        "fr": "Application Python d'intégration ERP/Comptabilité avec dashboard de visualisation et génération automatique de rapports. Solution sur mesure pour l'automatisation des processus comptables.",
+        "en": "Python application for ERP/Accounting integration with visualization dashboard and automated report generation. Complete data synchronization solution between business systems."
+      },
+      "technologies": ["Python", "Django", "PostgreSQL", "Chart.js", "Pandas", "API REST"],
+      "image": "images/projects/assabil.png",
+      "features": {
+        "fr": [
+          "Extraction automatisée de données ERP",
+          "Tableaux de bord interactifs",
+          "Génération de rapports PDF",
+          "Synchronisation temps réel",
+          "Interface d'administration"
+        ],
+        "en": [
+          "ERP/Accounting synchronization",
+          "Interactive visualization dashboard",
+          "Automated report generation",
+          "Data validation and cleaning",
+          "Multi-format export"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "2022",
+      "client": {
+        "fr": "PME Marocaine",
+        "en": "Assabil Group"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Solution parfaitement adaptée à nos besoins d'intégration",
+          "en": "Efficient solution that automated our accounting processes"
+        },
+        "author": "Direction Assabil"
+      }
+    },
+    {
+      "id": "aaf",
+      "title": "Ateliers d'Art de France",
+      "category": {
+        "fr": "CMS & E-commerce",
+        "en": "E-commerce & CMS"
+      },
+      "description": {
+        "fr": "Refonte complète du site institutionnel du Syndicat Professionnel des Métiers d'Art avec architecture Wagtail/Django. Plateforme fédérant plus de 6000 professionnels des métiers d'art en France avec système avancé de gestion de membres et annuaire géolocalisé.",
+        "en": "Complete redesign with Django/Wagtail + WordPress architecture, SEO optimization and performance. Modern platform for French art crafts professionals federating 6000+ members with advanced management and geolocated directory."
+      },
+      "technologies": ["Python", "Django", "Wagtail CMS", "PostgreSQL", "Redis", "Elasticsearch", "Bootstrap", "API REST", "Leaflet"],
+      "image": "images/projects/aaf.png",
+      "features": {
+        "fr": [
+          "Architecture Wagtail/Django haute performance",
+          "Système de gestion avancé pour 6000+ professionnels",
+          "Annuaire géolocalisé des ateliers en France",
+          "Moteur de recherche Elasticsearch multi-critères",
+          "Espace membre sécurisé avec profils professionnels",
+          "Système de blog/actualités avec modération",
+          "Migration complète des données existantes",
+          "Interface d'administration sur mesure",
+          "Optimisation SEO avancée (+150% trafic organique)",
+          "Performance optimisée (temps de chargement divisé par 3)"
+        ],
+        "en": [
+          "High-performance Wagtail/Django architecture",
+          "Advanced management system for 6000+ professionals",
+          "Geolocated directory of workshops across France",
+          "Elasticsearch multi-criteria search engine",
+          "Secure member area with professional profiles",
+          "Blog/news system with moderation",
+          "Complete data migration",
+          "Custom administration interface",
+          "Advanced SEO optimization (+150% organic traffic)",
+          "Optimized performance (load time divided by 3)"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "08/2023 - 04/2024",
+      "client": {
+        "fr": "Le Syndicat Professionnel des Métiers d'Art",
+        "en": "Ateliers d'Art de France"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Projet livré dans les délais avec une qualité exceptionnelle. L'équipe a su comprendre nos besoins spécifiques et livrer une solution parfaitement adaptée à notre écosystème.",
+          "en": "Top-class freelancer. Will hire again"
+        },
+        "author": "Direction Ateliers d'Art de France"
+      }
+    },
+    {
+      "id": "sci-x-platform",
+      "title": "Sci-X & Hydrogène Vert",
+      "category": {
+        "fr": "IA & Recherche Scientifique",
+        "en": "AI & Scientific Research"
+      },
+      "description": {
+        "fr": "Plateforme IA de synthèse d'articles scientifiques avec outils d'optimisation pour la recherche en électrolyse. Solution NLP avancée pour l'analyse de littérature scientifique et l'extraction de connaissances.",
+        "en": "AI platform for scientific article synthesis with optimization tools for electrolysis research. Advanced NLP solution for scientific literature analysis and knowledge extraction."
+      },
+      "technologies": ["Python", "TensorFlow", "NLP", "Django", "PostgreSQL", "Elasticsearch", "OpenAI API"],
+      "image": "images/projects/sci-x.jpg",
+      "features": {
+        "fr": [
+          "Synthèse d'articles alimentée par IA",
+          "Analyse de littérature scientifique",
+          "Extraction de connaissances",
+          "Outils d'optimisation de recherche",
+          "Traitement multi-langues"
+        ],
+        "en": [
+          "AI-powered article synthesis",
+          "Scientific literature analysis",
+          "Knowledge extraction",
+          "Research optimization tools",
+          "Multi-language processing"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "2024-2025",
+      "client": {
+        "fr": "Étudiante Doctorante Chercheuse",
+        "en": "PhD Student Researcher"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Solution innovante qui a révolutionné notre méthodologie de recherche",
+          "en": "Innovative solution that revolutionized our research methodology"
+        },
+        "author": "Dr. Saliha BOUAOUDA"
+      }
+    },
+    {
+      "id": "ecis-platform",
+      "title": "ECIS 2020/2021",
+      "category": {
+        "fr": "Gestion d'Événements",
+        "en": "Event Management"
+      },
+      "description": {
+        "fr": "Plateforme de gestion de conférences scientifiques internationales avec architecture complète de l'analyse des besoins jusqu'au déploiement. Solution complète pour l'organisation d'événements académiques.",
+        "en": "International scientific conference management platform with complete architecture from requirements analysis to deployment. Comprehensive solution for academic event organization."
+      },
+      "technologies": ["Drupal 8", "PHP", "MySQL", "JavaScript", "Bootstrap", "API Integration"],
+      "image": "images/projects/ecis2021.jpg",
+      "features": {
+        "fr": [
+          "Système de gestion de conférences",
+          "Soumission et révision de résumés",
+          "Intégration de paiement international",
+          "Planification multi-fuseaux horaires",
+          "Gestion des intervenants et participants"
+        ],
+        "en": [
+          "Conference management system",
+          "Abstract submission and review",
+          "International payment integration",
+          "Multi-timezone scheduling",
+          "Speaker and attendee management"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "2020-2021",
+      "client": {
+        "fr": "Conférence ECIS",
+        "en": "ECIS Conference"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Excellent professionnel, toujours à l'écoute et très réactif, impressive commitment and ethics.",
+          "en": "Excellent professional, always attentive and very responsive, impressive commitment and ethics."
+        },
+        "author": "Redouane Elamrani, Chercheur ECIS"
+      }
+    },
+    {
+      "id": "alma-water-distribution",
+      "title": "Alma.ma — Leader Branchement Eau Potable",
+      "category": {
+        "fr": "Industrie & Infrastructure Hydraulique",
+        "en": "Industry & Hydraulic Infrastructure"
+      },
+      "description": {
+        "fr": "Site institutionnel développé en Drupal 8 pour ALMA, entreprise leader dans le branchement d'eau sur la dernière chaîne de distribution d'eau potable au Maroc. Avec plus de 20 années d'expérience et certification ISO 9001.",
+        "en": "Institutional website developed in Drupal 8 for ALMA, leading company in water connections on the final drinking water distribution chain in Morocco. With 20+ years of experience and ISO 9001 certification."
+      },
+      "technologies": ["Drupal 8", "PHP", "MySQL", "JavaScript", "CSS", "Responsive Design"],
+      "image": "images/projects/alma-water-distribution.jpg",
+      "features": {
+        "fr": [
+          "Présentation expertise 20+ années secteur hydraulique",
+          "Solutions techniques branchement eau potable",
+          "Certification ISO 9001 mise en avant",
+          "Portfolio projets infrastructure eau",
+          "Formation produits et nouvelles méthodes",
+          "Interface moderne et professionnelle",
+          "Responsive design multi-appareils",
+          "Contact et devis en ligne"
+        ],
+        "en": [
+          "20+ years hydraulic sector expertise presentation",
+          "Technical drinking water connection solutions",
+          "ISO 9001 certification highlighted",
+          "Water infrastructure projects portfolio",
+          "Products and new methods training",
+          "Modern and professional interface",
+          "Multi-device responsive design",
+          "Online contact and quote system"
+        ]
+      },
+      "status": {
+        "fr": "Leader marché branchement eau potable Maroc",
+        "en": "Morocco water connection market leader"
+      },
+      "date": "2021",
+      "client": {
+        "fr": "ALMA — Entreprise Distribution Eau",
+        "en": "ALMA — Water Distribution Company"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Plus de 20 années d'expérience, certification ISO 9001, accompagnement majorité entreprises distribution eau potable au Maroc.",
+          "en": "20+ years experience, ISO 9001 certification, supporting majority of drinking water distribution companies in Morocco."
+        },
+        "author": "Direction ALMA"
+      }
+    },
+    {
+      "id": "hem-refonte-2015",
+      "title": "HEM.ac.ma — Refonte Institutionnelle 2015",
+      "category": {
+        "fr": "Éducation Supérieure & Communication Institutionnelle",
+        "en": "Higher Education & Institutional Communication"
+      },
+      "description": {
+        "fr": "Refonte complète du site institutionnel de HEM Business School en Drupal 7, transformant la présence digitale de l'établissement. Architecture moderne avec sections stratégiques : Concours 2015, concept 'Université Citoyenne®', partenariat IFC-Banque Mondiale, réseau Alumni. Version internationale bilingue.",
+        "en": "Complete redesign of HEM Business School institutional website in Drupal 7, transforming the institution's digital presence. Modern architecture with strategic sections: 2015 Admissions, 'Citizen University®' concept, IFC-World Bank partnership, Alumni network. Bilingual international version."
+      },
+      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Responsive Design", "Multilingue"],
+      "image": "images/projects/hem-refonte-2015.jpg",
+      "features": {
+        "fr": [
+          "Architecture Drupal 7 moderne et évolutive",
+          "Section Concours 2015 avec processus inscription",
+          "Concept 'Université Citoyenne®' mis en avant",
+          "Présentation partenariat IFC — Banque Mondiale",
+          "Plateforme HEM Alumni avec réseau diplômés",
+          "Newsletter institutionnelle intégrée",
+          "Section HEM Recrute pour opportunités carrières",
+          "Version internationale exclusivement anglais",
+          "Interface moderne multi-campus",
+          "Gestion contenus multilingue français-anglais"
+        ],
+        "en": [
+          "Modern and scalable Drupal 7 architecture",
+          "2015 Admissions section with registration process",
+          "Highlighted 'Citizen University®' concept",
+          "IFC — World Bank partnership presentation",
+          "HEM Alumni platform with graduate network",
+          "Integrated institutional newsletter",
+          "HEM Recrute section for career opportunities",
+          "International version exclusively in English",
+          "Modern multi-campus interface",
+          "French-English multilingual content management"
+        ]
+      },
+      "status": {
+        "fr": "Refonte majeure écosystème digital HEM",
+        "en": "Major HEM digital ecosystem redesign"
+      },
+      "date": "2015",
+      "client": {
+        "fr": "HEM Business School — Groupe LCI Education",
+        "en": "HEM Business School — LCI Education Group"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Refonte complète supportant la croissance internationale de HEM avec sections stratégiques et version bilingue.",
+          "en": "Complete redesign supporting HEM's international growth with strategic sections and bilingual version."
+        },
+        "author": "Direction HEM Business School"
+      }
+    },
+    {
+      "id": "medmetiers-institute",
+      "title": "MedMétiers.ac.ma",
+      "category": {
+        "fr": "Formation Professionnelle & Éducation Supérieure",
+        "en": "Professional Training & Higher Education"
+      },
+      "description": {
+        "fr": "Site institutionnel de Med Métiers — L'Institut Supérieur des Métiers Industriels, créé par le Groupe HEM en partenariat avec IFC (Banque Mondiale). Modèle unique au Maroc de formation professionnalisante BAC+3, spécialisée dans les métiers porteurs des services & industrie.",
+        "en": "Institutional website of Med Métiers — Higher Institute of Industrial Trades, created by HEM Group in partnership with IFC (World Bank). Unique model in Morocco of professional BAC+3 training, specialized in promising careers in services & industry."
+      },
+      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Content Management"],
+      "image": "images/projects/medmetiers-institute.jpg",
+      "features": {
+        "fr": [
+          "Présentation complète modèle pédagogique unique au Maroc",
+          "4 filières détaillées avec débouchés métiers spécifiques",
+          "Partenariat IFC-Banque Mondiale mis en avant",
+          "Programme 'Education for Employment' intégré",
+          "Formation théorie-pratique avec e-learning",
+          "Stages obligatoires dès 1ère année",
+          "Interface informative candidats et entreprises",
+          "Localisation Tanger — développement socio-économique"
+        ],
+        "en": [
+          "Complete presentation of unique pedagogical model in Morocco",
+          "4 detailed specializations with specific career opportunities",
+          "IFC-World Bank partnership highlighted",
+          "Integrated 'Education for Employment' program",
+          "Theory-practice training with e-learning",
+          "Mandatory internships from 1st year",
+          "Informative interface for candidates and companies",
+          "Tangier location — socio-economic development"
+        ]
+      },
+      "status": {
+        "fr": "Institut opérationnel — Filiale Groupe HEM",
+        "en": "Operational institute — HEM Group subsidiary"
+      },
+      "date": "2013",
+      "client": {
+        "fr": "Groupe HEM — Partenariat IFC Banque Mondiale",
+        "en": "HEM Group — IFC World Bank Partnership"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Modèle unique de démocratisation accès formation qualité, répondant parfaitement besoins entreprises marocaines.",
+          "en": "Unique model for democratizing access to quality training, perfectly meeting Moroccan companies' needs."
+        },
+        "author": "Direction Pédagogique Med Métiers"
+      }
+    },
+    {
+      "id": "economia-academic-journal",
+      "title": "Economia.ma — Revue Académique CESEM",
+      "category": {
+        "fr": "Publications Académiques & Recherche",
+        "en": "Academic Publications & Research"
+      },
+      "description": {
+        "fr": "Revue académique officielle éditée par le CESEM de HEM. Plateforme complète développée en Drupal 7 regroupant publications scientifiques, recherches, événements académiques et actualités économiques.",
+        "en": "Official academic journal published by CESEM of HEM. Complete platform developed in Drupal 7 gathering scientific publications, research, academic events and economic news."
+      },
+      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Publications Management", "Multimedia Content"],
+      "image": "images/projects/economia-journal.jpg",
+      "features": {
+        "fr": [
+          "Gestion complète publications académiques (Articles, Policy Papers, Working Papers)",
+          "Système recherche avancée (études de cas, terrain, programmes transversaux)",
+          "Agenda événements scientifiques (colloques, séminaires)",
+          "Présentation équipes (chercheurs, chaires, cellules recherche)",
+          "Section actualités multimédias (blogs, vidéos, entretiens audio)",
+          "Gestion partenariats académiques nationaux/internationaux",
+          "Architecture responsive et optimisée SEO"
+        ],
+        "en": [
+          "Complete academic publications management (Articles, Policy Papers, Working Papers)",
+          "Advanced research system (case studies, field studies, cross-cutting programs)",
+          "Scientific events calendar (conferences, seminars)",
+          "Teams presentation (researchers, chairs, research cells)",
+          "Multimedia news section (blogs, videos, audio interviews)",
+          "National/international academic partnerships management",
+          "Responsive architecture and SEO optimized"
+        ]
+      },
+      "status": {
+        "fr": "Revue de référence académique marocaine",
+        "en": "Reference Moroccan academic journal"
+      },
+      "date": "2012",
+      "client": {
+        "fr": "CESEM — HEM Research Center",
+        "en": "CESEM — HEM Research Center"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Plateforme de référence pour les publications académiques, architecture remarquable et fonctionnalités complètes.",
+          "en": "Reference platform for academic publications, remarkable architecture and complete features."
+        },
+        "author": "CESEM Research Team"
+      }
+    },
+    {
+      "id": "cesem-research-center",
+      "title": "CESEM.ma — Centre de Recherche",
+      "category": {
+        "fr": "Recherche Académique & Publications",
+        "en": "Academic Research & Publications"
+      },
+      "description": {
+        "fr": "Site web du Centre d'Études Sociales, Économiques et Managériales (CESEM), centre de recherche marocain dépendant de la direction Recherche et Publications de l'Institut HEM. Plateforme dédiée à la valorisation de la recherche académique.",
+        "en": "Website for the Centre d'Études Sociales, Économiques et Managériales (CESEM), Moroccan research center under HEM Institute's Research and Publications direction. Platform dedicated to academic research valorization."
+      },
+      "technologies": ["Drupal 6", "PHP", "MySQL", "JavaScript", "CSS", "Publications System"],
+      "image": "images/projects/cesem-research.jpg",
+      "features": {
+        "fr": [
+          "Présentation du centre de recherche CESEM",
+          "Publications et travaux de recherche",
+          "Interface chercheurs et équipes",
+          "Système de gestion des publications académiques",
+          "Liaison pôle pédagogique HEM",
+          "Valorisation recherche & développement",
+          "Pont savoir-production économique"
+        ],
+        "en": [
+          "CESEM research center presentation",
+          "Publications and research works",
+          "Researchers and teams interface",
+          "Academic publications management system",
+          "HEM pedagogical pole connection",
+          "Research & development valorization",
+          "Knowledge-economic production bridge"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Centre recherche HEM",
+        "en": "Historical — HEM research center"
+      },
+      "date": "2012",
+      "client": {
+        "fr": "CESEM — Direction Recherche HEM",
+        "en": "CESEM — HEM Research Direction"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Excellent professionnel, toujours à l'écoute et très réactif, engagement et éthique impressionnants.",
+          "en": "Excellent professional, always attentive and very responsive, impressive commitment and ethics."
+        },
+        "author": "Direction Recherche et Publications, HEM"
+      }
+    },
+    {
+      "id": "hem-digital-ecosystem",
+      "title": "Écosystème Digital HEM (2010-2014)",
+      "category": {
+        "fr": "Stratégie Digitale & Community Management",
+        "en": "Digital Strategy & Community Management"
+      },
+      "description": {
+        "fr": "Création et gestion complète de l'écosystème digital HEM : chaîne YouTube institutionnelle, 6 pages Facebook campus dédiées. Production de centaines de vidéos institutionnelles professionnelles, stratégie communication web multi-canal et management d'une équipe de 10 collaborateurs.",
+        "en": "Creation and complete management of HEM digital ecosystem: institutional YouTube channel, 6 dedicated campus Facebook pages. Production of hundreds of professional institutional videos, multi-channel web communication strategy and management of 10 collaborators team."
+      },
+      "technologies": ["YouTube Management", "Facebook Business", "Adobe Premiere Pro", "After Effects", "Community Management", "Video Production"],
+      "image": "images/projects/hem-digital-ecosystem.jpg",
+      "features": {
+        "fr": [
+          "Chaîne YouTube HEM officielle (première école business Maroc)",
+          "6 pages Facebook campus avec animations dédiées",
+          "Production vidéos institutionnelles (événements, témoignages)",
+          "Community management multi-campus coordonné",
+          "Stratégie content marketing éducatif",
+          "Reporting analytics centralisé",
+          "Formation équipes communication digitale",
+          "Couverture événements et conférences"
+        ],
+        "en": [
+          "Official HEM YouTube channel (first business school Morocco)",
+          "6 campus Facebook pages with dedicated animations",
+          "Institutional video production (events, testimonials)",
+          "Coordinated multi-campus community management",
+          "Educational content marketing strategy",
+          "Centralized analytics reporting",
+          "Digital communication team training",
+          "Events and conferences coverage"
+        ]
+      },
+      "status": {
+        "fr": "Fondation référence secteur éducatif",
+        "en": "Education sector reference foundation"
+      },
+      "date": "2010-2014",
+      "client": {
+        "fr": "Institut HEM",
+        "en": "Institut HEM"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Excellent professionnel, toujours attentif et très réactif, engagement et éthique impressionnants.",
+          "en": "Excellent professional, always attentive and very responsive, impressive commitment and ethics."
+        },
+        "author": "HEM Communication Team"
+      }
+    },
+    {
+      "id": "hem-institutional-site",
+      "title": "HEM.ac.ma — Site Institutionnel",
+      "category": {
+        "fr": "Éducation Supérieure",
+        "en": "Higher Education"
+      },
+      "description": {
+        "fr": "Site web institutionnel de HEM — Institut des Hautes Études de Management développé sous Drupal 6. Plateforme centrale de communication pour établissement d'enseignement supérieur privé marocain reconnu depuis 1988. Architecture multi-campus (6 villes).",
+        "en": "HEM — Institut des Hautes Études de Management institutional website developed with Drupal 6. Central communication platform for Moroccan private higher education institution recognized since 1988. Multi-campus architecture (6 cities)."
+      },
+      "technologies": ["Drupal 6", "PHP", "MySQL", "JavaScript", "CSS", "Multi-Site Architecture"],
+      "image": "images/projects/hem-institutional.jpg",
+      "features": {
+        "fr": [
+          "Architecture multi-campus (6 villes)",
+          "Gestion contenu académique centralisé",
+          "Présentation institutionnelle complète (Mission, Vision, Valeurs)",
+          "Interface étudiants et candidats",
+          "Système d'information programmes et formations",
+          "Intégration réseaux sociaux",
+          "Administration multi-utilisateurs",
+          "Histoire et fondation depuis 1988"
+        ],
+        "en": [
+          "Multi-campus architecture (6 cities)",
+          "Centralized academic content management",
+          "Complete institutional presentation (Mission, Vision, Values)",
+          "Student and candidate interface",
+          "Program and training information system",
+          "Social media integration",
+          "Multi-user administration",
+          "History and foundation since 1988"
+        ]
+      },
+      "status": {
+        "fr": "Migré vers Drupal 8 (2015)",
+        "en": "Migrated to Drupal 8 (2015)"
+      },
+      "date": "2010",
+      "client": {
+        "fr": "Institut HEM",
+        "en": "Institut HEM"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Karim is reliable, creative, and hardworking. I hold him in high esteem for his ethics and sense of responsibility.",
+          "en": "Karim is reliable, creative, and hardworking. I hold him in high esteem for his ethics and sense of responsibility."
+        },
+        "author": "Ali E., Director of Academic Affairs, HEM Business School"
+      }
+    },
+    {
+      "id": "sunlight-systems",
+      "title": "Sunlight-Systems.Net",
+      "category": {
+        "fr": "Développement Web & Multimédia",
+        "en": "Web Development & Multimedia"
+      },
+      "description": {
+        "fr": "Site web corporate et vitrine digitale de Sunlight Systems SARL. Présentait un portfolio de services complet allant du développement web à l'infrastructure réseau, desservant une clientèle diversifiée incluant Radio Plus Agadir et les Huissiers de Justice du Maroc. Produits propriétaires : 'Maroc Streaming' et 'Easy Dentaire'.",
+        "en": "Corporate website and digital showcase for Sunlight Systems SARL. Featured complete service portfolio from web development to network infrastructure, serving diverse clients including Radio Plus Agadir and Huissiers de Justice du Maroc. Proprietary products: 'Maroc Streaming' and 'Easy Dentaire'."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Adobe Suite", "Streaming Technology"],
+      "image": "screenshots/sunlight-systems.net_manual.png",
+      "features": {
+        "fr": [
+          "Vitrine d'entreprise multi-services IT",
+          "Gestion de portfolio clients",
+          "Intégration catalogue produits",
+          "Démonstration technologie streaming",
+          "Présentation services professionnels",
+          "Plateforme d'acquisition clients B2B"
+        ],
+        "en": [
+          "Multi-service IT company showcase",
+          "Client portfolio management",
+          "Product catalog integration",
+          "Streaming technology demonstration",
+          "Professional service presentation",
+          "B2B client acquisition platform"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2007",
+      "client": {
+        "fr": "Sunlight Systems SARL",
+        "en": "Sunlight Systems SARL"
+      },
+      "achievements": {
+        "fr": [
+          "Clients majeurs : Radio Plus Agadir, Huissiers de Justice",
+          "Lancement solution streaming propriétaire 'Maroc Streaming'",
+          "Développement logiciel dentaire 'Easy Dentaire'",
+          "Présence B2B établie multi-sectorielle"
+        ],
+        "en": [
+          "Served major clients: Radio Plus Agadir, Huissiers de Justice",
+          "Launched proprietary streaming solution 'Maroc Streaming'",
+          "Developed dental management software 'Easy Dentaire'",
+          "Established B2B presence across multiple sectors"
+        ]
+      }
+    },
+    {
+      "id": "soussagri",
+      "title": "SoussAgri.com",
+      "category": {
+        "fr": "Plateforme Agricole & AgriTech",
+        "en": "Agricultural Platform & AgriTech"
+      },
+      "description": {
+        "fr": "Premier portail agricole dédié à la région du Souss Massa au Maroc. Plateforme innovante de transfert de connaissances agricoles et de gestion optimisée des cultures. Solution AgriTech avant-gardiste intégrant la gestion de l'eau et l'optimisation des rendements — 2ème Prix INNOFEL 2008.",
+        "en": "Morocco's first regional agricultural portal dedicated to the Souss Massa region. Innovative platform for agricultural knowledge transfer and optimized crop management. Pioneering AgriTech solution integrating water management and yield optimization — 2nd Prize INNOFEL 2008."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Agricultural Management Systems", "Irrigation Optimization"],
+      "image": "screenshots/soussagri.com_manual.png",
+      "features": {
+        "fr": [
+          "Premier portail agricole régional du Maroc",
+          "Gestion multi-cultures spécialisée",
+          "Système d'économie d'eau intégré",
+          "Transfert de connaissances agricoles",
+          "Optimisation des rendements",
+          "Interface dédiée région Souss Massa",
+          "Outils de planification agricole"
+        ],
+        "en": [
+          "Morocco's first regional agricultural portal",
+          "Multi-crop specialized management",
+          "Integrated water economy system",
+          "Agricultural knowledge transfer",
+          "Yield optimization tools",
+          "Souss Massa region-specific interface",
+          "Agricultural planning tools"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2007-2008",
+      "client": {
+        "fr": "Secteur Agricole — Région Souss Massa",
+        "en": "Agricultural Sector — Souss Massa Region"
+      },
+      "achievements": {
+        "fr": [
+          "2ème Prix INNOFEL 2008 — Innovation Agricole",
+          "Premier portail agricole régional du Maroc",
+          "Solution pionnière AgriTech marocaine",
+          "Impact sur économie d'eau et rendements agricoles"
+        ],
+        "en": [
+          "2nd Prize INNOFEL 2008 — Agricultural Innovation",
+          "Morocco's first regional agricultural portal",
+          "Pioneering Moroccan AgriTech solution",
+          "Impact on water economy and agricultural yields"
+        ]
+      }
+    },
+    {
+      "id": "eriser",
+      "title": "Eriser.net",
+      "category": {
+        "fr": "AgriTech & Solutions d'Irrigation",
+        "en": "AgriTech & Irrigation Solutions"
+      },
+      "description": {
+        "fr": "Site web corporate pour ERISER, entreprise spécialisée dans les techniques d'irrigation agricole basée à Aït Melloul. Plateforme présentant des solutions d'irrigation autonomes et clés en main, avec expertise en micro-irrigation goutte-à-goutte pour zones arides.",
+        "en": "Corporate website for ERISER, agricultural irrigation techniques company based in Aït Melloul. Platform showcasing autonomous turnkey irrigation solutions, with expertise in drip micro-irrigation for arid zones."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "HTML", "Custom CMS"],
+      "image": "screenshots/eriser.net_manual.png",
+      "features": {
+        "fr": [
+          "Présentation solutions irrigation autonomes",
+          "Documentation micro-irrigation goutte-à-goutte",
+          "Portfolio services agricoles complets",
+          "Section événementiel professionnel",
+          "Gestion dossiers clients intégrée",
+          "Expertise traitement des eaux",
+          "Interface zones géographiques multiples"
+        ],
+        "en": [
+          "Autonomous irrigation solutions showcase",
+          "Drip micro-irrigation documentation",
+          "Complete agricultural services portfolio",
+          "Professional events section",
+          "Integrated client file management",
+          "Water treatment expertise",
+          "Multi-geographic zones interface"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2007-2008",
+      "client": {
+        "fr": "ERISER — Techniques d'Irrigation",
+        "en": "ERISER — Irrigation Techniques"
+      },
+      "achievements": {
+        "fr": [
+          "Digitalisation leader irrigation Souss Massa",
+          "Promotion innovation micro-irrigation au Maroc",
+          "Plateforme B2B secteur agricole",
+          "Solutions clés en main zones arides"
+        ],
+        "en": [
+          "Digitalization leader irrigation Souss Massa",
+          "Promoted micro-irrigation innovation in Morocco",
+          "B2B platform for agricultural sector",
+          "Turnkey solutions for arid zones"
+        ]
+      }
+    },
+    {
+      "id": "radioplus-agadir",
+      "title": "RadioPlus.ma",
+      "category": {
+        "fr": "Média & Streaming Audio",
+        "en": "Media & Audio Streaming"
+      },
+      "description": {
+        "fr": "Site web et infrastructure de streaming pour Radio Plus Agadir, première radio marocaine avec diffusion continue sur internet via RealPlayer. Station généraliste trilingue (Amazigh/Tachelhit, Arabe, Français) dédiée à l'animation de la région du Souss. Streaming audio propulsé par notre solution propriétaire 'Maroc Streaming'.",
+        "en": "Website and streaming infrastructure for Radio Plus Agadir, Morocco's first radio station with continuous internet broadcasting via RealPlayer. Trilingual generalist station (Amazigh/Tachelhit, Arabic, French) dedicated to animating the Souss region. Audio streaming powered by proprietary 'Maroc Streaming' solution."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "RealPlayer Streaming", "Maroc Streaming", "Audio Streaming Infrastructure"],
+      "image": "screenshots/radioplus.ma_manual.png",
+      "features": {
+        "fr": [
+          "Première radio marocaine streaming internet continu",
+          "Diffusion trilingue (Amazigh, Arabe, Français)",
+          "Interface web interactive auditeurs",
+          "Programmation en temps réel",
+          "Promotion événements culturels locaux",
+          "Support multi-langues pour touristes",
+          "Infrastructure streaming propriétaire",
+          "Animation région du Souss intégrée"
+        ],
+        "en": [
+          "Morocco's first continuous internet streaming radio",
+          "Trilingual broadcasting (Amazigh, Arabic, French)",
+          "Interactive web interface for listeners",
+          "Real-time programming display",
+          "Local cultural events promotion",
+          "Multi-language support for tourists",
+          "Proprietary streaming infrastructure",
+          "Integrated Souss region animation"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2007-2009",
+      "client": {
+        "fr": "Radio Plus Agadir",
+        "en": "Radio Plus Agadir"
+      },
+      "achievements": {
+        "fr": [
+          "Première radio marocaine avec streaming internet continu",
+          "Innovation technologique RealPlayer streaming",
+          "Pionnier radio locale trilingue au Maroc",
+          "Interface interculturelle région touristique majeure",
+          "Solution streaming 100% propriétaire 'Maroc Streaming'"
+        ],
+        "en": [
+          "Morocco's first radio with continuous internet streaming",
+          "RealPlayer streaming technological innovation",
+          "Pioneer trilingual local radio in Morocco",
+          "Intercultural interface for major tourist region",
+          "100% proprietary streaming solution 'Maroc Streaming'"
+        ]
+      }
+    },
+    {
+      "id": "packinfo",
+      "title": "Packinfo.ma",
+      "category": {
+        "fr": "Média Agricole & Plateforme d'Abonnement",
+        "en": "Agricultural Media & Subscription Platform"
+      },
+      "description": {
+        "fr": "Version web sous abonnement du magazine hebdomadaire PackInfo édité par Fellah Conseil. Plateforme spécialisée dans les conseils agricoles, gestion et assistance technique d'exploitations. Système d'abonnement intégré et accès sécurisé aux ressources techniques spécialisées.",
+        "en": "Web subscription version of PackInfo weekly magazine published by Fellah Conseil. Platform specialized in agricultural advice, management and technical assistance for farm operations. Integrated subscription system and secure access to specialized technical resources."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Subscription System", "Premium Content Management"],
+      "image": "screenshots/packinfo.ma_manual.png",
+      "features": {
+        "fr": [
+          "Version web magazine hebdomadaire agricole",
+          "Système d'abonnement sécurisé",
+          "Accès contenu premium professionnel",
+          "Conseils techniques spécialisés",
+          "Gestion d'exploitations agricoles",
+          "Assistance technique en ligne",
+          "Interface professionnels agriculture"
+        ],
+        "en": [
+          "Web version of weekly agricultural magazine",
+          "Secure subscription system",
+          "Professional premium content access",
+          "Specialized technical advice",
+          "Agricultural operation management",
+          "Online technical assistance",
+          "Agriculture professionals interface"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2008-2009",
+      "client": {
+        "fr": "Fellah Conseil",
+        "en": "Fellah Conseil"
+      },
+      "subProjects": ["fellahconseil"]
+    },
+    {
+      "id": "fellahconseil",
+      "title": "FellahConseil",
+      "category": {
+        "fr": "Plateforme Agricole B2B",
+        "en": "B2B Agricultural Platform"
+      },
+      "description": {
+        "fr": "Plateforme corporate regroupant l'écosystème complet Fellah Conseil : conseils, gestion, assistance et encadrement technique d'exploitation de projets agricoles. Hub central intégrant Amfel.ma (premier annuaire marocain filière fruits et légumes) et PackInfo.ma (magazine hebdomadaire sous abonnement).",
+        "en": "Corporate platform bringing together the complete Fellah Conseil ecosystem: advice, management, assistance and technical supervision of agricultural project operations. Central hub integrating Amfel.ma (Morocco's first fruits and vegetables directory) and PackInfo.ma (weekly subscription magazine)."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Multi-Site System", "Directory Integration"],
+      "image": "screenshots/fellahconseil_manual.png",
+      "features": {
+        "fr": [
+          "Hub central écosystème agricole Fellah Conseil",
+          "Intégration annuaire Amfel.ma",
+          "Gestion magazine PackInfo abonnements",
+          "Conseils techniques professionnels",
+          "Assistance exploitation projets",
+          "Encadrement technique spécialisé",
+          "Plateforme B2B filière fruits/légumes"
+        ],
+        "en": [
+          "Central hub Fellah Conseil agricultural ecosystem",
+          "Amfel.ma directory integration",
+          "PackInfo magazine subscription management",
+          "Professional technical advice",
+          "Project operation assistance",
+          "Specialized technical supervision",
+          "B2B platform fruits/vegetables sector"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2008-2009",
+      "client": {
+        "fr": "Fellah Conseil",
+        "en": "Fellah Conseil"
+      },
+      "subProjects": ["packinfo", "amfel"]
+    },
+    {
+      "id": "amfel",
+      "title": "Amfel.ma",
+      "category": {
+        "fr": "Annuaire B2B & Portail Sectoriel",
+        "en": "B2B Directory & Sector Portal"
+      },
+      "description": {
+        "fr": "Premier annuaire marocain de la filière fruits et légumes avec portail électronique. Répertoire professionnel de plus de 5000 adresses classées en 6 catégories. Projet éditorial hybride (5000 exemplaires papier format B5 + portail web) diffusé via salons professionnels internationaux (SIFEL, SIAM, Fruit Logistica Berlin).",
+        "en": "Morocco's first fruits and vegetables sector directory with electronic portal. Professional directory of 5000+ addresses classified in 6 categories. Hybrid editorial project (5000 paper copies B5 format + web portal) distributed via professional exhibitions (SIFEL, SIAM, Fruit Logistica Berlin)."
+      },
+      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Advanced Search System", "Multi-level Categorization"],
+      "image": "screenshots/amfel.ma_manual.png",
+      "features": {
+        "fr": [
+          "Base de données 5000+ adresses professionnelles",
+          "Catégorisation 6 secteurs spécialisés",
+          "Recherche avancée multi-critères",
+          "Interface bilingue français/arabe",
+          "Fiches entreprises détaillées",
+          "Cartographie professionnels par région",
+          "Synchronisation version papier/web",
+          "Export données pour salons professionnels"
+        ],
+        "en": [
+          "5000+ professional addresses database",
+          "6 specialized sector categorization",
+          "Advanced multi-criteria search",
+          "Bilingual French/Arabic interface",
+          "Detailed company profiles",
+          "Regional professional mapping",
+          "Paper/web version synchronization",
+          "Data export for trade shows"
+        ]
+      },
+      "status": {
+        "fr": "Historique — Archivé",
+        "en": "Historical — Archived"
+      },
+      "date": "2008-2009",
+      "client": {
+        "fr": "Fellah Conseil SARL",
+        "en": "Fellah Conseil SARL"
+      },
+      "achievements": {
+        "fr": [
+          "Premier annuaire sectoriel fruits/légumes Maroc",
+          "5000+ professionnels référencés",
+          "Distribution internationale (Berlin Fruit Logistica)",
+          "Référence secteur agro-alimentaire marocain",
+          "Projet hybride papier/digital pionnier"
+        ],
+        "en": [
+          "Morocco's first fruits/vegetables sector directory",
+          "5000+ professionals referenced",
+          "International distribution (Berlin Fruit Logistica)",
+          "Moroccan agri-food sector reference",
+          "Pioneer hybrid paper/digital project"
+        ]
+      }
+    }
+  ]
+}
