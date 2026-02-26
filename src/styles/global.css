@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl font-bold text-slate-900 dark:text-white mb-2;
+  }
+
+  .section-subheading {
+    @apply text-slate-500 dark:text-slate-400 text-lg;
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950 font-medium transition-all duration-300;
+  }
+
+  .tech-tag {
+    @apply inline-block px-2 py-1 text-xs font-mono rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Skill bar animation */
+@keyframes growBar {
+  from { width: 0%; }
+  to { width: var(--skill-level); }
+}
+
+.skill-bar {
+  animation: growBar 1s ease-out forwards;
+}
