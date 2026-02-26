@@ -1,0 +1,127 @@
+---
+import type { Lang } from '@types';
+import { t } from '@utils/i18n';
+import ThemeToggle from './ThemeToggle.astro';
+import LanguageSwitch from './LanguageSwitch.astro';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const navLinks = [
+  { key: 'nav.about', href: '#about' },
+  { key: 'nav.experience', href: '#experience' },
+  { key: 'nav.projects', href: '#projects' },
+  { key: 'nav.stack', href: '#stack' },
+  { key: 'nav.testimonials', href: '#testimonials' },
+  { key: 'nav.contact', href: '#contact' },
+];
+---
+
+<header
+  id="site-header"
+  class="fixed top-0 inset-x-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-sm border-b border-slate-200/60 dark:border-slate-700/60 transition-all duration-300"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo / Name -->
+      <a
+        href={lang === 'fr' ? '/' : '/en/'}
+        class="font-bold text-lg text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors"
+      >
+        K. AIT HAMMOU
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Navigation principale">
+        {navLinks.map(({ key, href }) => (
+          <a
+            href={href}
+            class="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md transition-colors"
+          >
+            {t(key, lang)}
+          </a>
+        ))}
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-2">
+        <LanguageSwitch lang={lang} />
+        <ThemeToggle lang={lang} />
+
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-btn"
+          aria-label="Menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+        >
+          <svg id="icon-hamburger" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="icon-close" class="hidden w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900"
+    role="navigation"
+    aria-label="Navigation mobile"
+  >
+    <div class="px-4 py-3 space-y-1">
+      {navLinks.map(({ key, href }) => (
+        <a
+          href={href}
+          class="mobile-nav-link block px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-md transition-colors"
+        >
+          {t(key, lang)}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-16" aria-hidden="true"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconHamburger = document.getElementById('icon-hamburger');
+  const iconClose = document.getElementById('icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false;
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    iconHamburger?.classList.toggle('hidden');
+    iconClose?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu on nav link click
+  document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu?.classList.add('hidden');
+      btn?.setAttribute('aria-expanded', 'false');
+      iconHamburger?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+    });
+  });
+
+  // Shrink header on scroll
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      header?.classList.add('shadow-sm');
+    } else {
+      header?.classList.remove('shadow-sm');
+    }
+  }, { passive: true });
+</script>

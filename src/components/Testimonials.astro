@@ -1,0 +1,38 @@
+---
+import type { Lang } from '@types';
+import type { Projects } from '@types';
+import { t } from '@utils/i18n';
+import TestimonialCarousel from './TestimonialCarousel.astro';
+
+interface Props {
+  projects: Projects;
+  lang: Lang;
+}
+const { projects, lang } = Astro.props;
+
+// Collect all testimonials from projects
+const testimonials = projects.projects
+  .filter((p) => p.testimonial)
+  .map((p) => ({
+    text: p.testimonial!.text,
+    author: p.testimonial!.author,
+    project: p.title,
+  }));
+---
+
+{testimonials.length > 0 && (
+  <section id="testimonials" class="py-20 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section header -->
+      <div class="text-center mb-12">
+        <h2 class="section-heading">{t('sections.testimonials', lang)}</h2>
+        <p class="text-slate-500 dark:text-slate-400 text-lg mt-2">
+          {t('testimonials.subtitle', lang)}
+        </p>
+      </div>
+
+      <!-- Carousel -->
+      <TestimonialCarousel testimonials={testimonials} lang={lang} />
+    </div>
+  </section>
+)}

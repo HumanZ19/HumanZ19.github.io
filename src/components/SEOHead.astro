@@ -1,0 +1,79 @@
+---
+import type { Lang } from '@types';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  canonicalUrl: string;
+  alternateUrl: string;
+  ogImage?: string | undefined;
+}
+
+const {
+  title,
+  description,
+  lang,
+  canonicalUrl,
+  alternateUrl,
+  ogImage = '/images/profile.png',
+} = Astro.props;
+
+const siteName = 'Karim AIT HAMMOU — Portfolio';
+const twitterHandle = '@karimaithammou';
+const alternateLang = lang === 'fr' ? 'en' : 'fr';
+---
+
+<!-- Charset & Viewport -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Primary Meta -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="author" content="Karim AIT HAMMOU" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Hreflang -->
+<link rel="alternate" hreflang={lang} href={canonicalUrl} />
+<link rel="alternate" hreflang={alternateLang} href={alternateUrl} />
+<link rel="alternate" hreflang="x-default" href={lang === 'fr' ? canonicalUrl : alternateUrl} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content={`${siteName} — Photo`} />
+<meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+<meta property="og:locale:alternate" content={lang === 'fr' ? 'en_US' : 'fr_FR'} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content={twitterHandle} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<!-- JSON-LD Person -->
+<script is:inline type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karim AIT HAMMOU",
+  "url": "https://humanz19.github.io",
+  "image": ogImage,
+  "sameAs": [
+    "https://linkedin.com/in/karimaithammou",
+    "https://github.com/HumanZ19"
+  ],
+  "jobTitle": lang === 'fr' ? "Solutions Architect & Chef de Projet Technique" : "Solutions Architect & Technical Project Manager",
+  "email": "aithammoukarim@gmail.com",
+  "knowsLanguage": ["fr", "en", "ar"]
+})} />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" href="/favicon.png" />

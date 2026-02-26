@@ -1,0 +1,41 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/Hero.astro';
+import About from '@components/About.astro';
+import ExperienceTimeline from '@components/ExperienceTimeline.astro';
+import ProjectsGrid from '@components/ProjectsGrid.astro';
+import Stack from '@components/Stack.astro';
+import Testimonials from '@components/Testimonials.astro';
+
+import ProfileSchema from '@schemas/profile.schema';
+import ProjectsSchema from '@schemas/projects.schema';
+import profileRaw from '@data/profile.json';
+import projectsRaw from '@data/projects.json';
+
+// Validate at build time — build fails on invalid data
+const profile = ProfileSchema.parse(profileRaw);
+const projects = ProjectsSchema.parse(projectsRaw);
+
+const lang = 'fr' as const;
+const site = 'https://humanz19.github.io';
+const canonicalUrl = site + '/';
+const alternateUrl = site + '/en/';
+const description = profile.basics.summary.fr.slice(0, 160);
+const title = `${profile.basics.name} — ${profile.basics.label.fr}`;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang={lang}
+  canonicalUrl={canonicalUrl}
+  alternateUrl={alternateUrl}
+  ogImage={`${site}/images/profile.png`}
+>
+  <Hero profile={profile} lang={lang} />
+  <About profile={profile} lang={lang} />
+  <ExperienceTimeline profile={profile} lang={lang} />
+  <ProjectsGrid projects={projects} lang={lang} />
+  <Stack profile={profile} lang={lang} />
+  <Testimonials projects={projects} lang={lang} />
+</BaseLayout>

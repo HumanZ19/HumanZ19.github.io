@@ -1,0 +1,85 @@
+---
+import type { Lang } from '@types';
+
+interface Props {
+  title?: string;
+  lang: Lang;
+}
+
+const { title = 'CV — Karim AIT HAMMOU', lang } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="robots" content="noindex, nofollow" />
+
+    <style>
+      /* A4 print-optimized layout using system fonts only */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --primary: #4f46e5;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --bg: #ffffff;
+      }
+
+      html,
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.5;
+      }
+
+      .cv-page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 16mm 18mm;
+        background: var(--bg);
+      }
+
+      /* Print: remove margins, fit to A4 */
+      @media print {
+        @page {
+          size: A4;
+          margin: 0;
+        }
+        html,
+        body {
+          width: 210mm;
+        }
+        .cv-page {
+          padding: 14mm 16mm;
+          width: 210mm;
+        }
+        a {
+          color: var(--primary) !important;
+          text-decoration: none !important;
+        }
+        .no-print {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv-page">
+      <slot />
+    </div>
+  </body>
+</html>

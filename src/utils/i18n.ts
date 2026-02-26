@@ -1,14 +1,6 @@
 import type { Lang, LocalizedField, LocalizedArray } from '../types';
 
-// Lazy-loaded i18n strings to avoid circular imports at build time
-const getStrings = async (lang: Lang) => {
-  if (lang === 'en') {
-    return (await import('../i18n/en.json')).default;
-  }
-  return (await import('../i18n/fr.json')).default;
-};
-
-// Synchronous versions using static imports (used in Astro components)
+// Static imports for synchronous use in Astro components
 import frStrings from '../i18n/fr.json';
 import enStrings from '../i18n/en.json';
 

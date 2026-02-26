@@ -1,0 +1,134 @@
+---
+import type { Lang } from '@types';
+import { localized } from '@utils/i18n';
+
+interface Testimonial {
+  text: { fr: string; en: string };
+  author: string;
+  project: string;
+}
+
+interface Props {
+  testimonials: Testimonial[];
+  lang: Lang;
+}
+const { testimonials, lang } = Astro.props;
+---
+
+<div class="relative overflow-hidden" id="testimonial-carousel">
+  <!-- Slides -->
+  <div class="flex transition-transform duration-500 ease-in-out" id="carousel-track" style="will-change: transform;">
+    {testimonials.map((t, i) => (
+      <div
+        class="min-w-full px-4"
+        role="group"
+        aria-roledescription="slide"
+        aria-label={`Témoignage ${i + 1} sur ${testimonials.length}`}
+      >
+        <blockquote class="card max-w-2xl mx-auto text-center py-8">
+          <!-- Quote icon -->
+          <div class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center mx-auto mb-6">
+            <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+            </svg>
+          </div>
+
+          <!-- Text -->
+          <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed italic mb-6">
+            "{localized(t.text, lang)}"
+          </p>
+
+          <!-- Author -->
+          <footer>
+            <cite class="not-italic">
+              <span class="font-bold text-slate-900 dark:text-white block">{t.author}</span>
+              <span class="text-sm text-indigo-600 dark:text-indigo-400">{t.project}</span>
+            </cite>
+          </footer>
+        </blockquote>
+      </div>
+    ))}
+  </div>
+
+  <!-- Navigation dots -->
+  {testimonials.length > 1 && (
+    <div class="flex justify-center gap-2 mt-6" role="tablist" aria-label="Navigation témoignages">
+      {testimonials.map((_, i) => (
+        <button
+          type="button"
+          class="carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          data-index={i}
+          role="tab"
+          aria-selected={i === 0 ? 'true' : 'false'}
+          aria-label={`Témoignage ${i + 1}`}
+        ></button>
+      ))}
+    </div>
+  )}
+
+  <!-- Prev/Next arrows -->
+  {testimonials.length > 1 && (
+    <div class="flex justify-center gap-4 mt-4">
+      <button
+        id="carousel-prev"
+        type="button"
+        aria-label="Témoignage précédent"
+        class="p-2 rounded-full border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button
+        id="carousel-next"
+        type="button"
+        aria-label="Témoignage suivant"
+        class="p-2 rounded-full border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  )}
+</div>
+
+<script>
+  const track = document.getElementById('carousel-track') as HTMLElement | null;
+  const dots = document.querySelectorAll<HTMLButtonElement>('.carousel-dot');
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const total = dots.length;
+
+  if (!track || total === 0) {
+    // nothing to do
+  } else {
+    let current = 0;
+
+    const goTo = (index: number) => {
+      current = (index + total) % total;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => {
+        const isActive = i === current;
+        dot.setAttribute('aria-selected', String(isActive));
+        dot.className = `carousel-dot w-2.5 h-2.5 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+          isActive ? 'bg-indigo-600 w-6' : 'bg-slate-300 dark:bg-slate-600 hover:bg-slate-400'
+        }`;
+      });
+    };
+
+    // Init first dot
+    goTo(0);
+
+    prevBtn?.addEventListener('click', () => goTo(current - 1));
+    nextBtn?.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+    // Auto-advance every 6s
+    let autoTimer = setInterval(() => goTo(current + 1), 6000);
+    track.addEventListener('mouseenter', () => clearInterval(autoTimer));
+    track.addEventListener('mouseleave', () => {
+      autoTimer = setInterval(() => goTo(current + 1), 6000);
+    });
+  }
+</script>

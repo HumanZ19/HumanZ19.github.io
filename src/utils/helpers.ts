@@ -1,4 +1,4 @@
-import type { Project, Lang } from '../types';
+import type { Project } from '../types';
 
 /**
  * Determine the filter category of a project for the project filters.
@@ -72,7 +72,7 @@ export function getProjectGradient(id: string): string {
   ];
   // Deterministic pick based on id characters
   const index = id.charCodeAt(0) % gradients.length;
-  return gradients[index];
+  return gradients[index] ?? gradients[0]!;
 }
 
 /**
@@ -80,6 +80,6 @@ export function getProjectGradient(id: string): string {
  */
 export function getProjectInitials(title: string): string {
   const words = title.split(/\s+/).filter(Boolean);
-  if (words.length === 1) return words[0].substring(0, 2).toUpperCase();
-  return (words[0][0] + words[1][0]).toUpperCase();
+  if (words.length === 1) return (words[0] ?? '').substring(0, 2).toUpperCase();
+  return ((words[0]?.[0] ?? '') + (words[1]?.[0] ?? '')).toUpperCase();
 }

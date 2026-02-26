@@ -66,6 +66,12 @@ const ProfileSchema = z.object({
     ),
     yearsOfExperience: z.number(),
     availability: LocalizedString,
+    heroStats: z
+      .object({
+        projectsCount: z.string(),
+        maxTeamManaged: z.number(),
+      })
+      .optional(),
   }),
   experience: z.array(ExperienceSchema),
   education: z.array(EducationSchema),

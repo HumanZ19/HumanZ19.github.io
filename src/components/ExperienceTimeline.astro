@@ -1,0 +1,52 @@
+---
+import type { Lang } from '@types';
+import type { Profile } from '@types';
+import { t } from '@utils/i18n';
+import ExperienceCard from './ExperienceCard.astro';
+
+interface Props {
+  profile: Profile;
+  lang: Lang;
+}
+const { profile, lang } = Astro.props;
+---
+
+<section id="experience" class="py-20 bg-white dark:bg-slate-900">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Section header -->
+    <div class="text-center mb-12">
+      <h2 class="section-heading">{t('sections.experience', lang)}</h2>
+      <p class="text-slate-500 dark:text-slate-400 text-lg mt-2">
+        {t('experience.subtitle', lang)}
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line (visible on lg+) -->
+      <div
+        class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-indigo-500/50 via-indigo-300/30 to-transparent -translate-x-1/2"
+        aria-hidden="true"
+      ></div>
+
+      <div class="space-y-6">
+        {profile.experience.map((exp, i) => (
+          <div class={`lg:grid lg:grid-cols-2 lg:gap-8 items-start ${i % 2 === 0 ? '' : 'lg:direction-rtl'}`}>
+            <!-- Left col (even) / Right col (odd) on desktop -->
+            <div class={i % 2 === 0 ? 'lg:pr-8' : 'lg:col-start-2 lg:pr-0 lg:pl-8'}>
+              <ExperienceCard experience={exp} lang={lang} />
+            </div>
+
+            <!-- Timeline dot (desktop) -->
+            <div
+              class={`hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center justify-center ${i % 2 === 0 ? '' : ''}`}
+              style={`top: ${i * 0}px`}
+              aria-hidden="true"
+            >
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

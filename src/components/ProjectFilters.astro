@@ -1,0 +1,97 @@
+---
+import type { Lang } from '@types';
+import type { Projects } from '@types';
+import { t } from '@utils/i18n';
+import { getProjectFilterCategory } from '@utils/helpers';
+
+interface Props {
+  projects: Projects;
+  lang: Lang;
+}
+const { projects, lang } = Astro.props;
+
+// Count per category
+const allCount = projects.projects.length;
+const recentCount = projects.projects.filter((p) => getProjectFilterCategory(p) === 'recent').length;
+const institutionalCount = projects.projects.filter((p) => getProjectFilterCategory(p) === 'institutional').length;
+const pioneerCount = projects.projects.filter((p) => getProjectFilterCategory(p) === 'pioneer').length;
+
+const filters = [
+  { id: 'all', label: t('projects.filter_all', lang), count: allCount },
+  { id: 'recent', label: t('projects.filter_recent', lang), count: recentCount },
+  { id: 'institutional', label: t('projects.filter_institutional', lang), count: institutionalCount },
+  { id: 'pioneer', label: t('projects.filter_pioneer', lang), count: pioneerCount },
+];
+---
+
+<div
+  id="project-filters"
+  class="flex flex-wrap items-center justify-center gap-2 mb-8"
+  role="group"
+  aria-label={t('projects.subtitle', lang)}
+>
+  {filters.map((filter, i) => (
+    <button
+      type="button"
+      data-filter={filter.id}
+      class={`filter-btn inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ${
+        i === 0
+          ? 'bg-indigo-600 text-white shadow-sm shadow-indigo-200 dark:shadow-indigo-900'
+          : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 hover:text-indigo-600 dark:hover:text-indigo-400'
+      }`}
+      aria-pressed={i === 0 ? 'true' : 'false'}
+    >
+      {filter.label}
+      <span class={`text-xs rounded-full px-1.5 py-0.5 ${
+        i === 0 ? 'bg-indigo-500 text-white' : 'bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400'
+      }`}>
+        {filter.count}
+      </span>
+    </button>
+  ))}
+</div>
+
+<script>
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const projectCards = document.querySelectorAll<HTMLElement>('[data-category]');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter!;
+
+      // Update button styles
+      filterBtns.forEach((b) => {
+        const isActive = b === btn;
+        b.setAttribute('aria-pressed', String(isActive));
+        if (isActive) {
+          b.classList.add('bg-indigo-600', 'text-white', 'shadow-sm', 'shadow-indigo-200', 'dark:shadow-indigo-900');
+          b.classList.remove('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-700', 'hover:border-indigo-300');
+          // Update count badge
+          const badge = b.querySelector('span');
+          if (badge) {
+            badge.className = 'text-xs rounded-full px-1.5 py-0.5 bg-indigo-500 text-white';
+          }
+        } else {
+          b.classList.remove('bg-indigo-600', 'text-white', 'shadow-sm', 'shadow-indigo-200', 'dark:shadow-indigo-900');
+          b.classList.add('bg-white', 'dark:bg-slate-800', 'text-slate-600', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-700', 'hover:border-indigo-300');
+          const badge = b.querySelector('span');
+          if (badge) {
+            badge.className = 'text-xs rounded-full px-1.5 py-0.5 bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400';
+          }
+        }
+      });
+
+      // Show/hide project cards
+      projectCards.forEach((card) => {
+        const parent = card.parentElement!;
+        if (filter === 'all' || card.dataset.category === filter) {
+          parent.style.display = '';
+          card.style.opacity = '1';
+          card.style.transform = 'scale(1)';
+        } else {
+          parent.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

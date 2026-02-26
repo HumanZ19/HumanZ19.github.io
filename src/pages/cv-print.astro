@@ -1,0 +1,124 @@
+---
+import CVPrintLayout from '@layouts/CVPrintLayout.astro';
+import ProfileSchema from '@schemas/profile.schema';
+import profileRaw from '@data/profile.json';
+import { localized, localizedArray } from '@utils/i18n';
+
+// Validate at build time
+const profile = ProfileSchema.parse(profileRaw);
+const lang = 'fr' as const;
+
+const { basics, experience, skills } = profile;
+const label = localized(basics.label, lang);
+const summary = localized(basics.summary, lang);
+---
+
+<CVPrintLayout title={`CV — ${basics.name}`} lang={lang}>
+  <!-- Print header -->
+  <header style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20pt;border-bottom:2pt solid #4f46e5;padding-bottom:12pt;">
+    <div>
+      <h1 style="font-size:20pt;font-weight:800;color:#1e293b;margin:0 0 4pt;">{basics.name}</h1>
+      <p style="font-size:12pt;font-weight:600;color:#4f46e5;margin:0 0 6pt;">{label}</p>
+      <p style="font-size:9pt;color:#64748b;margin:0;">
+        {basics.location.city}, {localized(basics.location.country, lang)} &nbsp;|&nbsp;
+        {basics.email} &nbsp;|&nbsp; {basics.phone}
+      </p>
+      <p style="font-size:9pt;color:#64748b;margin:4pt 0 0;">
+        linkedin.com/in/karimaithammou &nbsp;|&nbsp; github.com/HumanZ19
+      </p>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section style="margin-bottom:16pt;">
+    <h2 style="font-size:11pt;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 6pt;border-left:3pt solid #4f46e5;padding-left:8pt;">
+      Résumé
+    </h2>
+    <p style="font-size:9.5pt;color:#334155;line-height:1.6;margin:0;">{summary}</p>
+  </section>
+
+  <!-- Experience -->
+  <section style="margin-bottom:16pt;">
+    <h2 style="font-size:11pt;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 10pt;border-left:3pt solid #4f46e5;padding-left:8pt;">
+      Expérience Professionnelle
+    </h2>
+    {experience.map((exp) => {
+      const pos = localized(exp.position, lang);
+      const sum = localized(exp.summary, lang);
+      const highlights = localizedArray(exp.highlights, lang);
+      const startYear = exp.startDate.split('-')[0];
+      const endYear = exp.endDate === 'Present' ? 'Présent' : exp.endDate.split('-')[0];
+      return (
+        <div style="margin-bottom:12pt;break-inside:avoid;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2pt;">
+            <span style="font-weight:700;font-size:10pt;color:#1e293b;">{pos}</span>
+            <span style="font-size:9pt;color:#64748b;flex-shrink:0;margin-left:8pt;">{startYear} – {endYear}</span>
+          </div>
+          <p style="font-weight:600;font-size:9.5pt;color:#4f46e5;margin:0 0 4pt;">{exp.company}</p>
+          <p style="font-size:9pt;color:#475569;margin:0 0 4pt;line-height:1.5;">{sum}</p>
+          <ul style="margin:0 0 4pt;padding-left:14pt;">
+            {highlights.map((h) => (
+              <li style="font-size:9pt;color:#475569;margin-bottom:2pt;line-height:1.4;">{h}</li>
+            ))}
+          </ul>
+          <p style="font-size:8.5pt;color:#64748b;margin:0;">
+            <strong>Stack:</strong> {exp.stack.join(', ')}
+          </p>
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- Skills -->
+  <section style="margin-bottom:16pt;">
+    <h2 style="font-size:11pt;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 10pt;border-left:3pt solid #4f46e5;padding-left:8pt;">
+      Compétences Techniques
+    </h2>
+    {skills.technical.map((cat) => {
+      const catLabel = localized(cat.category, lang);
+      return (
+        <div style="margin-bottom:8pt;">
+          <p style="font-weight:600;font-size:9.5pt;color:#334155;margin:0 0 3pt;">{catLabel}</p>
+          <p style="font-size:8.5pt;color:#64748b;margin:0;line-height:1.6;">
+            {cat.items.map((item) => item.name).join(' · ')}
+          </p>
+        </div>
+      );
+    })}
+  </section>
+
+  <!-- Languages -->
+  <section style="margin-bottom:16pt;">
+    <h2 style="font-size:11pt;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 8pt;border-left:3pt solid #4f46e5;padding-left:8pt;">
+      Langues
+    </h2>
+    <p style="font-size:9pt;color:#475569;margin:0;">
+      {profile.languages.map((l) => `${localized(l.language, lang)} (${localized(l.fluency, lang)})`).join(' · ')}
+    </p>
+  </section>
+
+  <!-- Education -->
+  {profile.education.length > 0 && (
+    <section>
+      <h2 style="font-size:11pt;font-weight:700;color:#4f46e5;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 8pt;border-left:3pt solid #4f46e5;padding-left:8pt;">
+        Formation
+      </h2>
+      {profile.education.map((edu) => (
+        <div style="margin-bottom:6pt;">
+          <span style="font-weight:700;font-size:10pt;color:#1e293b;">{edu.institution}</span>
+          <span style="font-size:9pt;color:#64748b;"> · {localized(edu.area, lang)} · {edu.startDate}–{edu.endDate}</span>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <!-- Print button (not printed) -->
+  <div class="no-print" style="position:fixed;top:16pt;right:16pt;">
+    <button
+      onclick="window.print()"
+      style="background:#4f46e5;color:#fff;border:none;padding:8pt 14pt;border-radius:6pt;font-size:10pt;font-weight:600;cursor:pointer;"
+    >
+      Imprimer / Enregistrer PDF
+    </button>
+  </div>
+</CVPrintLayout>

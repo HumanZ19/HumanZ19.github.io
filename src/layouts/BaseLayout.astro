@@ -1,0 +1,62 @@
+---
+import SEOHead from '@components/SEOHead.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import '@styles/global.css';
+import type { Lang } from '@types';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Lang;
+  canonicalUrl: string;
+  alternateUrl: string;
+  ogImage?: string | undefined;
+}
+
+const { title, description, lang, canonicalUrl, alternateUrl, ogImage } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <!-- Dark mode init MUST run before paint to avoid flash -->
+    <script is:inline>
+      (function () {
+        try {
+          const stored = localStorage.getItem('theme');
+          if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (_) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Inter + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <SEOHead
+      title={title}
+      description={description}
+      lang={lang}
+      canonicalUrl={canonicalUrl}
+      alternateUrl={alternateUrl}
+      ogImage={ogImage}
+    />
+  </head>
+
+  <body class="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans antialiased transition-colors duration-300">
+    <Header lang={lang} />
+
+    <main id="main-content">
+      <slot />
+    </main>
+
+    <Footer lang={lang} />
+  </body>
+</html>

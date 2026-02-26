@@ -1,0 +1,52 @@
+---
+interface Props {
+  src?: string | undefined;
+  alt: string;
+  class?: string | undefined;
+  width?: number | undefined;
+  height?: number | undefined;
+  fallbackText?: string | undefined;
+  gradient?: string | undefined;
+}
+
+const {
+  src,
+  alt,
+  class: className = '',
+  width = 400,
+  height = 225,
+  fallbackText,
+  gradient = 'from-indigo-500 to-purple-600',
+} = Astro.props;
+---
+
+{
+  src ? (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading="lazy"
+      decoding="async"
+      class={className}
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+    />
+    <div
+      class={`hidden items-center justify-center bg-gradient-to-br ${gradient} text-white font-bold text-2xl ${className}`}
+      style={`width:${width}px;height:${height}px;`}
+      aria-hidden="true"
+    >
+      {fallbackText ?? alt.slice(0, 2).toUpperCase()}
+    </div>
+  ) : (
+    <div
+      class={`flex items-center justify-center bg-gradient-to-br ${gradient} text-white font-bold text-2xl ${className}`}
+      style={`min-height:${height}px;`}
+      role="img"
+      aria-label={alt}
+    >
+      {fallbackText ?? alt.slice(0, 2).toUpperCase()}
+    </div>
+  )
+}
