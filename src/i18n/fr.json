@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "stack": "Stack Technique",
+    "testimonials": "Témoignages",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "cta_cv": "Télécharger mon CV",
+    "cta_contact": "Me contacter",
+    "stats_years": "Années d'expérience",
+    "stats_projects": "Projets réalisés",
+    "stats_team": "Max équipe managée"
+  },
+  "sections": {
+    "about": "À propos",
+    "experience": "Parcours Professionnel",
+    "projects": "Projets & Réalisations",
+    "stack": "Stack Technique",
+    "testimonials": "Ce qu'ils disent",
+    "contact": "Contact"
+  },
+  "about": {
+    "subtitle": "Polyvalence sectorielle et expertise technique",
+    "highlight_leadership": "Leadership",
+    "highlight_leadership_desc": "Management d'équipes techniques internationales",
+    "highlight_innovation": "Innovation",
+    "highlight_innovation_desc": "IA, Trading algorithmique, Computer Vision",
+    "highlight_multisector": "Multi-sectoriel",
+    "highlight_multisector_desc": "Adaptabilité prouvée dans tous secteurs",
+    "availability_label": "Disponibilité",
+    "languages_label": "Langues"
+  },
+  "experience": {
+    "subtitle": "Parcours d'expertise technique et managériale",
+    "present": "Présent",
+    "stack_label": "Stack"
+  },
+  "projects": {
+    "subtitle": "Découvrez mes réalisations techniques les plus significatives",
+    "filter_all": "Tous",
+    "filter_all_count": "projets",
+    "filter_recent": "Récents (2020+)",
+    "filter_institutional": "Institutionnel",
+    "filter_pioneer": "Pionnier (2007-2009)",
+    "features": "Fonctionnalités clés",
+    "achievements": "Réalisations",
+    "status_label": "Statut",
+    "client_label": "Client",
+    "tech_stack": "Technologies",
+    "date_label": "Période",
+    "show_features": "Voir les fonctionnalités",
+    "hide_features": "Masquer"
+  },
+  "testimonials": {
+    "title": "Ce qu'ils disent de moi",
+    "subtitle": "Avis de clients et collaborateurs"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Discutons de votre prochain projet",
+    "cta_heading": "Prêt à transformer vos défis techniques en opportunités ?",
+    "cta_desc": "Que ce soit pour de l'architecture de solutions, du management d'équipes techniques, ou des développements complexes, je suis là pour vous accompagner.",
+    "cta_btn": "Démarrons la conversation",
+    "email_label": "Email",
+    "phone_label": "Téléphone",
+    "location_label": "Localisation",
+    "linkedin_label": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "built_with": "Construit avec",
+    "back_to_top": "Haut de page"
+  },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "toggle": "Basculer le thème"
+  },
+  "lang": {
+    "switch_to_en": "Switch to English",
+    "switch_to_fr": "Passer en Français"
+  },
+  "cv": {
+    "print_title": "CV — Karim AIT HAMMOU",
+    "download": "Télécharger CV PDF"
+  }
+}

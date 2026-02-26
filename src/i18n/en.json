@@ -1,0 +1,91 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stack": "Tech Stack",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "cta_cv": "Download my CV",
+    "cta_contact": "Contact me",
+    "stats_years": "Years of experience",
+    "stats_projects": "Projects delivered",
+    "stats_team": "Max team managed"
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Professional Journey",
+    "projects": "Projects & Achievements",
+    "stack": "Tech Stack",
+    "testimonials": "What they say",
+    "contact": "Contact"
+  },
+  "about": {
+    "subtitle": "Sector versatility and technical expertise",
+    "highlight_leadership": "Leadership",
+    "highlight_leadership_desc": "International technical team management",
+    "highlight_innovation": "Innovation",
+    "highlight_innovation_desc": "AI, Algorithmic Trading, Computer Vision",
+    "highlight_multisector": "Multi-sector",
+    "highlight_multisector_desc": "Proven adaptability across all sectors",
+    "availability_label": "Availability",
+    "languages_label": "Languages"
+  },
+  "experience": {
+    "subtitle": "Technical and managerial expertise journey",
+    "present": "Present",
+    "stack_label": "Stack"
+  },
+  "projects": {
+    "subtitle": "Discover my most significant technical achievements",
+    "filter_all": "All",
+    "filter_all_count": "projects",
+    "filter_recent": "Recent (2020+)",
+    "filter_institutional": "Institutional",
+    "filter_pioneer": "Pioneer (2007-2009)",
+    "features": "Key Features",
+    "achievements": "Achievements",
+    "status_label": "Status",
+    "client_label": "Client",
+    "tech_stack": "Technologies",
+    "date_label": "Period",
+    "show_features": "Show features",
+    "hide_features": "Hide"
+  },
+  "testimonials": {
+    "title": "What they say about me",
+    "subtitle": "Client and collaborator reviews"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's discuss your next project",
+    "cta_heading": "Ready to turn your technical challenges into opportunities?",
+    "cta_desc": "Whether for solutions architecture, technical team management, or complex developments, I'm here to guide you.",
+    "cta_btn": "Start the conversation",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "location_label": "Location",
+    "linkedin_label": "LinkedIn"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "built_with": "Built with",
+    "back_to_top": "Back to top"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "lang": {
+    "switch_to_en": "Switch to English",
+    "switch_to_fr": "Passer en Français"
+  },
+  "cv": {
+    "print_title": "CV — Karim AIT HAMMOU",
+    "download": "Download CV PDF"
+  }
+}
