@@ -70,6 +70,8 @@ const ProfileSchema = z.object({
       .object({
         projectsCount: z.string(),
         maxTeamManaged: z.number(),
+        countriesDeployed: z.string().optional(),
+        legislationsCompliance: z.number().optional(),
       })
       .optional(),
   }),

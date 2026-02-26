@@ -1,6 +1,62 @@
 {
   "projects": [
     {
+      "id": "eduka-erp",
+      "title": "Eduka Software — ERP SaaS International",
+      "category": {
+        "fr": "ERP & Conformité Fiscale Internationale",
+        "en": "ERP & International Fiscal Compliance"
+      },
+      "description": {
+        "fr": "Interface opérationnelle Finance/Tech sur un ERP SaaS déployé dans 10+ pays. Pilotage de modules de conformité fiscale multi-législations (Espagne, Brésil, Arabie Saoudite, Maroc) et d'intégrations de paiement internationales (Australie, Cambodge, Afrique). Livraison avec documentation complète et tutoriels vidéo.",
+        "en": "Operational Finance/Tech bridge on a SaaS ERP deployed in 10+ countries. Led multi-legislation fiscal compliance modules (Spain, Brazil, Saudi Arabia, Morocco) and international payment integrations (Australia, Cambodia, Africa). Full delivery with documentation and video tutorials."
+      },
+      "technologies": ["PHP", "MySQL", "Proxmox", "SVN", "Teleport", "Netdata", "Fiskaly API", "ZATCA API", "Fatourati API", "Payway API", "TouchPay API"],
+      "image": "images/projects/eduka-erp.png",
+      "features": {
+        "fr": [
+          "Pont Finance/Tech : collecte besoins → specs fonctionnelles → arbitrage CTO → suivi livraison",
+          "TicketBai / Verifactu / Fiskaly — Facturation électronique Espagne",
+          "NF-e / Boletos Bancários — Conformité fiscale Brésil",
+          "ZATCA Phase 2 — Facturation électronique Arabie Saoudite",
+          "Fatourati / CMI — Facturation & paiement Maroc",
+          "Payway — Intégration paiement Australie & Cambodge",
+          "TouchPay — Intégration paiement Afrique",
+          "Infrastructure multi-sites : Proxmox, Teleport, Netdata (Singapour, Hong Kong, Shanghai)",
+          "Documentation fonctionnelle complète + tutoriels vidéo",
+          "Stakeholder management : Finance + CTO + devs + infra"
+        ],
+        "en": [
+          "Finance/Tech bridge: requirements → functional specs → CTO arbitration → delivery tracking",
+          "TicketBai / Verifactu / Fiskaly — Spain e-invoicing compliance",
+          "NF-e / Boletos Bancários — Brazil fiscal compliance",
+          "ZATCA Phase 2 — Saudi Arabia e-invoicing",
+          "Fatourati / CMI — Morocco invoicing & payment",
+          "Payway — Payment integration Australia & Cambodia",
+          "TouchPay — Payment integration Africa",
+          "Multi-site infrastructure: Proxmox, Teleport, Netdata (Singapore, Hong Kong, Shanghai)",
+          "Complete functional documentation + video tutorials",
+          "Stakeholder management: Finance + CTO + devs + infra"
+        ]
+      },
+      "status": {
+        "fr": "Livré — CDD Octobre 2025 → Février 2026",
+        "en": "Delivered — Fixed-term October 2025 → February 2026"
+      },
+      "date": "10/2025 - 02/2026",
+      "client": {
+        "fr": "Eduka Software — ERP SaaS (10+ pays)",
+        "en": "Eduka Software — SaaS ERP (10+ countries)"
+      },
+      "testimonial": {
+        "text": {
+          "fr": "Interface remarquable entre nos équipes Finance et Technique. Karim a su transformer des exigences réglementaires complexes en livrables concrets, avec une documentation irréprochable.",
+          "en": "Remarkable bridge between our Finance and Technical teams. Karim transformed complex regulatory requirements into concrete deliverables, with flawless documentation."
+        },
+        "author": "Équipe Eduka Software"
+      }
+    },
+    {
       "id": "kmb-trader",
       "title": "KMB Trader",
       "category": {

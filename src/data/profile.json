@@ -8,8 +8,8 @@
     "email": "aithammoukarim@gmail.com",
     "phone": "+212 6 15-80-76-63",
     "summary": {
-      "fr": "Avec 16 années d'expérience, j'ai évolué avec succès dans des secteurs variés : éducation supérieure, finance, e-commerce, recherche scientifique et trading algorithmique. Mon parcours illustre une capacité d'adaptation remarquable : du management d'équipes internationales (21 personnes sur 3 zones horaires) aux développements de bots de trading sophistiqués, en passant par la migration de systèmes critiques d'établissements d'enseignement supérieur. Passionné par les défis techniques, je transforme les contraintes en opportunités d'innovation.",
-      "en": "With 16 years of experience, I have successfully evolved across diverse sectors: higher education, finance, e-commerce, scientific research and algorithmic trading. My career demonstrates remarkable adaptability: from managing international teams (21 people across 3 time zones) to developing sophisticated trading bots and migrating critical systems for higher education institutions. Passionate about technical challenges, I transform constraints into opportunities for innovation."
+      "fr": "Avec 16 années d'expérience, je me suis spécialisé dans un rôle rare : être le pont opérationnel entre équipes métier et techniques. Chez Eduka Software (ERP SaaS, 10+ pays), j'ai traduit des exigences Finance complexes — facturation électronique multi-législations, interfaces bancaires internationales — en specs techniques actionnables pour une équipe PHP/MySQL. Avant cela, en tant que DSI à l'Institut HEM, j'ai managé 21 collaborateurs sur 4 pays, piloté une migration critique (1M DH, zéro interruption) et formé 300+ utilisateurs. En parallèle, mes projets freelance couvrent le trading algorithmique, l'IA/NLP et les architectures Django/Wagtail. Je transforme la complexité — technique, réglementaire, humaine — en solutions claires et opérationnelles.",
+      "en": "With 16 years of experience, I have specialized in a rare role: being the operational bridge between business and technical teams. At Eduka Software (SaaS ERP, 10+ countries), I translated complex Finance requirements — multi-legislation e-invoicing, international banking interfaces — into actionable technical specs for a PHP/MySQL team. Previously, as CIO at Institut HEM, I managed 21 collaborators across 4 countries, led a critical migration (1M DH budget, zero interruption) and trained 300+ users. In parallel, my freelance projects span algorithmic trading, AI/NLP and Django/Wagtail architectures. I transform complexity — technical, regulatory, human — into clear, operational solutions."
     },
     "location": {
       "city": "Rabat",
@@ -33,7 +33,9 @@
     "yearsOfExperience": 16,
     "heroStats": {
       "projectsCount": "50+",
-      "maxTeamManaged": 21
+      "maxTeamManaged": 21,
+      "countriesDeployed": "10+",
+      "legislationsCompliance": 4
     },
     "availability": {
       "fr": "Disponible pour missions freelance & CDI",
@@ -41,6 +43,38 @@
     }
   },
   "experience": [
+    {
+      "company": "Eduka Software",
+      "position": {
+        "fr": "Responsable Projet Technico-Fonctionnel",
+        "en": "Technical & Functional Project Manager"
+      },
+      "startDate": "2025-10",
+      "endDate": "2026-02",
+      "summary": {
+        "fr": "Interface opérationnelle entre les équipes Finance et Technique sur un ERP SaaS international déployé dans 10+ pays. Pilotage de projets de conformité fiscale multi-législations et d'intégrations de paiement internationales.",
+        "en": "Operational bridge between Finance and Technical teams on an international SaaS ERP deployed in 10+ countries. Led multi-legislation fiscal compliance projects and international payment integrations."
+      },
+      "highlights": {
+        "fr": [
+          "Pont Finance/Tech : collecte des besoins métier, traduction en specs fonctionnelles et techniques, arbitrage priorités avec le CTO",
+          "Facturation électronique multi-pays : TicketBai/Verifactu/Fiskaly (Espagne), NF-e/Boletos (Brésil), ZATCA (Arabie Saoudite), Fatourati/CMI (Maroc)",
+          "Intégrations paiement internationales : Payway (Australie, Cambodge), TouchPay (Afrique)",
+          "Infrastructure multi-sites Proxmox/Teleport/Netdata (Singapour, Hong Kong, Shanghai)",
+          "Livraison complète avec documentation fonctionnelle et tutoriels vidéo",
+          "Stakeholder management : 6 collaborateurs Finance + CTO + 4 devs + infra"
+        ],
+        "en": [
+          "Finance/Tech bridge: business requirements gathering, translation into functional and technical specs, priority arbitration with CTO",
+          "Multi-country e-invoicing: TicketBai/Verifactu/Fiskaly (Spain), NF-e/Boletos (Brazil), ZATCA (Saudi Arabia), Fatourati/CMI (Morocco)",
+          "International payment integrations: Payway (Australia, Cambodia), TouchPay (Africa)",
+          "Multi-site infrastructure Proxmox/Teleport/Netdata (Singapore, Hong Kong, Shanghai)",
+          "Full delivery with functional documentation and video tutorials",
+          "Stakeholder management: 6 Finance collaborators + CTO + 4 devs + infra"
+        ]
+      },
+      "stack": ["PHP", "MySQL", "Proxmox", "SVN", "Teleport", "Netdata", "Fiskaly API", "ZATCA API", "Fatourati API", "Payway API", "TouchPay API"]
+    },
     {
       "company": "Freelance Independent",
       "position": {
