@@ -119,31 +119,57 @@ const stats = basics.heroStats;
 
         <!-- Stats cards -->
         {stats && (
-          <div class="grid grid-cols-3 gap-4 w-full max-w-sm">
-            <div class="card text-center py-4">
-              <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
-                {basics.yearsOfExperience}+
+          <div class="space-y-3 w-full max-w-sm">
+            <div class="grid grid-cols-3 gap-3">
+              <div class="card text-center py-4">
+                <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  {basics.yearsOfExperience}+
+                </div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
+                  {t('hero.stats_years', lang)}
+                </div>
               </div>
-              <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
-                {t('hero.stats_years', lang)}
+              <div class="card text-center py-4">
+                <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  {stats.projectsCount}
+                </div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
+                  {t('hero.stats_projects', lang)}
+                </div>
+              </div>
+              <div class="card text-center py-4">
+                <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                  {stats.maxTeamManaged}
+                </div>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
+                  {t('hero.stats_team', lang)}
+                </div>
               </div>
             </div>
-            <div class="card text-center py-4">
-              <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
-                {stats.projectsCount}
+            {(stats.countriesDeployed || stats.legislationsCompliance) && (
+              <div class="grid grid-cols-2 gap-3">
+                {stats.countriesDeployed && (
+                  <div class="card text-center py-4">
+                    <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                      {stats.countriesDeployed}
+                    </div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
+                      {t('hero.stats_countries', lang)}
+                    </div>
+                  </div>
+                )}
+                {stats.legislationsCompliance && (
+                  <div class="card text-center py-4">
+                    <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
+                      {stats.legislationsCompliance}
+                    </div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
+                      {t('hero.stats_legislations', lang)}
+                    </div>
+                  </div>
+                )}
               </div>
-              <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
-                {t('hero.stats_projects', lang)}
-              </div>
-            </div>
-            <div class="card text-center py-4">
-              <div class="text-2xl font-extrabold text-indigo-600 dark:text-indigo-400">
-                {stats.maxTeamManaged}
-              </div>
-              <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-tight">
-                {t('hero.stats_team', lang)}
-              </div>
-            </div>
+            )}
           </div>
         )}
       </div>

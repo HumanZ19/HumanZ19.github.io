@@ -13,7 +13,9 @@
     "cta_contact": "Me contacter",
     "stats_years": "Années d'expérience",
     "stats_projects": "Projets réalisés",
-    "stats_team": "Max équipe managée"
+    "stats_team": "Max équipe managée",
+    "stats_countries": "Pays déployés",
+    "stats_legislations": "Législations fiscales"
   },
   "sections": {
     "about": "À propos",
