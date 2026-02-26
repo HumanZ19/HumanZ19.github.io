@@ -31,6 +31,10 @@
       }
     ],
     "yearsOfExperience": 16,
+    "heroStats": {
+      "projectsCount": "50+",
+      "maxTeamManaged": 21
+    },
     "availability": {
       "fr": "Disponible pour missions freelance & CDI",
       "en": "Available for freelance & permanent positions"

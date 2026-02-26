@@ -6,7 +6,7 @@
  * Requires: puppeteer (already in devDependencies)
  */
 
-import { spawn, type ChildProcess } from 'node:child_process';
+// node:child_process not used — static server is built inline
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';

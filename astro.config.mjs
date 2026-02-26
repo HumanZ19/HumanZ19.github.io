@@ -5,7 +5,8 @@ export default defineConfig({
   site: 'https://humanz19.github.io',
   integrations: [
     tailwind(),
-    // sitemap: re-enable in Phase 5 (known bug with i18n in @astrojs/sitemap@3.x)
+    // sitemap: generated as static public/sitemap.xml
+    // @astrojs/sitemap@3.7.0 crashes with Astro i18n routing (upstream bug)
   ],
   output: 'static',
   i18n: {

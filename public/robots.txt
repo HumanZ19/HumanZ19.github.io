@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cv-print/
+
+Sitemap: https://humanz19.github.io/sitemap.xml
