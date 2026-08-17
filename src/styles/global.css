@@ -2,85 +2,251 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Portfolio Karim AIT HAMMOU - direction "salle de controle"
+   Reference : docs/DESIGN-SYSTEM.md. Les regles marquees [SPEC 5.x] repondent
+   a une exigence explicite et ne doivent pas etre assouplies.
+   ========================================================================== */
+
 @layer base {
+  :root {
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
+    /* [SPEC 5.4] aucun debordement horizontal parasite */
+    overflow-x: hidden;
   }
 
   body {
-    @apply bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100;
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply bg-ink-900 text-txt-100 font-sans antialiased;
+    overflow-x: hidden;
   }
 
-  * {
-    @apply transition-colors duration-200;
+  /* [SPEC 5.4] le remede structurel aux scrolls horizontaux : sans min-width:0,
+     un enfant de grid/flex refuse de retrecir sous la taille de son contenu. */
+  main *,
+  footer *,
+  header * {
+    min-width: 0;
+  }
+
+  ::selection {
+    @apply bg-signal text-ink-900;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-signal;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-semibold tracking-tight;
+  }
+
+  a {
+    @apply transition-colors;
   }
 }
 
 @layer components {
-  .section-heading {
-    @apply text-4xl font-bold text-slate-900 dark:text-white mb-3;
+  /* --- Ossature ---------------------------------------------------------- */
+
+  .shell {
+    @apply mx-auto w-full max-w-content px-4 md:px-8;
   }
 
-  .section-subheading {
-    @apply text-slate-500 dark:text-slate-400 text-lg;
+  .section {
+    @apply py-16 md:py-24;
   }
 
-  .card {
-    @apply rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm hover:shadow-md transition-all duration-300;
+  /* Titre de section : numero monospace + libelle condensed + filet */
+  .section-head {
+    @apply mb-12 flex items-baseline gap-4 border-b border-line-600 pb-4;
+  }
+
+  .section-index {
+    @apply font-mono text-xs uppercase tracking-[0.08em] text-signal;
+  }
+
+  .section-title {
+    @apply font-display text-2xl font-semibold text-txt-100;
+  }
+
+  .section-note {
+    @apply ml-auto hidden font-mono text-xs text-txt-500 sm:block;
+  }
+
+  /* --- Labels et donnees ------------------------------------------------- */
+
+  .label {
+    @apply font-mono text-xs uppercase tracking-[0.08em] text-txt-500;
+  }
+
+  /* Lecture d'instrument : valeur large, unite discrete, filet au-dessus */
+  .readout {
+    @apply border-t border-line-500 pt-3;
+  }
+
+  .readout-value {
+    @apply font-display text-3xl font-bold leading-none text-txt-100;
+  }
+
+  .readout-unit {
+    @apply mt-2 block font-mono text-xs uppercase leading-tight tracking-[0.08em] text-txt-500;
+  }
+
+  /* --- Pastilles --------------------------------------------------------- */
+  /* [SPEC 5.1] hauteur fixe, une seule ligne, jamais de retour a la ligne
+     interne. C'est le conteneur qui fait passer les pastilles a la ligne
+     entre elles, jamais le texte a l'interieur d'une pastille. */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    height: 24px;
+    max-width: 180px;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 2px;
+    @apply border border-line-600 bg-ink-800 font-mono text-xs text-txt-300;
+  }
+
+  .tag-strong {
+    @apply border-signal-dim text-signal;
+  }
+
+  .tag-row {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  /* --- Cards ------------------------------------------------------------- */
+  /* [SPEC 5.2] le survol ne deplace rien : ni transform, ni ombre portee, ni
+     mise a l'echelle. Seules la bordure et la teinte de fond changent. */
+  .panel {
+    @apply flex h-full flex-col border border-line-600 bg-ink-800 p-6;
+    transition:
+      border-color 150ms ease,
+      background-color 150ms ease;
+  }
+
+  .panel:hover {
+    @apply border-line-500 bg-ink-700;
+  }
+
+  /* [SPEC 5.3] pied de card pousse en bas : les pieds s'alignent d'une card
+     a l'autre meme quand les descriptions sont de longueurs differentes. */
+  .panel-foot {
+    @apply mt-auto pt-6;
+  }
+
+  /* --- Troncature -------------------------------------------------------- */
+  /* [SPEC 5.5] le contenu est contraint a l'affichage en dernier recours,
+     apres avoir ete calibre a la source dans les donnees. */
+  .clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .clamp-3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  /* --- Liens ------------------------------------------------------------- */
+
+  .link-signal {
+    @apply font-mono text-xs uppercase tracking-[0.08em] text-signal;
+    @apply border-b border-signal-dim pb-0.5 hover:border-signal;
+  }
+
+  .btn {
+    @apply inline-flex h-11 items-center gap-2 border px-5 font-mono text-xs uppercase tracking-[0.08em];
+    transition:
+      border-color 150ms ease,
+      background-color 150ms ease,
+      color 150ms ease;
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary-600 hover:bg-primary-700 text-white font-medium transition-all duration-300;
+    @apply border-signal bg-signal text-ink-900 hover:bg-signal-dim hover:border-signal-dim hover:text-txt-100;
   }
 
-  .btn-secondary {
-    @apply inline-flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-primary-600 text-primary-600 dark:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950 font-medium transition-all duration-300;
+  .btn-ghost {
+    @apply border-line-500 text-txt-300 hover:border-txt-300 hover:text-txt-100;
   }
 
-  .tech-tag {
-    @apply inline-block px-3 py-1 text-xs font-mono rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300;
+  /* --- Rail vertical ----------------------------------------------------- */
+  /* Le registre : un filet de 1px le long duquel s'alignent les entrees. */
+  .rail {
+    @apply relative border-l border-line-600 pl-6;
+  }
+
+  .rail-mark::before {
+    content: '';
+    @apply absolute left-0 top-2 h-px w-4 bg-signal-dim;
   }
 }
 
-/* Print styles */
+@layer utilities {
+  /* Revelation au chargement, echelonnee. Unique orchestration du site.
+
+     L'etat initial invisible est porte par le keyframe `from` et par
+     animation-fill-mode: backwards, jamais par une regle `opacity: 0` sur
+     l'element lui-meme. Si l'animation ne se joue pas, quelle qu'en soit la
+     raison, le contenu reste visible : aucun texte ne depend d'une animation
+     pour exister. */
+  .reveal {
+    animation: reveal 500ms cubic-bezier(0.2, 0.6, 0.2, 1) backwards;
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, #262c30 1px, transparent 1px),
+      linear-gradient(to bottom, #262c30 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+}
+
+/* Accessibilite : toute animation est neutralisee sur demande systeme. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    animation: none;
+  }
+}
+
+/* Impression : la page CV conserve un rendu clair et lisible. */
 @media print {
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
   body {
-    background: white;
-    color: black;
-    font-size: 11pt;
-    line-height: 1.4;
+    background: #fff;
+    color: #000;
   }
-
-  .no-print {
-    display: none !important;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  section {
-    page-break-inside: avoid;
-  }
-
-  h2, h3 {
-    page-break-after: avoid;
-  }
-}
-
-/* Skill bar animation */
-@keyframes growBar {
-  from { width: 0%; }
-  to { width: var(--skill-level); }
-}
-
-.skill-bar {
-  animation: growBar 1s ease-out forwards;
 }

@@ -1,6 +1,562 @@
 {
   "projects": [
     {
+      "id": "phytochemhub",
+      "title": "PhytochemHub",
+      "category": {
+        "fr": "Plateforme IA & Publication Scientifique",
+        "en": "AI Platform & Scientific Publishing"
+      },
+      "description": {
+        "fr": "Plateforme d'intelligence scientifique entièrement automatisée, bâtie autour d'un LLM auto-hébergé. Elle moissonne les publications en libre accès, extrait composés, sources végétales et bioactivités, puis sert le résultat via une API REST et un tableau de bord temps réel. Principe directeur : zéro hallucination, chaque donnée reste traçable jusqu'au DOI de son article source. Aucune dépendance cloud sur le chemin critique.",
+        "en": "Fully automated scientific intelligence platform built around a self-hosted LLM. It harvests open-access publications, extracts compounds, plant sources and bioactivities, then serves the result through a REST API and a real-time dashboard. Guiding principle: zero hallucination, every data point stays traceable to its source article DOI. No cloud dependency on the critical path."
+      },
+      "technologies": [
+        "Python",
+        "Django Ninja",
+        "Ollama",
+        "mistral-nemo 12B",
+        "marker-pdf",
+        "PostgreSQL",
+        "pgvector",
+        "Streamlit",
+        "Docker",
+        "CUDA"
+      ],
+      "image": "images/projects/phytochemhub.png",
+      "features": {
+        "fr": [
+          "Pipeline ETL en 5 étapes avec suivi d'état par document",
+          "Moisson automatisée OpenAlex et récupération des PDF",
+          "Parsing GPU des PDF, tableaux et données chimiques préservés",
+          "Extraction par LLM local vers schémas Pydantic validés",
+          "Embeddings 768 dimensions stockés en pgvector, prêts pour le RAG",
+          "API REST documentée et tableau de bord temps réel",
+          "Traçabilité intégrale : aucune donnée sans DOI source"
+        ],
+        "en": [
+          "Five-stage ETL pipeline with per-document status tracking",
+          "Automated OpenAlex harvesting and PDF retrieval",
+          "GPU PDF parsing, tables and chemical data preserved",
+          "Local LLM extraction into validated Pydantic schemas",
+          "768-dimension embeddings in pgvector, RAG-ready",
+          "Documented REST API and real-time dashboard",
+          "End-to-end traceability: no data point without a source DOI"
+        ]
+      },
+      "status": {
+        "fr": "R&D - Pipeline opérationnel",
+        "en": "R&D - Operational pipeline"
+      },
+      "date": "02/2026 - 07/2026",
+      "client": {
+        "fr": "Projet personnel R&D",
+        "en": "Personal R&D project"
+      }
+    },
+    {
+      "id": "wagtailer",
+      "title": "Wagtailer",
+      "category": {
+        "fr": "Framework IA & Industrialisation",
+        "en": "AI Framework & Industrialisation"
+      },
+      "description": {
+        "fr": "Framework d'usine à sites piloté par agents IA : un questionnaire client en entrée, un site livrable en sortie. Il distille le savoir de plus de cinq refontes réelles : ce qui a survécu à toutes les versions est gravé dans une doctrine, ce qui a été gaspillé est interdit par un pare-feu d'anti-patterns. La gouvernance n'est pas documentée, elle est exécutable.",
+        "en": "Agent-driven site factory framework: a client questionnaire in, a deliverable site out. It distils the lessons of more than five real rebuilds: what survived every version is carved into doctrine, what was wasted is blocked by an anti-pattern firewall. Governance here is not documented, it is executable."
+      },
+      "technologies": [
+        "Wagtail",
+        "Python",
+        "Agents IA",
+        "Git hooks",
+        "JSON Schema",
+        "i18n"
+      ],
+      "image": "images/projects/wagtailer.png",
+      "features": {
+        "fr": [
+          "Pipeline en 13 phases, chacune fermée par une porte de validation",
+          "Catalogue de 6 agents spécialisés mobilisables à la demande",
+          "Hook pré-commit anti-hardcode, déterministe et testé",
+          "Registre d'anti-patterns interdisant les erreurs déjà payées",
+          "Squelette de projet client-agnostique, 16 modules compilés",
+          "Couche pivot JSON entre sources de contenu et pages",
+          "Boucle d'auto-amélioration sous garde de non-croissance"
+        ],
+        "en": [
+          "Thirteen-phase pipeline, each closed by a validation gate",
+          "Catalogue of six specialised agents available on demand",
+          "Deterministic, tested anti-hardcode pre-commit hook",
+          "Anti-pattern registry banning already-paid-for mistakes",
+          "Client-agnostic project scaffold, 16 modules compiling",
+          "JSON pivot layer between content sources and pages",
+          "Self-improvement loop under a no-growth guard"
+        ]
+      },
+      "status": {
+        "fr": "Framework complet",
+        "en": "Framework complete"
+      },
+      "date": "07/2026",
+      "client": {
+        "fr": "Projet personnel R&D",
+        "en": "Personal R&D project"
+      }
+    },
+    {
+      "id": "unlimited-ocr",
+      "title": "Unlimited-OCR",
+      "category": {
+        "fr": "Déploiement de modèle & Souveraineté",
+        "en": "Model Deployment & Sovereignty"
+      },
+      "description": {
+        "fr": "Chaîne OCR entièrement locale sur GPU, conçue pour que le document ne quitte jamais la machine. Elle transforme PDF et images en Markdown structuré en préservant titres, tableaux, formules et ordre de lecture. Exposée comme une commande unique appelable depuis n'importe quel projet.",
+        "en": "Fully local GPU OCR chain, designed so that documents never leave the machine. It turns PDFs and images into structured Markdown, preserving headings, tables, formulas and reading order. Exposed as a single command callable from any project."
+      },
+      "technologies": [
+        "Python",
+        "Transformers",
+        "CUDA",
+        "Modele 3B",
+        "PyTorch"
+      ],
+      "image": "images/projects/unlimited-ocr.png",
+      "features": {
+        "fr": [
+          "Inférence 100% locale, aucun document transmis à un tiers",
+          "Arbitrage documenté entre chemins d'inférence selon le GPU cible",
+          "Empreinte VRAM maîtrisée, environ 7 Go en bfloat16",
+          "Traitement par lots : un seul chargement modèle pour N fichiers",
+          "Sortie Markdown avec tableaux en HTML et figures extraites",
+          "Script d'autotest vérifiant l'environnement et la chaîne complète"
+        ],
+        "en": [
+          "Fully local inference, no document ever sent to a third party",
+          "Documented trade-off between inference paths per target GPU",
+          "Controlled VRAM footprint, around 7 GB in bfloat16",
+          "Batch processing: a single model load for N files",
+          "Markdown output with HTML tables and extracted figures",
+          "Self-test script validating environment and full chain"
+        ]
+      },
+      "status": {
+        "fr": "Outil interne en service",
+        "en": "Internal tool in service"
+      },
+      "date": "04/2026 - 07/2026",
+      "client": {
+        "fr": "Outil transverse interne",
+        "en": "Internal cross-project tool"
+      }
+    },
+    {
+      "id": "docking-pipeline",
+      "title": "Virtual Docking Studio",
+      "category": {
+        "fr": "Calcul Scientifique & Reproductibilité",
+        "en": "Scientific Computing & Reproducibility"
+      },
+      "description": {
+        "fr": "Pipeline modulaire de docking moléculaire in silico, conçu pour supprimer la préparation manuelle : plus de fichiers à convertir à la main, plus de détection de grille approximative, plus de téléchargements fastidieux. L'objectif est la reproductibilité totale d'une campagne de docking à partir d'une configuration unique. Développé en appui d'un travail doctoral en phytochimie.",
+        "en": "Modular in silico molecular docking pipeline, built to remove manual preparation: no more hand-converted files, no more guessed grid detection, no more tedious downloads. The goal is total reproducibility of a docking campaign from a single configuration. Built in support of doctoral work in phytochemistry."
+      },
+      "technologies": [
+        "Python",
+        "AutoDock Vina",
+        "RDKit",
+        "PDBQT",
+        "Pandas"
+      ],
+      "image": "images/projects/docking-pipeline.png",
+      "features": {
+        "fr": [
+          "Approche zéro-config : la campagne part d'un seul fichier de réglages",
+          "Préparation automatique des ligands et de la protéine cible",
+          "Détection automatique de la grille de docking",
+          "Récupération automatisée des composés depuis les bases publiques",
+          "Reproductibilité totale : même entrée, même résultat",
+          "Application concrète à l'étude d'un inhibiteur potentiel"
+        ],
+        "en": [
+          "Zero-config approach: a campaign starts from a single settings file",
+          "Automatic preparation of ligands and target protein",
+          "Automatic docking grid detection",
+          "Automated compound retrieval from public databases",
+          "Total reproducibility: same input, same result",
+          "Concrete application to a candidate inhibitor study"
+        ]
+      },
+      "status": {
+        "fr": "Livré - Utilisé en recherche",
+        "en": "Delivered - Used in research"
+      },
+      "date": "03/2026 - 06/2026",
+      "client": {
+        "fr": "Étudiante Doctorante Chercheuse",
+        "en": "Doctoral Researcher"
+      }
+    },
+    {
+      "id": "voicebox-xtts",
+      "title": "Voicebox XTTS",
+      "category": {
+        "fr": "Synthèse Vocale & IA Locale",
+        "en": "Voice Synthesis & Local AI"
+      },
+      "description": {
+        "fr": "Studio vocal IA fonctionnant entièrement en local, dédié à la narration longue et au livre audio à partir d'une voix clonée. L'ordre de priorité assumé est la qualité du rendu avant la vitesse, et la vitesse avant la simplicité. L'ensemble tourne sur GPU personnel, sans service tiers.",
+        "en": "Fully local AI voice studio, dedicated to long-form narration and audiobook production from a cloned voice. The assumed priority order is output quality before speed, and speed before simplicity. Everything runs on a personal GPU, with no third-party service."
+      },
+      "technologies": [
+        "XTTS-v2",
+        "PyTorch",
+        "CUDA",
+        "Python",
+        "uv"
+      ],
+      "image": "images/projects/voicebox.png",
+      "features": {
+        "fr": [
+          "Clonage vocal et narration longue durée en local",
+          "Pile d'inférence PyTorch et CUDA sur GPU 16 Go",
+          "Environnement Python épinglé pour stabilité des dépendances ML",
+          "Traitement par lots pour la narration de textes longs",
+          "Diagnostic matériel et logiciel documenté avant installation"
+        ],
+        "en": [
+          "Local voice cloning and long-form narration",
+          "PyTorch and CUDA inference stack on a 16 GB GPU",
+          "Pinned Python environment for ML dependency stability",
+          "Batch processing for long-text narration",
+          "Documented hardware and software diagnosis before setup"
+        ]
+      },
+      "status": {
+        "fr": "R&D - Setup opérationnel",
+        "en": "R&D - Operational setup"
+      },
+      "date": "05/2026 - 06/2026",
+      "client": {
+        "fr": "Projet personnel R&D",
+        "en": "Personal R&D project"
+      }
+    },
+    {
+      "id": "stream-grabber",
+      "title": "Stream Grabber Desktop",
+      "category": {
+        "fr": "Application Desktop & Architecture Hybride",
+        "en": "Desktop Application & Hybrid Architecture"
+      },
+      "description": {
+        "fr": "Application desktop Linux de téléchargement vidéo, audio et torrent, bâtie sur une architecture hybride : interface Electron pilotant un backend Python en processus adjacent. Ce patron d'architecture a ensuite été réutilisé comme socle pour d'autres applications desktop.",
+        "en": "Linux desktop application for video, audio and torrent downloads, built on a hybrid architecture: an Electron interface driving a Python backend as a sidecar process. This architectural pattern was later reused as the foundation for other desktop applications."
+      },
+      "technologies": [
+        "Electron",
+        "Python",
+        "FastAPI",
+        "yt-dlp",
+        "aria2c"
+      ],
+      "image": "images/projects/stream-grabber.png",
+      "features": {
+        "fr": [
+          "Interface Electron et backend FastAPI en processus adjacent",
+          "Téléchargement vidéo, extraction audio et gestion de torrents",
+          "Patron d'architecture réutilisé sur des projets ultérieurs",
+          "Fonctionnement entièrement local sur poste Linux"
+        ],
+        "en": [
+          "Electron interface with a FastAPI sidecar backend",
+          "Video download, audio extraction and torrent handling",
+          "Architecture pattern reused across later projects",
+          "Fully local operation on a Linux workstation"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "04/2026 - 05/2026",
+      "client": {
+        "fr": "Projet personnel",
+        "en": "Personal project"
+      }
+    },
+    {
+      "id": "pjap",
+      "title": "PJAP",
+      "category": {
+        "fr": "IA Locale & Automatisation Métier",
+        "en": "Local AI & Workflow Automation"
+      },
+      "description": {
+        "fr": "Copilote local et privé de candidature professionnelle. Il analyse une offre, compose le CV et la lettre adaptés, conserve l'historique et automatise ce qui peut l'être. Toute l'intelligence tourne sur un LLM local : aucune donnée personnelle n'est envoyée à un service tiers. L'architecture combine extension navigateur, pont natif et application desktop.",
+        "en": "Local, private copilot for job applications. It analyses a posting, composes the matching CV and cover letter, keeps the history and automates what can be automated. All intelligence runs on a local LLM: no personal data is sent to any third-party service. The architecture combines a browser extension, a native bridge and a desktop application."
+      },
+      "technologies": [
+        "Electron",
+        "React",
+        "FastAPI",
+        "Ollama",
+        "qwen2.5 14B",
+        "SQLite",
+        "pgvector",
+        "Chrome MV3"
+      ],
+      "image": "images/projects/pjap.png",
+      "features": {
+        "fr": [
+          "LLM local pour la génération, aucune donnée envoyée dans le cloud",
+          "Extension navigateur détectant les pages d'offres",
+          "Pont de messagerie natif entre extension et application desktop",
+          "Embeddings et recherche vectorielle sur l'historique",
+          "Stockage local en base embarquée, mode journalisé",
+          "Architecture héritée du patron Electron et backend adjacent"
+        ],
+        "en": [
+          "Local LLM for generation, no data sent to the cloud",
+          "Browser extension detecting job posting pages",
+          "Native messaging bridge between extension and desktop app",
+          "Embeddings and vector search across application history",
+          "Local embedded database storage in journaled mode",
+          "Architecture inherited from the Electron sidecar pattern"
+        ]
+      },
+      "status": {
+        "fr": "En développement",
+        "en": "In development"
+      },
+      "date": "05/2026",
+      "client": {
+        "fr": "Projet personnel R&D",
+        "en": "Personal R&D project"
+      }
+    },
+    {
+      "id": "maroc-numerique",
+      "title": "MarocNumerique",
+      "category": {
+        "fr": "Plateforme Éducative & Service Public",
+        "en": "Learning Platform & Public Service"
+      },
+      "description": {
+        "fr": "Portail d'apprentissage trilingue arabe, français et anglais, conçu pour transformer plus de deux mille trois cents procédures administratives marocaines en parcours pédagogiques guidés. L'ambition est de rendre lisible une bureaucratie qui ne l'est pas, en organisant l'information autour des situations de vie réelles plutôt que des administrations.",
+        "en": "Trilingual Arabic, French and English learning portal, designed to turn more than two thousand three hundred Moroccan administrative procedures into guided learning paths. The ambition is to make an opaque bureaucracy legible, by organising information around real life situations rather than around administrations."
+      },
+      "technologies": [
+        "PHP",
+        "LMS",
+        "Trilingue AR/FR/EN",
+        "Taxonomies",
+        "SCRUM"
+      ],
+      "image": "images/projects/maroc-numerique.png",
+      "features": {
+        "fr": [
+          "Plus de 2 300 procédures administratives structurées",
+          "Parcours guidés organisés par situation de vie",
+          "Interface trilingue arabe, français et anglais",
+          "Scripts d'import automatisé des procédures et taxonomies",
+          "Charte de marque et guide de style produits",
+          "Conduite en sprints avec cérémonies et livrables tracés"
+        ],
+        "en": [
+          "More than 2,300 structured administrative procedures",
+          "Guided paths organised by life situation",
+          "Trilingual Arabic, French and English interface",
+          "Automated import scripts for procedures and taxonomies",
+          "Brand guidelines and style guide produced",
+          "Run in sprints with documented ceremonies and deliverables"
+        ]
+      },
+      "status": {
+        "fr": "En développement",
+        "en": "In development"
+      },
+      "date": "04/2026",
+      "client": {
+        "fr": "Projet personnel",
+        "en": "Personal project"
+      }
+    },
+    {
+      "id": "labapp-spectro",
+      "title": "LabApp",
+      "category": {
+        "fr": "Application Offline-First & Instrumentation",
+        "en": "Offline-First Application & Instrumentation"
+      },
+      "description": {
+        "fr": "Application offline-first pour Android et poste Linux, dédiée à la saisie validée de mesures de spectrophotométrie UV. Elle répond à une contrainte de terrain précise : un laboratoire sans réseau, des mains occupées, et des erreurs de saisie qui invalident une série entière de mesures. La validation se fait en temps réel, au moment de la lecture.",
+        "en": "Offline-first application for Android and Linux desktop, dedicated to validated entry of UV spectrophotometry readings. It answers a precise field constraint: a laboratory with no network, busy hands, and entry errors that invalidate an entire measurement series. Validation happens in real time, as the reading is taken."
+      },
+      "technologies": [
+        "Offline-first",
+        "Android",
+        "Linux desktop",
+        "Validation temps reel"
+      ],
+      "image": "images/projects/labapp.png",
+      "features": {
+        "fr": [
+          "Fonctionnement intégral sans réseau, en laboratoire isolé",
+          "Validation des mesures au moment de la saisie",
+          "Double cible Android et poste de travail Linux",
+          "Garde-fous contre les erreurs invalidant une série"
+        ],
+        "en": [
+          "Full operation with no network, in an isolated laboratory",
+          "Measurement validation at the point of entry",
+          "Dual target: Android and Linux workstation",
+          "Guardrails against errors invalidating a series"
+        ]
+      },
+      "status": {
+        "fr": "Livré",
+        "en": "Delivered"
+      },
+      "date": "2025 - 2026",
+      "client": {
+        "fr": "Étudiante Doctorante Chercheuse",
+        "en": "Doctoral Researcher"
+      }
+    },
+    {
+      "id": "leaders-on-purpose",
+      "title": "Leaders On Purpose & Manal Bernoussi",
+      "category": {
+        "fr": "Wagtail & Écosystème Multi-Sites",
+        "en": "Wagtail & Multi-Site Ecosystem"
+      },
+      "description": {
+        "fr": "Conception et mise en production de l'écosystème digital complet d'une fondatrice et de sa marque de coaching : deux sites Wagtail distincts mais cohérents, accompagnés de leur infrastructure d'hébergement, de leur chaîne de déploiement et de la documentation de prise en main destinée à une cliente non technique. Dernière mission freelance en date.",
+        "en": "Design and production rollout of a complete digital ecosystem for a founder and her coaching brand: two distinct but coherent Wagtail sites, together with their hosting infrastructure, deployment chain and handover documentation aimed at a non-technical client. Most recent freelance engagement."
+      },
+      "technologies": [
+        "Wagtail",
+        "Django",
+        "Python",
+        "cPanel",
+        "Polylang",
+        "SEO"
+      ],
+      "image": "images/projects/leaders-on-purpose.png",
+      "features": {
+        "fr": [
+          "Deux sites Wagtail en production, identité visuelle commune",
+          "leadersonpurpose.ma et manalbernoussi.com",
+          "Migration depuis une ancienne base WordPress",
+          "Infrastructure d'hébergement et zone DNS administrées",
+          "Chaîne de déploiement et sauvegardes documentées",
+          "Guides de prise en main rédigés pour une cliente non technique",
+          "Contenu éditable atome par atome par la cliente"
+        ],
+        "en": [
+          "Two Wagtail sites in production, shared visual identity",
+          "leadersonpurpose.ma and manalbernoussi.com",
+          "Migration away from a legacy WordPress base",
+          "Hosting infrastructure and DNS zone administered",
+          "Documented deployment chain and backups",
+          "Handover guides written for a non-technical client",
+          "Content editable atom by atom by the client"
+        ]
+      },
+      "status": {
+        "fr": "En production",
+        "en": "In production"
+      },
+      "date": "2026",
+      "client": {
+        "fr": "Manal Bernoussi - Leaders On Purpose",
+        "en": "Manal Bernoussi - Leaders On Purpose"
+      },
+      "url": "https://leadersonpurpose.ma"
+    },
+    {
+      "id": "kaizen-corpus",
+      "title": "Kaizen",
+      "category": {
+        "fr": "Ingénierie de Contenu pour LLM",
+        "en": "Content Engineering for LLMs"
+      },
+      "description": {
+        "fr": "Corpus Markdown structuré de la méthode Kaizen, organisé en arborescence par langue et conçu pour être lu directement par une IA autonome. Le principe est celui d'une source unique produisant plusieurs sorties : le même fond alimente des formats et des langues différents sans duplication de contenu.",
+        "en": "Structured Markdown corpus of the Kaizen method, organised as a per-language tree and designed to be read directly by an autonomous AI. The principle is one source producing several outputs: the same substance feeds different formats and languages without duplicating content."
+      },
+      "technologies": [
+        "Markdown",
+        "Multilingue",
+        "Corpus IA"
+      ],
+      "image": "images/projects/kaizen.png",
+      "features": {
+        "fr": [
+          "Arborescence de contenu organisée par langue",
+          "Source unique alimentant plusieurs formats de sortie",
+          "Structure pensée pour la lecture par un agent autonome",
+          "Séparation nette entre le fond et ses mises en forme"
+        ],
+        "en": [
+          "Content tree organised per language",
+          "Single source feeding several output formats",
+          "Structure designed for autonomous agent consumption",
+          "Clean separation between substance and its renderings"
+        ]
+      },
+      "status": {
+        "fr": "Corpus actif",
+        "en": "Active corpus"
+      },
+      "date": "2024 - 2026",
+      "client": {
+        "fr": "Projet personnel",
+        "en": "Personal project"
+      }
+    },
+    {
+      "id": "veille-seo",
+      "title": "Veille SEO & GEO",
+      "category": {
+        "fr": "Veille & Référencement Génératif",
+        "en": "Research & Generative Search"
+      },
+      "description": {
+        "fr": "Travail de veille structurée sur l'évolution du référencement à l'heure des moteurs génératifs : passage d'une logique de classement à une logique de citation par les IA, transcription et analyse de sources, extraction des pratiques qui résistent à l'épreuve des faits. La matière alimente ensuite les arbitrages éditoriaux sur les projets clients.",
+        "en": "Structured research on how search is shifting in the age of generative engines: from ranking logic to being cited by AI systems, with source transcription and analysis, and extraction of the practices that hold up in practice. The material then feeds editorial decisions on client projects."
+      },
+      "technologies": [
+        "SEO",
+        "GEO",
+        "Analyse de corpus"
+      ],
+      "image": "images/projects/veille-seo.png",
+      "features": {
+        "fr": [
+          "Transcription et analyse de sources spécialisées",
+          "Distinction entre pratiques durables et effets de mode",
+          "Application directe aux arbitrages éditoriaux clients"
+        ],
+        "en": [
+          "Transcription and analysis of specialised sources",
+          "Separating durable practice from passing trends",
+          "Direct application to client editorial decisions"
+        ]
+      },
+      "status": {
+        "fr": "Veille continue",
+        "en": "Ongoing research"
+      },
+      "date": "06/2026",
+      "client": {
+        "fr": "Veille interne",
+        "en": "Internal research"
+      }
+    },
+    {
       "id": "eduka-erp",
       "title": "Eduka Software — ERP SaaS International",
       "category": {
@@ -11,7 +567,19 @@
         "fr": "Interface opérationnelle Finance/Tech sur un ERP SaaS déployé dans 10+ pays. Pilotage de modules de conformité fiscale multi-législations (Espagne, Brésil, Arabie Saoudite, Maroc) et d'intégrations de paiement internationales (Australie, Cambodge, Afrique). Livraison avec documentation complète et tutoriels vidéo.",
         "en": "Operational Finance/Tech bridge on a SaaS ERP deployed in 10+ countries. Led multi-legislation fiscal compliance modules (Spain, Brazil, Saudi Arabia, Morocco) and international payment integrations (Australia, Cambodia, Africa). Full delivery with documentation and video tutorials."
       },
-      "technologies": ["PHP", "MySQL", "Proxmox", "SVN", "Teleport", "Netdata", "Fiskaly API", "ZATCA API", "Fatourati API", "Payway API", "TouchPay API"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "Proxmox",
+        "SVN",
+        "Teleport",
+        "Netdata",
+        "Fiskaly API",
+        "ZATCA API",
+        "Fatourati API",
+        "Payway API",
+        "TouchPay API"
+      ],
       "image": "images/projects/eduka-erp.png",
       "features": {
         "fr": [
@@ -67,7 +635,14 @@
         "fr": "Bot de trading automatisé sur Binance avec stratégies propriétaires et interface de monitoring temps réel. Système complet avec backtesting, gestion des risques et alertes automatiques.",
         "en": "Automated trading bot on Binance with proprietary strategies and real-time monitoring interface. Complete system with backtesting, risk management and automatic alerts."
       },
-      "technologies": ["Python", "Binance API", "Django", "PostgreSQL", "Redis", "WebSocket"],
+      "technologies": [
+        "Python",
+        "Binance API",
+        "Django",
+        "PostgreSQL",
+        "Redis",
+        "WebSocket"
+      ],
       "image": "images/projects/kmb-trader.jpg",
       "features": {
         "fr": [
@@ -113,7 +688,14 @@
         "fr": "Plateforme Django de géolocalisation temps réel avec cartographie interactive pour la gestion d'équipes distribuées. Solution complète pour le suivi des équipes internationales.",
         "en": "Django real-time geolocation platform with interactive mapping for distributed team management. Complete solution for international team tracking with advanced analytics."
       },
-      "technologies": ["Python", "Django", "PostgreSQL", "Leaflet.js", "WebSocket", "REST API"],
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Leaflet.js",
+        "WebSocket",
+        "REST API"
+      ],
       "image": "images/projects/worldwide-team.png",
       "features": {
         "fr": [
@@ -159,7 +741,14 @@
         "fr": "Application Python d'intégration ERP/Comptabilité avec dashboard de visualisation et génération automatique de rapports. Solution sur mesure pour l'automatisation des processus comptables.",
         "en": "Python application for ERP/Accounting integration with visualization dashboard and automated report generation. Complete data synchronization solution between business systems."
       },
-      "technologies": ["Python", "Django", "PostgreSQL", "Chart.js", "Pandas", "API REST"],
+      "technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Chart.js",
+        "Pandas",
+        "API REST"
+      ],
       "image": "images/projects/assabil.png",
       "features": {
         "fr": [
@@ -205,7 +794,17 @@
         "fr": "Refonte complète du site institutionnel du Syndicat Professionnel des Métiers d'Art avec architecture Wagtail/Django. Plateforme fédérant plus de 6000 professionnels des métiers d'art en France avec système avancé de gestion de membres et annuaire géolocalisé.",
         "en": "Complete redesign with Django/Wagtail + WordPress architecture, SEO optimization and performance. Modern platform for French art crafts professionals federating 6000+ members with advanced management and geolocated directory."
       },
-      "technologies": ["Python", "Django", "Wagtail CMS", "PostgreSQL", "Redis", "Elasticsearch", "Bootstrap", "API REST", "Leaflet"],
+      "technologies": [
+        "Python",
+        "Django",
+        "Wagtail CMS",
+        "PostgreSQL",
+        "Redis",
+        "Elasticsearch",
+        "Bootstrap",
+        "API REST",
+        "Leaflet"
+      ],
       "image": "images/projects/aaf.png",
       "features": {
         "fr": [
@@ -261,7 +860,15 @@
         "fr": "Plateforme IA de synthèse d'articles scientifiques avec outils d'optimisation pour la recherche en électrolyse. Solution NLP avancée pour l'analyse de littérature scientifique et l'extraction de connaissances.",
         "en": "AI platform for scientific article synthesis with optimization tools for electrolysis research. Advanced NLP solution for scientific literature analysis and knowledge extraction."
       },
-      "technologies": ["Python", "TensorFlow", "NLP", "Django", "PostgreSQL", "Elasticsearch", "OpenAI API"],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "NLP",
+        "Django",
+        "PostgreSQL",
+        "Elasticsearch",
+        "OpenAI API"
+      ],
       "image": "images/projects/sci-x.jpg",
       "features": {
         "fr": [
@@ -307,7 +914,14 @@
         "fr": "Plateforme de gestion de conférences scientifiques internationales avec architecture complète de l'analyse des besoins jusqu'au déploiement. Solution complète pour l'organisation d'événements académiques.",
         "en": "International scientific conference management platform with complete architecture from requirements analysis to deployment. Comprehensive solution for academic event organization."
       },
-      "technologies": ["Drupal 8", "PHP", "MySQL", "JavaScript", "Bootstrap", "API Integration"],
+      "technologies": [
+        "Drupal 8",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap",
+        "API Integration"
+      ],
       "image": "images/projects/ecis2021.jpg",
       "features": {
         "fr": [
@@ -353,7 +967,14 @@
         "fr": "Site institutionnel développé en Drupal 8 pour ALMA, entreprise leader dans le branchement d'eau sur la dernière chaîne de distribution d'eau potable au Maroc. Avec plus de 20 années d'expérience et certification ISO 9001.",
         "en": "Institutional website developed in Drupal 8 for ALMA, leading company in water connections on the final drinking water distribution chain in Morocco. With 20+ years of experience and ISO 9001 certification."
       },
-      "technologies": ["Drupal 8", "PHP", "MySQL", "JavaScript", "CSS", "Responsive Design"],
+      "technologies": [
+        "Drupal 8",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Responsive Design"
+      ],
       "image": "images/projects/alma-water-distribution.jpg",
       "features": {
         "fr": [
@@ -405,7 +1026,15 @@
         "fr": "Refonte complète du site institutionnel de HEM Business School en Drupal 7, transformant la présence digitale de l'établissement. Architecture moderne avec sections stratégiques : Concours 2015, concept 'Université Citoyenne®', partenariat IFC-Banque Mondiale, réseau Alumni. Version internationale bilingue.",
         "en": "Complete redesign of HEM Business School institutional website in Drupal 7, transforming the institution's digital presence. Modern architecture with strategic sections: 2015 Admissions, 'Citizen University®' concept, IFC-World Bank partnership, Alumni network. Bilingual international version."
       },
-      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Responsive Design", "Multilingue"],
+      "technologies": [
+        "Drupal 7",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Responsive Design",
+        "Multilingue"
+      ],
       "image": "images/projects/hem-refonte-2015.jpg",
       "features": {
         "fr": [
@@ -461,7 +1090,14 @@
         "fr": "Site institutionnel de Med Métiers — L'Institut Supérieur des Métiers Industriels, créé par le Groupe HEM en partenariat avec IFC (Banque Mondiale). Modèle unique au Maroc de formation professionnalisante BAC+3, spécialisée dans les métiers porteurs des services & industrie.",
         "en": "Institutional website of Med Métiers — Higher Institute of Industrial Trades, created by HEM Group in partnership with IFC (World Bank). Unique model in Morocco of professional BAC+3 training, specialized in promising careers in services & industry."
       },
-      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Content Management"],
+      "technologies": [
+        "Drupal 7",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Content Management"
+      ],
       "image": "images/projects/medmetiers-institute.jpg",
       "features": {
         "fr": [
@@ -513,7 +1149,15 @@
         "fr": "Revue académique officielle éditée par le CESEM de HEM. Plateforme complète développée en Drupal 7 regroupant publications scientifiques, recherches, événements académiques et actualités économiques.",
         "en": "Official academic journal published by CESEM of HEM. Complete platform developed in Drupal 7 gathering scientific publications, research, academic events and economic news."
       },
-      "technologies": ["Drupal 7", "PHP", "MySQL", "JavaScript", "CSS", "Publications Management", "Multimedia Content"],
+      "technologies": [
+        "Drupal 7",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Publications",
+        "Multimedia Content"
+      ],
       "image": "images/projects/economia-journal.jpg",
       "features": {
         "fr": [
@@ -563,7 +1207,14 @@
         "fr": "Site web du Centre d'Études Sociales, Économiques et Managériales (CESEM), centre de recherche marocain dépendant de la direction Recherche et Publications de l'Institut HEM. Plateforme dédiée à la valorisation de la recherche académique.",
         "en": "Website for the Centre d'Études Sociales, Économiques et Managériales (CESEM), Moroccan research center under HEM Institute's Research and Publications direction. Platform dedicated to academic research valorization."
       },
-      "technologies": ["Drupal 6", "PHP", "MySQL", "JavaScript", "CSS", "Publications System"],
+      "technologies": [
+        "Drupal 6",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Publications System"
+      ],
       "image": "images/projects/cesem-research.jpg",
       "features": {
         "fr": [
@@ -613,7 +1264,14 @@
         "fr": "Création et gestion complète de l'écosystème digital HEM : chaîne YouTube institutionnelle, 6 pages Facebook campus dédiées. Production de centaines de vidéos institutionnelles professionnelles, stratégie communication web multi-canal et management d'une équipe de 10 collaborateurs.",
         "en": "Creation and complete management of HEM digital ecosystem: institutional YouTube channel, 6 dedicated campus Facebook pages. Production of hundreds of professional institutional videos, multi-channel web communication strategy and management of 10 collaborators team."
       },
-      "technologies": ["YouTube Management", "Facebook Business", "Adobe Premiere Pro", "After Effects", "Community Management", "Video Production"],
+      "technologies": [
+        "YouTube Management",
+        "Facebook Business",
+        "Adobe Premiere Pro",
+        "After Effects",
+        "Community Management",
+        "Video Production"
+      ],
       "image": "images/projects/hem-digital-ecosystem.jpg",
       "features": {
         "fr": [
@@ -665,7 +1323,14 @@
         "fr": "Site web institutionnel de HEM — Institut des Hautes Études de Management développé sous Drupal 6. Plateforme centrale de communication pour établissement d'enseignement supérieur privé marocain reconnu depuis 1988. Architecture multi-campus (6 villes).",
         "en": "HEM — Institut des Hautes Études de Management institutional website developed with Drupal 6. Central communication platform for Moroccan private higher education institution recognized since 1988. Multi-campus architecture (6 cities)."
       },
-      "technologies": ["Drupal 6", "PHP", "MySQL", "JavaScript", "CSS", "Multi-Site Architecture"],
+      "technologies": [
+        "Drupal 6",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Multi-Site Arch."
+      ],
       "image": "images/projects/hem-institutional.jpg",
       "features": {
         "fr": [
@@ -717,7 +1382,14 @@
         "fr": "Site web corporate et vitrine digitale de Sunlight Systems SARL. Présentait un portfolio de services complet allant du développement web à l'infrastructure réseau, desservant une clientèle diversifiée incluant Radio Plus Agadir et les Huissiers de Justice du Maroc. Produits propriétaires : 'Maroc Streaming' et 'Easy Dentaire'.",
         "en": "Corporate website and digital showcase for Sunlight Systems SARL. Featured complete service portfolio from web development to network infrastructure, serving diverse clients including Radio Plus Agadir and Huissiers de Justice du Maroc. Proprietary products: 'Maroc Streaming' and 'Easy Dentaire'."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Adobe Suite", "Streaming Technology"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Adobe Suite",
+        "Streaming Technology"
+      ],
       "image": "screenshots/sunlight-systems.net_manual.png",
       "features": {
         "fr": [
@@ -772,7 +1444,14 @@
         "fr": "Premier portail agricole dédié à la région du Souss Massa au Maroc. Plateforme innovante de transfert de connaissances agricoles et de gestion optimisée des cultures. Solution AgriTech avant-gardiste intégrant la gestion de l'eau et l'optimisation des rendements — 2ème Prix INNOFEL 2008.",
         "en": "Morocco's first regional agricultural portal dedicated to the Souss Massa region. Innovative platform for agricultural knowledge transfer and optimized crop management. Pioneering AgriTech solution integrating water management and yield optimization — 2nd Prize INNOFEL 2008."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Agricultural Management Systems", "Irrigation Optimization"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Agri Management",
+        "Irrigation"
+      ],
       "image": "screenshots/soussagri.com_manual.png",
       "features": {
         "fr": [
@@ -829,7 +1508,14 @@
         "fr": "Site web corporate pour ERISER, entreprise spécialisée dans les techniques d'irrigation agricole basée à Aït Melloul. Plateforme présentant des solutions d'irrigation autonomes et clés en main, avec expertise en micro-irrigation goutte-à-goutte pour zones arides.",
         "en": "Corporate website for ERISER, agricultural irrigation techniques company based in Aït Melloul. Platform showcasing autonomous turnkey irrigation solutions, with expertise in drip micro-irrigation for arid zones."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "HTML", "Custom CMS"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "HTML",
+        "Custom CMS"
+      ],
       "image": "screenshots/eriser.net_manual.png",
       "features": {
         "fr": [
@@ -886,7 +1572,15 @@
         "fr": "Site web et infrastructure de streaming pour Radio Plus Agadir, première radio marocaine avec diffusion continue sur internet via RealPlayer. Station généraliste trilingue (Amazigh/Tachelhit, Arabe, Français) dédiée à l'animation de la région du Souss. Streaming audio propulsé par notre solution propriétaire 'Maroc Streaming'.",
         "en": "Website and streaming infrastructure for Radio Plus Agadir, Morocco's first radio station with continuous internet broadcasting via RealPlayer. Trilingual generalist station (Amazigh/Tachelhit, Arabic, French) dedicated to animating the Souss region. Audio streaming powered by proprietary 'Maroc Streaming' solution."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "RealPlayer Streaming", "Maroc Streaming", "Audio Streaming Infrastructure"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "RealPlayer Streaming",
+        "Maroc Streaming",
+        "Audio Streaming"
+      ],
       "image": "screenshots/radioplus.ma_manual.png",
       "features": {
         "fr": [
@@ -947,7 +1641,14 @@
         "fr": "Version web sous abonnement du magazine hebdomadaire PackInfo édité par Fellah Conseil. Plateforme spécialisée dans les conseils agricoles, gestion et assistance technique d'exploitations. Système d'abonnement intégré et accès sécurisé aux ressources techniques spécialisées.",
         "en": "Web subscription version of PackInfo weekly magazine published by Fellah Conseil. Platform specialized in agricultural advice, management and technical assistance for farm operations. Integrated subscription system and secure access to specialized technical resources."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Subscription System", "Premium Content Management"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Subscription System",
+        "Premium Content"
+      ],
       "image": "screenshots/packinfo.ma_manual.png",
       "features": {
         "fr": [
@@ -978,7 +1679,9 @@
         "fr": "Fellah Conseil",
         "en": "Fellah Conseil"
       },
-      "subProjects": ["fellahconseil"]
+      "subProjects": [
+        "fellahconseil"
+      ]
     },
     {
       "id": "fellahconseil",
@@ -991,7 +1694,14 @@
         "fr": "Plateforme corporate regroupant l'écosystème complet Fellah Conseil : conseils, gestion, assistance et encadrement technique d'exploitation de projets agricoles. Hub central intégrant Amfel.ma (premier annuaire marocain filière fruits et légumes) et PackInfo.ma (magazine hebdomadaire sous abonnement).",
         "en": "Corporate platform bringing together the complete Fellah Conseil ecosystem: advice, management, assistance and technical supervision of agricultural project operations. Central hub integrating Amfel.ma (Morocco's first fruits and vegetables directory) and PackInfo.ma (weekly subscription magazine)."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Multi-Site System", "Directory Integration"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Multi-Site System",
+        "Directory Integration"
+      ],
       "image": "screenshots/fellahconseil_manual.png",
       "features": {
         "fr": [
@@ -1022,7 +1732,10 @@
         "fr": "Fellah Conseil",
         "en": "Fellah Conseil"
       },
-      "subProjects": ["packinfo", "amfel"]
+      "subProjects": [
+        "packinfo",
+        "amfel"
+      ]
     },
     {
       "id": "amfel",
@@ -1035,7 +1748,14 @@
         "fr": "Premier annuaire marocain de la filière fruits et légumes avec portail électronique. Répertoire professionnel de plus de 5000 adresses classées en 6 catégories. Projet éditorial hybride (5000 exemplaires papier format B5 + portail web) diffusé via salons professionnels internationaux (SIFEL, SIAM, Fruit Logistica Berlin).",
         "en": "Morocco's first fruits and vegetables sector directory with electronic portal. Professional directory of 5000+ addresses classified in 6 categories. Hybrid editorial project (5000 paper copies B5 format + web portal) distributed via professional exhibitions (SIFEL, SIAM, Fruit Logistica Berlin)."
       },
-      "technologies": ["PHP", "MySQL", "JavaScript", "CSS", "Advanced Search System", "Multi-level Categorization"],
+      "technologies": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "Advanced Search System",
+        "Categorization"
+      ],
       "image": "screenshots/amfel.ma_manual.png",
       "features": {
         "fr": [

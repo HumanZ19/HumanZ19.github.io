@@ -12,7 +12,7 @@
       "en": "With 16 years of experience, I have specialized in a rare role: being the operational bridge between business and technical teams. At Eduka Software (SaaS ERP, 10+ countries), I translated complex Finance requirements — multi-legislation e-invoicing, international banking interfaces — into actionable technical specs for a PHP/MySQL team. Previously, as CIO at Institut HEM, I managed 21 collaborators across 4 countries, led a critical migration (1M DH budget, zero interruption) and trained 300+ users. In parallel, my freelance projects span algorithmic trading, AI/NLP and Django/Wagtail architectures. I transform complexity — technical, regulatory, human — into clear, operational solutions."
     },
     "location": {
-      "city": "Rabat",
+      "city": "Casablanca",
       "country": {
         "fr": "Maroc",
         "en": "Morocco"
@@ -73,7 +73,19 @@
           "Stakeholder management: 6 Finance collaborators + CTO + 4 devs + infra"
         ]
       },
-      "stack": ["PHP", "MySQL", "Proxmox", "SVN", "Teleport", "Netdata", "Fiskaly API", "ZATCA API", "Fatourati API", "Payway API", "TouchPay API"]
+      "stack": [
+        "PHP",
+        "MySQL",
+        "Proxmox",
+        "SVN",
+        "Teleport",
+        "Netdata",
+        "Fiskaly API",
+        "ZATCA API",
+        "Fatourati API",
+        "Payway API",
+        "TouchPay API"
+      ]
     },
     {
       "company": "Freelance Independent",
@@ -105,7 +117,20 @@
           "ALMA.ma — Drupal 8 institutional site, Morocco's drinking water connection market leader"
         ]
       },
-      "stack": ["Python", "Django", "Wagtail CMS", "Drupal 8", "PostgreSQL", "Redis", "WebSocket", "TensorFlow", "NLP", "OpenAI API", "Docker", "Elasticsearch"]
+      "stack": [
+        "Python",
+        "Django",
+        "Wagtail CMS",
+        "Drupal 8",
+        "PostgreSQL",
+        "Redis",
+        "WebSocket",
+        "TensorFlow",
+        "NLP",
+        "OpenAI API",
+        "Docker",
+        "Elasticsearch"
+      ]
     },
     {
       "company": "Institut HEM — Groupe LCI Education",
@@ -135,7 +160,15 @@
           "IT budget management and executive negotiation"
         ]
       },
-      "stack": ["Konosys", "Linux", "Windows Server", "Microsoft 365", "VPN", "Network Infrastructure", "IT Project Management"]
+      "stack": [
+        "Konosys",
+        "Linux",
+        "Windows Server",
+        "Microsoft 365",
+        "VPN",
+        "Network Infrastructure",
+        "IT Project Management"
+      ]
     },
     {
       "company": "Consultant Freelance",
@@ -163,7 +196,16 @@
           "Economia.ma — CESEM academic journal, scientific publications platform"
         ]
       },
-      "stack": ["Drupal 7", "Drupal 8", "PHP", "MySQL", "JavaScript", "Bootstrap", "SEO", "Responsive Design"]
+      "stack": [
+        "Drupal 7",
+        "Drupal 8",
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "Bootstrap",
+        "SEO",
+        "Responsive Design"
+      ]
     },
     {
       "company": "Institut HEM",
@@ -193,7 +235,16 @@
           "Coordinated multi-campus community management"
         ]
       },
-      "stack": ["Drupal 6", "PHP", "MySQL", "Adobe Premiere Pro", "After Effects", "YouTube", "Facebook Business", "Community Management"]
+      "stack": [
+        "Drupal 6",
+        "PHP",
+        "MySQL",
+        "Adobe Premiere Pro",
+        "After Effects",
+        "YouTube",
+        "Facebook Business",
+        "Community Management"
+      ]
     },
     {
       "company": "Sunlight Systems SARL",
@@ -223,7 +274,14 @@
           "Major clients: Radio Plus Agadir, Huissiers de Justice du Maroc"
         ]
       },
-      "stack": ["PHP", "MySQL", "JavaScript", "CSS", "RealPlayer Streaming", "Adobe Suite"]
+      "stack": [
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "CSS",
+        "RealPlayer Streaming",
+        "Adobe Suite"
+      ]
     }
   ],
   "education": [
@@ -247,14 +305,46 @@
           "en": "Leadership & Management"
         },
         "items": [
-          { "name": "Gestion d'équipes techniques", "level": 95, "icon": "users" },
-          { "name": "Gestion de projets IT", "level": 92, "icon": "project-diagram" },
-          { "name": "Formation utilisateurs", "level": 90, "icon": "graduation-cap" },
-          { "name": "Conduite du changement", "level": 88, "icon": "sync" },
-          { "name": "Coordination multi-campus", "level": 90, "icon": "globe" },
-          { "name": "Gestion budgétaire IT", "level": 85, "icon": "chart-bar" },
-          { "name": "Négociation stakeholders", "level": 88, "icon": "handshake" },
-          { "name": "Leadership bienveillant", "level": 95, "icon": "heart" }
+          {
+            "name": "Gestion d'équipes techniques",
+            "level": 95,
+            "icon": "users"
+          },
+          {
+            "name": "Gestion de projets IT",
+            "level": 92,
+            "icon": "project-diagram"
+          },
+          {
+            "name": "Formation utilisateurs",
+            "level": 90,
+            "icon": "graduation-cap"
+          },
+          {
+            "name": "Conduite du changement",
+            "level": 88,
+            "icon": "sync"
+          },
+          {
+            "name": "Coordination multi-campus",
+            "level": 90,
+            "icon": "globe"
+          },
+          {
+            "name": "Gestion budgétaire IT",
+            "level": 85,
+            "icon": "chart-bar"
+          },
+          {
+            "name": "Négociation stakeholders",
+            "level": 88,
+            "icon": "handshake"
+          },
+          {
+            "name": "Leadership bienveillant",
+            "level": 95,
+            "icon": "heart"
+          }
         ]
       },
       {
@@ -263,28 +353,116 @@
           "en": "Architecture & Development"
         },
         "items": [
-          { "name": "Python", "level": 92, "icon": "python" },
-          { "name": "Django", "level": 90, "icon": "django" },
-          { "name": "PHP", "level": 88, "icon": "php" },
-          { "name": "JavaScript", "level": 82, "icon": "javascript" },
-          { "name": "PostgreSQL", "level": 88, "icon": "postgresql" },
-          { "name": "MySQL", "level": 85, "icon": "mysql" },
-          { "name": "MongoDB", "level": 75, "icon": "mongodb" },
-          { "name": "Drupal 7/8/9", "level": 90, "icon": "drupal" },
-          { "name": "WordPress", "level": 80, "icon": "wordpress" },
-          { "name": "Wagtail CMS", "level": 85, "icon": "wagtail" },
-          { "name": "REST APIs", "level": 90, "icon": "api" },
-          { "name": "GraphQL", "level": 75, "icon": "graphql" },
-          { "name": "Docker", "level": 80, "icon": "docker" },
-          { "name": "Linux", "level": 88, "icon": "linux" },
-          { "name": "Git & CI/CD", "level": 85, "icon": "git" },
-          { "name": "AWS / DigitalOcean", "level": 78, "icon": "cloud" },
-          { "name": "Redis", "level": 78, "icon": "redis" },
-          { "name": "Elasticsearch", "level": 75, "icon": "elasticsearch" },
-          { "name": "SEO Expert", "level": 88, "icon": "search" },
-          { "name": "Performance Web", "level": 85, "icon": "tachometer" },
-          { "name": "Sécurité Web", "level": 80, "icon": "shield" },
-          { "name": "VPS Management", "level": 82, "icon": "server" }
+          {
+            "name": "Python",
+            "level": 92,
+            "icon": "python"
+          },
+          {
+            "name": "Django",
+            "level": 90,
+            "icon": "django"
+          },
+          {
+            "name": "PHP",
+            "level": 88,
+            "icon": "php"
+          },
+          {
+            "name": "JavaScript",
+            "level": 82,
+            "icon": "javascript"
+          },
+          {
+            "name": "PostgreSQL",
+            "level": 88,
+            "icon": "postgresql"
+          },
+          {
+            "name": "MySQL",
+            "level": 85,
+            "icon": "mysql"
+          },
+          {
+            "name": "MongoDB",
+            "level": 75,
+            "icon": "mongodb"
+          },
+          {
+            "name": "Drupal 7/8/9",
+            "level": 90,
+            "icon": "drupal"
+          },
+          {
+            "name": "WordPress",
+            "level": 80,
+            "icon": "wordpress"
+          },
+          {
+            "name": "Wagtail CMS",
+            "level": 85,
+            "icon": "wagtail"
+          },
+          {
+            "name": "REST APIs",
+            "level": 90,
+            "icon": "api"
+          },
+          {
+            "name": "GraphQL",
+            "level": 75,
+            "icon": "graphql"
+          },
+          {
+            "name": "Docker",
+            "level": 80,
+            "icon": "docker"
+          },
+          {
+            "name": "Linux",
+            "level": 88,
+            "icon": "linux"
+          },
+          {
+            "name": "Git & CI/CD",
+            "level": 85,
+            "icon": "git"
+          },
+          {
+            "name": "AWS / DigitalOcean",
+            "level": 78,
+            "icon": "cloud"
+          },
+          {
+            "name": "Redis",
+            "level": 78,
+            "icon": "redis"
+          },
+          {
+            "name": "Elasticsearch",
+            "level": 75,
+            "icon": "elasticsearch"
+          },
+          {
+            "name": "SEO Expert",
+            "level": 88,
+            "icon": "search"
+          },
+          {
+            "name": "Performance Web",
+            "level": 85,
+            "icon": "tachometer"
+          },
+          {
+            "name": "Sécurité Web",
+            "level": 80,
+            "icon": "shield"
+          },
+          {
+            "name": "VPS Management",
+            "level": 82,
+            "icon": "server"
+          }
         ]
       },
       {
@@ -293,24 +471,96 @@
           "en": "Artificial Intelligence & Data"
         },
         "items": [
-          { "name": "TensorFlow", "level": 78, "icon": "tensorflow" },
-          { "name": "PyTorch", "level": 72, "icon": "pytorch" },
-          { "name": "scikit-learn", "level": 80, "icon": "sklearn" },
-          { "name": "OpenCV", "level": 75, "icon": "opencv" },
-          { "name": "Computer Vision", "level": 75, "icon": "eye" },
-          { "name": "NLP", "level": 78, "icon": "language" },
-          { "name": "Machine Learning", "level": 80, "icon": "brain" },
-          { "name": "Pandas", "level": 85, "icon": "pandas" },
-          { "name": "NumPy", "level": 83, "icon": "numpy" },
-          { "name": "Jupyter", "level": 82, "icon": "jupyter" },
-          { "name": "Trading Bots", "level": 85, "icon": "trading" },
-          { "name": "Financial APIs", "level": 82, "icon": "finance" },
-          { "name": "Real-time Analytics", "level": 80, "icon": "analytics" },
-          { "name": "Time Series Analysis", "level": 78, "icon": "timeline" },
-          { "name": "OpenAI API", "level": 80, "icon": "openai" },
-          { "name": "Data Visualization", "level": 82, "icon": "chart-line" },
-          { "name": "Algorithmic Trading", "level": 85, "icon": "chart" },
-          { "name": "Deep Learning", "level": 72, "icon": "network" }
+          {
+            "name": "TensorFlow",
+            "level": 78,
+            "icon": "tensorflow"
+          },
+          {
+            "name": "PyTorch",
+            "level": 72,
+            "icon": "pytorch"
+          },
+          {
+            "name": "scikit-learn",
+            "level": 80,
+            "icon": "sklearn"
+          },
+          {
+            "name": "OpenCV",
+            "level": 75,
+            "icon": "opencv"
+          },
+          {
+            "name": "Computer Vision",
+            "level": 75,
+            "icon": "eye"
+          },
+          {
+            "name": "NLP",
+            "level": 78,
+            "icon": "language"
+          },
+          {
+            "name": "Machine Learning",
+            "level": 80,
+            "icon": "brain"
+          },
+          {
+            "name": "Pandas",
+            "level": 85,
+            "icon": "pandas"
+          },
+          {
+            "name": "NumPy",
+            "level": 83,
+            "icon": "numpy"
+          },
+          {
+            "name": "Jupyter",
+            "level": 82,
+            "icon": "jupyter"
+          },
+          {
+            "name": "Trading Bots",
+            "level": 85,
+            "icon": "trading"
+          },
+          {
+            "name": "Financial APIs",
+            "level": 82,
+            "icon": "finance"
+          },
+          {
+            "name": "Real-time Analytics",
+            "level": 80,
+            "icon": "analytics"
+          },
+          {
+            "name": "Time Series Analysis",
+            "level": 78,
+            "icon": "timeline"
+          },
+          {
+            "name": "OpenAI API",
+            "level": 80,
+            "icon": "openai"
+          },
+          {
+            "name": "Data Visualization",
+            "level": 82,
+            "icon": "chart-line"
+          },
+          {
+            "name": "Algorithmic Trading",
+            "level": 85,
+            "icon": "chart"
+          },
+          {
+            "name": "Deep Learning",
+            "level": 72,
+            "icon": "network"
+          }
         ]
       }
     ],
@@ -339,20 +589,44 @@
   },
   "languages": [
     {
-      "language": { "fr": "Français", "en": "French" },
-      "fluency": { "fr": "Bilingue", "en": "Bilingual" }
+      "language": {
+        "fr": "Français",
+        "en": "French"
+      },
+      "fluency": {
+        "fr": "Bilingue",
+        "en": "Bilingual"
+      }
     },
     {
-      "language": { "fr": "Anglais", "en": "English" },
-      "fluency": { "fr": "Professionnel", "en": "Professional" }
+      "language": {
+        "fr": "Anglais",
+        "en": "English"
+      },
+      "fluency": {
+        "fr": "Professionnel",
+        "en": "Professional"
+      }
     },
     {
-      "language": { "fr": "Arabe", "en": "Arabic" },
-      "fluency": { "fr": "Natif", "en": "Native" }
+      "language": {
+        "fr": "Arabe",
+        "en": "Arabic"
+      },
+      "fluency": {
+        "fr": "Natif",
+        "en": "Native"
+      }
     },
     {
-      "language": { "fr": "Amazigh", "en": "Amazigh" },
-      "fluency": { "fr": "Natif", "en": "Native" }
+      "language": {
+        "fr": "Amazigh",
+        "en": "Amazigh"
+      },
+      "fluency": {
+        "fr": "Natif",
+        "en": "Native"
+      }
     }
   ]
 }

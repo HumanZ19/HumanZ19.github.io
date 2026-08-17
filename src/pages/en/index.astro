@@ -21,6 +21,7 @@ const site = 'https://humanz19.github.io';
 const canonicalUrl = site + '/en/';
 const alternateUrl = site + '/';
 const description = profile.basics.summary.en.slice(0, 160);
+const statusLocation = `${profile.basics.location.city}, ${profile.basics.location.country.en}`;
 const title = `${profile.basics.name} — ${profile.basics.label.en}`;
 ---
 
@@ -30,6 +31,7 @@ const title = `${profile.basics.name} — ${profile.basics.label.en}`;
   lang={lang}
   canonicalUrl={canonicalUrl}
   alternateUrl={alternateUrl}
+  statusLocation={statusLocation}
   ogImage={`${site}/images/profile.png`}
 >
   <Hero profile={profile} lang={lang} />
