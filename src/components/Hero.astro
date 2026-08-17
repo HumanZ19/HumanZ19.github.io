@@ -13,6 +13,12 @@ const label = localized(basics.label, lang);
 const availability = localized(basics.availability, lang);
 const stats = basics.heroStats;
 
+// Le CV telechargeable est le PDF de l'archetype retenu comme poste phare
+// (Bibliotheque/07-Senior-Django-AI), servi dans la langue de la page. Ces
+// fichiers sont regeneres par le builder de la bibliotheque, qui garantit
+// l'absence de tiret long, puis copies dans public/cv/.
+const cvHref = lang === 'fr' ? '/cv/Karim-AIT-HAMMOU-CV-FR.pdf' : '/cv/Karim-AIT-HAMMOU-CV-EN.pdf';
+
 // Les metriques sont presentees comme des lectures d'instrument : valeur large,
 // unite discrete, filet au-dessus. Aucune card arrondie centree.
 const readouts = [
@@ -62,7 +68,7 @@ const readouts = [
 
     <!-- Actions -->
     <div class="reveal mt-10 flex flex-wrap items-center gap-3" style="animation-delay:240ms">
-      <a href="/cv-print/" target="_blank" rel="noopener" class="btn btn-primary">
+      <a href={cvHref} download class="btn btn-primary">
         {t('hero.cta_cv', lang)}
       </a>
       <a href="#contact" class="btn btn-ghost">
