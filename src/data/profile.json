@@ -2,14 +2,14 @@
   "basics": {
     "name": "Karim AIT HAMMOU",
     "label": {
-      "fr": "Solutions Architect & Chef de Projet Technique",
-      "en": "Solutions Architect & Technical Project Manager"
+      "fr": "Ingénieur Senior Python / Django - IA & LLM",
+      "en": "Senior Python / Django Engineer - AI & LLM"
     },
     "email": "aithammoukarim@gmail.com",
     "phone": "+212 6 15-80-76-63",
     "summary": {
-      "fr": "Avec 20 années d'expérience, je me suis spécialisé dans un rôle rare : être le pont opérationnel entre équipes métier et techniques. Chez Eduka Software (ERP SaaS, 10+ pays), j'ai traduit des exigences Finance complexes - facturation électronique multi-législations, interfaces bancaires internationales - en specs techniques actionnables pour une équipe PHP/MySQL. Avant cela, en tant que DSI à l'Institut HEM, j'ai managé 21 collaborateurs sur 4 pays, piloté une migration critique (1M DH, zéro interruption) et formé 300+ utilisateurs. En parallèle, mes projets freelance couvrent le trading algorithmique, l'IA/NLP et les architectures Django/Wagtail. Je transforme la complexité - technique, réglementaire, humaine - en solutions claires et opérationnelles.",
-      "en": "With 20 years of experience, I have specialized in a rare role: being the operational bridge between business and technical teams. At Eduka Software (SaaS ERP, 10+ countries), I translated complex Finance requirements - multi-legislation e-invoicing, international banking interfaces - into actionable technical specs for a PHP/MySQL team. Previously, as CIO at Institut HEM, I managed 21 collaborators across 4 countries, led a critical migration (1M DH budget, zero interruption) and trained 300+ users. In parallel, my freelance projects span algorithmic trading, AI/NLP and Django/Wagtail architectures. I transform complexity - technical, regulatory, human - into clear, operational solutions."
+      "fr": "Je construis des backends Python et Django qui servent de couche applicative à des systèmes LLM en production. Sur PhytochemHub, un pipeline en cinq étapes bâti autour d'un modèle auto-hébergé alimente une API Django Ninja et une base pgvector, sans aucune dépendance cloud sur le chemin critique. Sur KMB Trader, un système multi-agents orchestré par LangGraph tourne en continu, avec surveillance et escalade vers l'humain. Côté web, je livre des sites Wagtail en production, dont deux mis en ligne cette année. Vingt ans d'informatique derrière, dont une direction des systèmes d'information : je sais tenir un système au-delà de la démonstration, le documenter et le transmettre à ceux qui l'exploiteront.",
+      "en": "I build Python and Django backends that serve as the application layer for production LLM systems. On PhytochemHub, a five-stage pipeline built around a self-hosted model feeds a Django Ninja API and a pgvector store, with no cloud dependency on the critical path. On KMB Trader, a LangGraph-orchestrated multi-agent system runs continuously, with monitoring and human escalation. On the web side, I ship Wagtail sites to production, two of them launched this year. Twenty years in IT behind that, including a stint as Chief Information Officer: I know how to keep a system running past the demo, document it, and hand it over to the people who will operate it."
     },
     "location": {
       "city": "Casablanca",
@@ -38,8 +38,8 @@
       "legislationsCompliance": 4
     },
     "availability": {
-      "fr": "Disponible pour missions freelance & CDI",
-      "en": "Available for freelance & permanent positions"
+      "fr": "Disponible immédiatement - mission freelance ou poste, remote ou relocation",
+      "en": "Available immediately - freelance or full-time, remote or relocation"
     }
   },
   "experience": [
@@ -566,24 +566,20 @@
     ],
     "soft": {
       "fr": [
-        "Architecture de solutions complexes",
-        "Gestion de projet et coordination",
-        "Communication technique et non-technique",
-        "Leadership bienveillant orienté résultats",
-        "Adaptabilité multi-sectorielle",
-        "Conduite du changement",
-        "Négociation et gestion des parties prenantes",
-        "Mentorat et formation d'équipes"
+        "Conception d'architectures backend durables",
+        "Passage du prototype à la production",
+        "Documentation technique et transmission",
+        "Autonomie complète sur une mission",
+        "Communication directe avec le métier",
+        "Vingt ans de systèmes maintenus"
       ],
       "en": [
-        "Complex solutions architecture",
-        "Project management and coordination",
-        "Technical and non-technical communication",
-        "Results-oriented and empathetic leadership",
-        "Multi-sector adaptability",
-        "Change management",
-        "Negotiation and stakeholder management",
-        "Team mentoring and training"
+        "Designing backends built to last",
+        "Taking prototypes through to production",
+        "Technical documentation and handover",
+        "Full autonomy on an engagement",
+        "Direct communication with business stakeholders",
+        "Twenty years of systems kept running"
       ]
     }
   },

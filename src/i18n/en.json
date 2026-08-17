@@ -26,13 +26,13 @@
     "contact": "Contact"
   },
   "about": {
-    "subtitle": "Sector versatility and technical expertise",
-    "highlight_leadership": "Leadership",
-    "highlight_leadership_desc": "International technical team management",
-    "highlight_innovation": "Innovation",
-    "highlight_innovation_desc": "AI, Algorithmic Trading, Computer Vision",
-    "highlight_multisector": "Multi-sector",
-    "highlight_multisector_desc": "Proven adaptability across all sectors",
+    "subtitle": "Python backends and production LLM systems",
+    "highlight_leadership": "Django & LLM",
+    "highlight_leadership_desc": "Python backends serving as the application layer for production models",
+    "highlight_innovation": "Sovereignty",
+    "highlight_innovation_desc": "Self-hosted models, local GPU, no data sent to any third party",
+    "highlight_multisector": "Production-proven",
+    "highlight_multisector_desc": "Twenty years shipping systems that outlive the demo",
     "availability_label": "Availability",
     "languages_label": "Languages"
   },

@@ -26,13 +26,13 @@
     "contact": "Contact"
   },
   "about": {
-    "subtitle": "Polyvalence sectorielle et expertise technique",
-    "highlight_leadership": "Leadership",
-    "highlight_leadership_desc": "Management d'équipes techniques internationales",
-    "highlight_innovation": "Innovation",
-    "highlight_innovation_desc": "IA, Trading algorithmique, Computer Vision",
-    "highlight_multisector": "Multi-sectoriel",
-    "highlight_multisector_desc": "Adaptabilité prouvée dans tous secteurs",
+    "subtitle": "Backends Python et systèmes LLM en production",
+    "highlight_leadership": "Django & LLM",
+    "highlight_leadership_desc": "Backends Python qui servent de couche applicative à des modèles en production",
+    "highlight_innovation": "Souveraineté",
+    "highlight_innovation_desc": "Modèles auto-hébergés, GPU local, aucune donnée envoyée à un tiers",
+    "highlight_multisector": "Tenue en production",
+    "highlight_multisector_desc": "Vingt ans à livrer des systèmes qui survivent à la démonstration",
     "availability_label": "Disponibilité",
     "languages_label": "Langues"
   },
