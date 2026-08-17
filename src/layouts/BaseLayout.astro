@@ -26,11 +26,25 @@ const buildDate = new Date().toISOString().slice(0, 10);
 ---
 
 <!doctype html>
-<!-- Theme sombre unique et assume : la direction "salle de controle" n'a pas
-     d'equivalent clair credible. La classe dark est donc posee en dur, ce qui
-     preserve les variantes dark: des composants non encore repris. -->
-<html lang={lang} class="dark scroll-smooth">
+<!-- Le theme se joue sur la classe `light` de <html>. Sombre par defaut :
+     c'est la direction principale, le clair en est la declinaison de jour.
+     Les couleurs sont des variables CSS (voir global.css), donc aucun
+     composant n'a besoin de variante conditionnelle. -->
+<html lang={lang} class="scroll-smooth">
   <head>
+    <!-- Doit s'executer avant le premier rendu, sinon la page s'affiche en
+         sombre une fraction de seconde avant de basculer en clair. -->
+    <script is:inline>
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light');
+          }
+        } catch (e) {
+          /* stockage indisponible : on reste sur le theme par defaut */
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

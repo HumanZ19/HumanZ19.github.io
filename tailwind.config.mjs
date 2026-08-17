@@ -13,24 +13,28 @@ export default {
         sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
         mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
       },
+      // Les couleurs pointent vers des variables CSS definies dans global.css.
+      // Consequence : un seul jeu de classes (bg-ink-900, text-txt-100, ...)
+      // sert les deux themes, et aucun composant n'a besoin de variante
+      // conditionnelle. Le theme se change en basculant une classe sur <html>.
       colors: {
         ink: {
-          900: '#0B0D0E',
-          800: '#131719',
-          700: '#1B2023',
+          900: 'rgb(var(--c-ink-900) / <alpha-value>)',
+          800: 'rgb(var(--c-ink-800) / <alpha-value>)',
+          700: 'rgb(var(--c-ink-700) / <alpha-value>)',
         },
         line: {
-          600: '#262C30',
-          500: '#333A3F',
+          600: 'rgb(var(--c-line-600) / <alpha-value>)',
+          500: 'rgb(var(--c-line-500) / <alpha-value>)',
         },
         txt: {
-          100: '#E8EBEC',
-          300: '#9AA1A6',
-          500: '#646C71',
+          100: 'rgb(var(--c-txt-100) / <alpha-value>)',
+          300: 'rgb(var(--c-txt-300) / <alpha-value>)',
+          500: 'rgb(var(--c-txt-500) / <alpha-value>)',
         },
         signal: {
-          DEFAULT: '#FFB000',
-          dim: '#8A5F00',
+          DEFAULT: 'rgb(var(--c-signal) / <alpha-value>)',
+          dim: 'rgb(var(--c-signal-dim) / <alpha-value>)',
         },
       },
       fontSize: {

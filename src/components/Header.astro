@@ -2,15 +2,13 @@
 import type { Lang } from '@types';
 import { t } from '@utils/i18n';
 import LanguageSwitch from './LanguageSwitch.astro';
+import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
 
-// ThemeToggle retire : le site assume un theme sombre unique (voir
-// docs/DESIGN-SYSTEM.md section 3). Un basculeur a moitie tenu coute plus
-// qu'il ne rapporte.
 const navLinks = [
   { key: 'nav.about', href: '#about' },
   { key: 'nav.experience', href: '#experience' },
@@ -43,7 +41,8 @@ const navLinks = [
       }
     </nav>
 
-    <div class="flex flex-shrink-0 items-center gap-3">
+    <div class="flex flex-shrink-0 items-center gap-2">
+      <ThemeToggle lang={lang} />
       <LanguageSwitch lang={lang} />
 
       <button

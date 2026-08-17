@@ -71,8 +71,34 @@ fort qu'une palette repartie.
 Regle d'emploi de l'accent : au maximum **un element ambre par bloc visuel**.
 L'ambre marque ce qui est actif, mesure ou en cours. Jamais un fond plein large.
 
-Theme unique sombre. Pas de bascule clair/sombre : la direction perd son sens en
-clair, et un toggle a moitie tenu est pire que pas de toggle.
+### Deux themes, un seul jeu de classes
+
+Les couleurs ci-dessus sont exposees en **variables CSS** consommees par
+Tailwind (`rgb(var(--c-ink-900) / <alpha-value>)`). Consequence : les deux
+themes partagent exactement les memes classes et aucun composant ne connait le
+theme courant. Basculer revient a poser la classe `light` sur `<html>`.
+
+Le **sombre est la direction principale** : salle de controle de nuit. Le
+**clair en est la declinaison de jour**, pas un theme concurrent : papier
+technique legerement chaud plutot que blanc pur, encre presque noire.
+
+```css
+html.light {
+  --c-ink-900: 247 246 243;  /* papier */
+  --c-ink-800: 255 255 255;  /* surfaces */
+  --c-txt-100: 26 25 23;     /* encre */
+  --c-signal: 154 102 0;     /* ambre assombri */
+}
+```
+
+L'ambre change de valeur entre les deux themes, et ce n'est pas negociable :
+l'ambre vif du theme sombre (#FFB000) tombe a 1.8:1 de contraste sur fond clair,
+soit illisible. Chaque role de texte doit tenir **4.5:1 minimum dans les deux
+themes** ; un script de verification mesure ces ratios sur le rendu reel.
+
+La preference est memorisee en `localStorage` et appliquee par un script inline
+place avant le premier rendu, sans quoi la page clignote en sombre avant de
+basculer.
 
 ## 4. Grille et espacement
 

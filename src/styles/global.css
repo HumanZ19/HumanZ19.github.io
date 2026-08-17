@@ -9,8 +9,44 @@
    ========================================================================== */
 
 @layer base {
+  /* --------------------------------------------------------------------
+     Palettes. Les deux themes partagent exactement les memes roles, seules
+     les valeurs changent : aucun composant ne connait le theme courant.
+
+     Sombre : salle de controle de nuit, anthracite et ambre phosphore.
+     Clair  : la meme salle en plein jour. Papier technique legerement
+              chaud plutot que blanc pur, encre presque noire, et un ambre
+              assombri pour rester lisible sur fond clair (l'ambre vif du
+              theme sombre tomberait a 1.8:1 de contraste, illisible).
+     -------------------------------------------------------------------- */
   :root {
+    --c-ink-900: 11 13 14;
+    --c-ink-800: 19 23 25;
+    --c-ink-700: 27 32 35;
+    --c-line-600: 38 44 48;
+    --c-line-500: 51 58 63;
+    --c-txt-100: 232 235 236;
+    --c-txt-300: 154 161 166;
+    --c-txt-500: 126 134 139;
+    --c-signal: 255 176 0;
+    --c-signal-dim: 138 95 0;
+    --c-grid: 38 44 48;
     color-scheme: dark;
+  }
+
+  html.light {
+    --c-ink-900: 247 246 243;
+    --c-ink-800: 255 255 255;
+    --c-ink-700: 240 238 232;
+    --c-line-600: 221 217 209;
+    --c-line-500: 188 182 171;
+    --c-txt-100: 26 25 23;
+    --c-txt-300: 82 78 72;
+    --c-txt-500: 105 100 92;
+    --c-signal: 154 102 0;
+    --c-signal-dim: 205 176 122;
+    --c-grid: 224 220 212;
+    color-scheme: light;
   }
 
   html {
@@ -221,8 +257,8 @@
 
   .grid-lines {
     background-image:
-      linear-gradient(to right, #262c30 1px, transparent 1px),
-      linear-gradient(to bottom, #262c30 1px, transparent 1px);
+      linear-gradient(to right, rgb(var(--c-grid)) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(var(--c-grid)) 1px, transparent 1px);
     background-size: 64px 64px;
   }
 }

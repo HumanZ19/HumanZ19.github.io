@@ -52,7 +52,8 @@
       "client": {
         "fr": "Projet personnel R&D",
         "en": "Personal R&D project"
-      }
+      },
+      "url": "https://phytochemhub.com"
     },
     {
       "id": "wagtailer",
@@ -558,7 +559,7 @@
     },
     {
       "id": "eduka-erp",
-      "title": "Eduka Software — ERP SaaS International",
+      "title": "Eduka Software - ERP SaaS International",
       "category": {
         "fr": "ERP & Conformité Fiscale Internationale",
         "en": "ERP & International Fiscal Compliance"
@@ -584,37 +585,37 @@
       "features": {
         "fr": [
           "Pont Finance/Tech : collecte besoins → specs fonctionnelles → arbitrage CTO → suivi livraison",
-          "TicketBai / Verifactu / Fiskaly — Facturation électronique Espagne",
-          "NF-e / Boletos Bancários — Conformité fiscale Brésil",
-          "ZATCA Phase 2 — Facturation électronique Arabie Saoudite",
-          "Fatourati / CMI — Facturation & paiement Maroc",
-          "Payway — Intégration paiement Australie & Cambodge",
-          "TouchPay — Intégration paiement Afrique",
+          "TicketBai / Verifactu / Fiskaly - Facturation électronique Espagne",
+          "NF-e / Boletos Bancários - Conformité fiscale Brésil",
+          "ZATCA Phase 2 - Facturation électronique Arabie Saoudite",
+          "Fatourati / CMI - Facturation & paiement Maroc",
+          "Payway - Intégration paiement Australie & Cambodge",
+          "TouchPay - Intégration paiement Afrique",
           "Infrastructure multi-sites : Proxmox, Teleport, Netdata (Singapour, Hong Kong, Shanghai)",
           "Documentation fonctionnelle complète + tutoriels vidéo",
           "Stakeholder management : Finance + CTO + devs + infra"
         ],
         "en": [
           "Finance/Tech bridge: requirements → functional specs → CTO arbitration → delivery tracking",
-          "TicketBai / Verifactu / Fiskaly — Spain e-invoicing compliance",
-          "NF-e / Boletos Bancários — Brazil fiscal compliance",
-          "ZATCA Phase 2 — Saudi Arabia e-invoicing",
-          "Fatourati / CMI — Morocco invoicing & payment",
-          "Payway — Payment integration Australia & Cambodia",
-          "TouchPay — Payment integration Africa",
+          "TicketBai / Verifactu / Fiskaly - Spain e-invoicing compliance",
+          "NF-e / Boletos Bancários - Brazil fiscal compliance",
+          "ZATCA Phase 2 - Saudi Arabia e-invoicing",
+          "Fatourati / CMI - Morocco invoicing & payment",
+          "Payway - Payment integration Australia & Cambodia",
+          "TouchPay - Payment integration Africa",
           "Multi-site infrastructure: Proxmox, Teleport, Netdata (Singapore, Hong Kong, Shanghai)",
           "Complete functional documentation + video tutorials",
           "Stakeholder management: Finance + CTO + devs + infra"
         ]
       },
       "status": {
-        "fr": "Livré — CDD Octobre 2025 → Février 2026",
-        "en": "Delivered — Fixed-term October 2025 → February 2026"
+        "fr": "Livré - CDD Octobre 2025 → Février 2026",
+        "en": "Delivered - Fixed-term October 2025 → February 2026"
       },
       "date": "10/2025 - 02/2026",
       "client": {
-        "fr": "Eduka Software — ERP SaaS (10+ pays)",
-        "en": "Eduka Software — SaaS ERP (10+ countries)"
+        "fr": "Eduka Software - ERP SaaS (10+ pays)",
+        "en": "Eduka Software - SaaS ERP (10+ countries)"
       },
       "testimonial": {
         "text": {
@@ -727,7 +728,7 @@
           "fr": "Built my Python-based product single-handedly while being a great communicator for progress and blockers. I'll certainly hire him again.",
           "en": "Built my Python-based product single-handedly while being a great communicator for progress and blockers. I'll certainly hire him again."
         },
-        "author": "Client Upwork — Constellation World Map"
+        "author": "Client Upwork - Constellation World Map"
       }
     },
     {
@@ -958,7 +959,7 @@
     },
     {
       "id": "alma-water-distribution",
-      "title": "Alma.ma — Leader Branchement Eau Potable",
+      "title": "Alma.ma - Leader Branchement Eau Potable",
       "category": {
         "fr": "Industrie & Infrastructure Hydraulique",
         "en": "Industry & Hydraulic Infrastructure"
@@ -1004,8 +1005,8 @@
       },
       "date": "2021",
       "client": {
-        "fr": "ALMA — Entreprise Distribution Eau",
-        "en": "ALMA — Water Distribution Company"
+        "fr": "ALMA - Entreprise Distribution Eau",
+        "en": "ALMA - Water Distribution Company"
       },
       "testimonial": {
         "text": {
@@ -1013,11 +1014,12 @@
           "en": "20+ years experience, ISO 9001 certification, supporting majority of drinking water distribution companies in Morocco."
         },
         "author": "Direction ALMA"
-      }
+      },
+      "url": "https://alma.ma"
     },
     {
       "id": "hem-refonte-2015",
-      "title": "HEM.ac.ma — Refonte Institutionnelle 2015",
+      "title": "HEM.ac.ma - Refonte Institutionnelle 2015",
       "category": {
         "fr": "Éducation Supérieure & Communication Institutionnelle",
         "en": "Higher Education & Institutional Communication"
@@ -1041,7 +1043,7 @@
           "Architecture Drupal 7 moderne et évolutive",
           "Section Concours 2015 avec processus inscription",
           "Concept 'Université Citoyenne®' mis en avant",
-          "Présentation partenariat IFC — Banque Mondiale",
+          "Présentation partenariat IFC - Banque Mondiale",
           "Plateforme HEM Alumni avec réseau diplômés",
           "Newsletter institutionnelle intégrée",
           "Section HEM Recrute pour opportunités carrières",
@@ -1053,7 +1055,7 @@
           "Modern and scalable Drupal 7 architecture",
           "2015 Admissions section with registration process",
           "Highlighted 'Citizen University®' concept",
-          "IFC — World Bank partnership presentation",
+          "IFC - World Bank partnership presentation",
           "HEM Alumni platform with graduate network",
           "Integrated institutional newsletter",
           "HEM Recrute section for career opportunities",
@@ -1068,8 +1070,8 @@
       },
       "date": "2015",
       "client": {
-        "fr": "HEM Business School — Groupe LCI Education",
-        "en": "HEM Business School — LCI Education Group"
+        "fr": "HEM Business School - Groupe LCI Education",
+        "en": "HEM Business School - LCI Education Group"
       },
       "testimonial": {
         "text": {
@@ -1077,7 +1079,8 @@
           "en": "Complete redesign supporting HEM's international growth with strategic sections and bilingual version."
         },
         "author": "Direction HEM Business School"
-      }
+      },
+      "url": "https://hem.ac.ma"
     },
     {
       "id": "medmetiers-institute",
@@ -1087,8 +1090,8 @@
         "en": "Professional Training & Higher Education"
       },
       "description": {
-        "fr": "Site institutionnel de Med Métiers — L'Institut Supérieur des Métiers Industriels, créé par le Groupe HEM en partenariat avec IFC (Banque Mondiale). Modèle unique au Maroc de formation professionnalisante BAC+3, spécialisée dans les métiers porteurs des services & industrie.",
-        "en": "Institutional website of Med Métiers — Higher Institute of Industrial Trades, created by HEM Group in partnership with IFC (World Bank). Unique model in Morocco of professional BAC+3 training, specialized in promising careers in services & industry."
+        "fr": "Site institutionnel de Med Métiers - L'Institut Supérieur des Métiers Industriels, créé par le Groupe HEM en partenariat avec IFC (Banque Mondiale). Modèle unique au Maroc de formation professionnalisante BAC+3, spécialisée dans les métiers porteurs des services & industrie.",
+        "en": "Institutional website of Med Métiers - Higher Institute of Industrial Trades, created by HEM Group in partnership with IFC (World Bank). Unique model in Morocco of professional BAC+3 training, specialized in promising careers in services & industry."
       },
       "technologies": [
         "Drupal 7",
@@ -1108,7 +1111,7 @@
           "Formation théorie-pratique avec e-learning",
           "Stages obligatoires dès 1ère année",
           "Interface informative candidats et entreprises",
-          "Localisation Tanger — développement socio-économique"
+          "Localisation Tanger - développement socio-économique"
         ],
         "en": [
           "Complete presentation of unique pedagogical model in Morocco",
@@ -1118,17 +1121,17 @@
           "Theory-practice training with e-learning",
           "Mandatory internships from 1st year",
           "Informative interface for candidates and companies",
-          "Tangier location — socio-economic development"
+          "Tangier location - socio-economic development"
         ]
       },
       "status": {
-        "fr": "Institut opérationnel — Filiale Groupe HEM",
-        "en": "Operational institute — HEM Group subsidiary"
+        "fr": "Institut opérationnel - Filiale Groupe HEM",
+        "en": "Operational institute - HEM Group subsidiary"
       },
       "date": "2013",
       "client": {
-        "fr": "Groupe HEM — Partenariat IFC Banque Mondiale",
-        "en": "HEM Group — IFC World Bank Partnership"
+        "fr": "Groupe HEM - Partenariat IFC Banque Mondiale",
+        "en": "HEM Group - IFC World Bank Partnership"
       },
       "testimonial": {
         "text": {
@@ -1140,7 +1143,7 @@
     },
     {
       "id": "economia-academic-journal",
-      "title": "Economia.ma — Revue Académique CESEM",
+      "title": "Economia.ma - Revue Académique CESEM",
       "category": {
         "fr": "Publications Académiques & Recherche",
         "en": "Academic Publications & Research"
@@ -1185,8 +1188,8 @@
       },
       "date": "2012",
       "client": {
-        "fr": "CESEM — HEM Research Center",
-        "en": "CESEM — HEM Research Center"
+        "fr": "CESEM - HEM Research Center",
+        "en": "CESEM - HEM Research Center"
       },
       "testimonial": {
         "text": {
@@ -1194,11 +1197,12 @@
           "en": "Reference platform for academic publications, remarkable architecture and complete features."
         },
         "author": "CESEM Research Team"
-      }
+      },
+      "url": "https://economia.ma"
     },
     {
       "id": "cesem-research-center",
-      "title": "CESEM.ma — Centre de Recherche",
+      "title": "CESEM.ma - Centre de Recherche",
       "category": {
         "fr": "Recherche Académique & Publications",
         "en": "Academic Research & Publications"
@@ -1237,13 +1241,13 @@
         ]
       },
       "status": {
-        "fr": "Historique — Centre recherche HEM",
-        "en": "Historical — HEM research center"
+        "fr": "Historique - Centre recherche HEM",
+        "en": "Historical - HEM research center"
       },
       "date": "2012",
       "client": {
-        "fr": "CESEM — Direction Recherche HEM",
-        "en": "CESEM — HEM Research Direction"
+        "fr": "CESEM - Direction Recherche HEM",
+        "en": "CESEM - HEM Research Direction"
       },
       "testimonial": {
         "text": {
@@ -1310,18 +1314,19 @@
           "en": "Excellent professional, always attentive and very responsive, impressive commitment and ethics."
         },
         "author": "HEM Communication Team"
-      }
+      },
+      "url": "https://hem.ac.ma"
     },
     {
       "id": "hem-institutional-site",
-      "title": "HEM.ac.ma — Site Institutionnel",
+      "title": "HEM.ac.ma - Site Institutionnel",
       "category": {
         "fr": "Éducation Supérieure",
         "en": "Higher Education"
       },
       "description": {
-        "fr": "Site web institutionnel de HEM — Institut des Hautes Études de Management développé sous Drupal 6. Plateforme centrale de communication pour établissement d'enseignement supérieur privé marocain reconnu depuis 1988. Architecture multi-campus (6 villes).",
-        "en": "HEM — Institut des Hautes Études de Management institutional website developed with Drupal 6. Central communication platform for Moroccan private higher education institution recognized since 1988. Multi-campus architecture (6 cities)."
+        "fr": "Site web institutionnel de HEM - Institut des Hautes Études de Management développé sous Drupal 6. Plateforme centrale de communication pour établissement d'enseignement supérieur privé marocain reconnu depuis 1988. Architecture multi-campus (6 villes).",
+        "en": "HEM - Institut des Hautes Études de Management institutional website developed with Drupal 6. Central communication platform for Moroccan private higher education institution recognized since 1988. Multi-campus architecture (6 cities)."
       },
       "technologies": [
         "Drupal 6",
@@ -1369,7 +1374,8 @@
           "en": "Karim is reliable, creative, and hardworking. I hold him in high esteem for his ethics and sense of responsibility."
         },
         "author": "Ali E., Director of Academic Affairs, HEM Business School"
-      }
+      },
+      "url": "https://hem.ac.ma"
     },
     {
       "id": "sunlight-systems",
@@ -1410,8 +1416,8 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2007",
       "client": {
@@ -1441,8 +1447,8 @@
         "en": "Agricultural Platform & AgriTech"
       },
       "description": {
-        "fr": "Premier portail agricole dédié à la région du Souss Massa au Maroc. Plateforme innovante de transfert de connaissances agricoles et de gestion optimisée des cultures. Solution AgriTech avant-gardiste intégrant la gestion de l'eau et l'optimisation des rendements — 2ème Prix INNOFEL 2008.",
-        "en": "Morocco's first regional agricultural portal dedicated to the Souss Massa region. Innovative platform for agricultural knowledge transfer and optimized crop management. Pioneering AgriTech solution integrating water management and yield optimization — 2nd Prize INNOFEL 2008."
+        "fr": "Premier portail agricole dédié à la région du Souss Massa au Maroc. Plateforme innovante de transfert de connaissances agricoles et de gestion optimisée des cultures. Solution AgriTech avant-gardiste intégrant la gestion de l'eau et l'optimisation des rendements - 2ème Prix INNOFEL 2008.",
+        "en": "Morocco's first regional agricultural portal dedicated to the Souss Massa region. Innovative platform for agricultural knowledge transfer and optimized crop management. Pioneering AgriTech solution integrating water management and yield optimization - 2nd Prize INNOFEL 2008."
       },
       "technologies": [
         "PHP",
@@ -1474,23 +1480,23 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2007-2008",
       "client": {
-        "fr": "Secteur Agricole — Région Souss Massa",
-        "en": "Agricultural Sector — Souss Massa Region"
+        "fr": "Secteur Agricole - Région Souss Massa",
+        "en": "Agricultural Sector - Souss Massa Region"
       },
       "achievements": {
         "fr": [
-          "2ème Prix INNOFEL 2008 — Innovation Agricole",
+          "2ème Prix INNOFEL 2008 - Innovation Agricole",
           "Premier portail agricole régional du Maroc",
           "Solution pionnière AgriTech marocaine",
           "Impact sur économie d'eau et rendements agricoles"
         ],
         "en": [
-          "2nd Prize INNOFEL 2008 — Agricultural Innovation",
+          "2nd Prize INNOFEL 2008 - Agricultural Innovation",
           "Morocco's first regional agricultural portal",
           "Pioneering Moroccan AgriTech solution",
           "Impact on water economy and agricultural yields"
@@ -1538,13 +1544,13 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2007-2008",
       "client": {
-        "fr": "ERISER — Techniques d'Irrigation",
-        "en": "ERISER — Irrigation Techniques"
+        "fr": "ERISER - Techniques d'Irrigation",
+        "en": "ERISER - Irrigation Techniques"
       },
       "achievements": {
         "fr": [
@@ -1605,8 +1611,8 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2007-2009",
       "client": {
@@ -1671,8 +1677,8 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2008-2009",
       "client": {
@@ -1724,8 +1730,8 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2008-2009",
       "client": {
@@ -1780,8 +1786,8 @@
         ]
       },
       "status": {
-        "fr": "Historique — Archivé",
-        "en": "Historical — Archived"
+        "fr": "Historique - Archivé",
+        "en": "Historical - Archived"
       },
       "date": "2008-2009",
       "client": {

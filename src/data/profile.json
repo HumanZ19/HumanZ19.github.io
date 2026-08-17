@@ -8,8 +8,8 @@
     "email": "aithammoukarim@gmail.com",
     "phone": "+212 6 15-80-76-63",
     "summary": {
-      "fr": "Avec 16 années d'expérience, je me suis spécialisé dans un rôle rare : être le pont opérationnel entre équipes métier et techniques. Chez Eduka Software (ERP SaaS, 10+ pays), j'ai traduit des exigences Finance complexes — facturation électronique multi-législations, interfaces bancaires internationales — en specs techniques actionnables pour une équipe PHP/MySQL. Avant cela, en tant que DSI à l'Institut HEM, j'ai managé 21 collaborateurs sur 4 pays, piloté une migration critique (1M DH, zéro interruption) et formé 300+ utilisateurs. En parallèle, mes projets freelance couvrent le trading algorithmique, l'IA/NLP et les architectures Django/Wagtail. Je transforme la complexité — technique, réglementaire, humaine — en solutions claires et opérationnelles.",
-      "en": "With 16 years of experience, I have specialized in a rare role: being the operational bridge between business and technical teams. At Eduka Software (SaaS ERP, 10+ countries), I translated complex Finance requirements — multi-legislation e-invoicing, international banking interfaces — into actionable technical specs for a PHP/MySQL team. Previously, as CIO at Institut HEM, I managed 21 collaborators across 4 countries, led a critical migration (1M DH budget, zero interruption) and trained 300+ users. In parallel, my freelance projects span algorithmic trading, AI/NLP and Django/Wagtail architectures. I transform complexity — technical, regulatory, human — into clear, operational solutions."
+      "fr": "Avec 20 années d'expérience, je me suis spécialisé dans un rôle rare : être le pont opérationnel entre équipes métier et techniques. Chez Eduka Software (ERP SaaS, 10+ pays), j'ai traduit des exigences Finance complexes - facturation électronique multi-législations, interfaces bancaires internationales - en specs techniques actionnables pour une équipe PHP/MySQL. Avant cela, en tant que DSI à l'Institut HEM, j'ai managé 21 collaborateurs sur 4 pays, piloté une migration critique (1M DH, zéro interruption) et formé 300+ utilisateurs. En parallèle, mes projets freelance couvrent le trading algorithmique, l'IA/NLP et les architectures Django/Wagtail. Je transforme la complexité - technique, réglementaire, humaine - en solutions claires et opérationnelles.",
+      "en": "With 20 years of experience, I have specialized in a rare role: being the operational bridge between business and technical teams. At Eduka Software (SaaS ERP, 10+ countries), I translated complex Finance requirements - multi-legislation e-invoicing, international banking interfaces - into actionable technical specs for a PHP/MySQL team. Previously, as CIO at Institut HEM, I managed 21 collaborators across 4 countries, led a critical migration (1M DH budget, zero interruption) and trained 300+ users. In parallel, my freelance projects span algorithmic trading, AI/NLP and Django/Wagtail architectures. I transform complexity - technical, regulatory, human - into clear, operational solutions."
     },
     "location": {
       "city": "Casablanca",
@@ -30,7 +30,7 @@
         "icon": "github"
       }
     ],
-    "yearsOfExperience": 16,
+    "yearsOfExperience": 20,
     "heroStats": {
       "projectsCount": "50+",
       "maxTeamManaged": 21,
@@ -101,20 +101,20 @@
       },
       "highlights": {
         "fr": [
-          "KMB Trader — Bot de trading automatisé sur Binance avec stratégies propriétaires",
-          "WorldWide Team — Plateforme Django de géolocalisation temps réel pour équipes distribuées",
-          "Sci-X & Hydrogène Vert — Plateforme IA de synthèse d'articles scientifiques (NLP/OpenAI)",
-          "Ateliers d'Art de France — Refonte complète Django/Wagtail, 6000+ professionnels, +150% trafic organique",
-          "Assabil ERP Extractor — Application Python d'intégration ERP/Comptabilité avec dashboard",
-          "ALMA.ma — Site institutionnel Drupal 8, leader branchement eau potable Maroc"
+          "KMB Trader - Bot de trading automatisé sur Binance avec stratégies propriétaires",
+          "WorldWide Team - Plateforme Django de géolocalisation temps réel pour équipes distribuées",
+          "Sci-X & Hydrogène Vert - Plateforme IA de synthèse d'articles scientifiques (NLP/OpenAI)",
+          "Ateliers d'Art de France - Refonte complète Django/Wagtail, 6000+ professionnels, +150% trafic organique",
+          "Assabil ERP Extractor - Application Python d'intégration ERP/Comptabilité avec dashboard",
+          "ALMA.ma - Site institutionnel Drupal 8, leader branchement eau potable Maroc"
         ],
         "en": [
-          "KMB Trader — Automated trading bot on Binance with proprietary strategies",
-          "WorldWide Team — Django real-time geolocation platform for distributed teams",
-          "Sci-X & Green Hydrogen — AI platform for scientific article synthesis (NLP/OpenAI)",
-          "Ateliers d'Art de France — Complete Django/Wagtail redesign, 6000+ professionals, +150% organic traffic",
-          "Assabil ERP Extractor — Python ERP/Accounting integration application with dashboard",
-          "ALMA.ma — Drupal 8 institutional site, Morocco's drinking water connection market leader"
+          "KMB Trader - Automated trading bot on Binance with proprietary strategies",
+          "WorldWide Team - Django real-time geolocation platform for distributed teams",
+          "Sci-X & Green Hydrogen - AI platform for scientific article synthesis (NLP/OpenAI)",
+          "Ateliers d'Art de France - Complete Django/Wagtail redesign, 6000+ professionals, +150% organic traffic",
+          "Assabil ERP Extractor - Python ERP/Accounting integration application with dashboard",
+          "ALMA.ma - Drupal 8 institutional site, Morocco's drinking water connection market leader"
         ]
       },
       "stack": [
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "company": "Institut HEM — Groupe LCI Education",
+      "company": "Institut HEM - Groupe LCI Education",
       "position": {
         "fr": "Directeur Système d'Information (DSI)",
         "en": "Director of Information Systems (CIO)"
@@ -184,16 +184,16 @@
       },
       "highlights": {
         "fr": [
-          "MedMétiers.ac.ma — Institut Supérieur des Métiers Industriels (Groupe HEM / IFC Banque Mondiale)",
-          "HEM.ac.ma Refonte 2015 — Architecture Drupal 7 multilingue, version internationale",
-          "ECIS 2020/2021 — Plateforme de gestion de conférences scientifiques internationales",
-          "Economia.ma — Revue académique CESEM, plateforme publications scientifiques"
+          "MedMétiers.ac.ma - Institut Supérieur des Métiers Industriels (Groupe HEM / IFC Banque Mondiale)",
+          "HEM.ac.ma Refonte 2015 - Architecture Drupal 7 multilingue, version internationale",
+          "ECIS 2020/2021 - Plateforme de gestion de conférences scientifiques internationales",
+          "Economia.ma - Revue académique CESEM, plateforme publications scientifiques"
         ],
         "en": [
-          "MedMétiers.ac.ma — Higher Institute of Industrial Trades (HEM Group / IFC World Bank)",
-          "HEM.ac.ma Redesign 2015 — Multilingual Drupal 7 architecture, international version",
-          "ECIS 2020/2021 — International scientific conference management platform",
-          "Economia.ma — CESEM academic journal, scientific publications platform"
+          "MedMétiers.ac.ma - Higher Institute of Industrial Trades (HEM Group / IFC World Bank)",
+          "HEM.ac.ma Redesign 2015 - Multilingual Drupal 7 architecture, international version",
+          "ECIS 2020/2021 - International scientific conference management platform",
+          "Economia.ma - CESEM academic journal, scientific publications platform"
         ]
       },
       "stack": [
@@ -260,15 +260,15 @@
       },
       "highlights": {
         "fr": [
-          "SoussAgri.com — 2ème Prix INNOFEL 2008, premier portail agricole régional du Maroc",
-          "RadioPlus.ma — Première radio marocaine avec streaming internet continu",
+          "SoussAgri.com - 2ème Prix INNOFEL 2008, premier portail agricole régional du Maroc",
+          "RadioPlus.ma - Première radio marocaine avec streaming internet continu",
           "Solutions B2B agricoles innovantes : Amfel.ma (5000+ adresses), FellahConseil, Eriser.net",
           "Développement solution streaming propriétaire 'Maroc Streaming'",
           "Clients majeurs : Radio Plus Agadir, Huissiers de Justice du Maroc"
         ],
         "en": [
-          "SoussAgri.com — 2nd Prize INNOFEL 2008, Morocco's first regional agricultural portal",
-          "RadioPlus.ma — Morocco's first radio with continuous internet streaming",
+          "SoussAgri.com - 2nd Prize INNOFEL 2008, Morocco's first regional agricultural portal",
+          "RadioPlus.ma - Morocco's first radio with continuous internet streaming",
           "Innovative B2B agricultural solutions: Amfel.ma (5000+ addresses), FellahConseil, Eriser.net",
           "Development of proprietary 'Maroc Streaming' solution",
           "Major clients: Radio Plus Agadir, Huissiers de Justice du Maroc"
@@ -286,7 +286,7 @@
   ],
   "education": [
     {
-      "institution": "Institut HEM — Hautes Études de Management",
+      "institution": "Institut HEM - Hautes Études de Management",
       "area": {
         "fr": "Management & Systèmes d'Information",
         "en": "Management & Information Systems"

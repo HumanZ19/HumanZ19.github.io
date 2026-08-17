@@ -12,7 +12,7 @@ import ProjectsSchema from '@schemas/projects.schema';
 import profileRaw from '@data/profile.json';
 import projectsRaw from '@data/projects.json';
 
-// Validate at build time — build fails on invalid data
+// Validate at build time - build fails on invalid data
 const profile = ProfileSchema.parse(profileRaw);
 const projects = ProjectsSchema.parse(projectsRaw);
 
@@ -22,7 +22,7 @@ const canonicalUrl = site + '/en/';
 const alternateUrl = site + '/';
 const description = profile.basics.summary.en.slice(0, 160);
 const statusLocation = `${profile.basics.location.city}, ${profile.basics.location.country.en}`;
-const title = `${profile.basics.name} — ${profile.basics.label.en}`;
+const title = `${profile.basics.name} - ${profile.basics.label.en}`;
 ---
 
 <BaseLayout
