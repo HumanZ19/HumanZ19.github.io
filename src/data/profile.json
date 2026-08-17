@@ -90,46 +90,47 @@
     {
       "company": "Freelance Independent",
       "position": {
-        "fr": "Solutions Architect & Full-Stack Developer",
-        "en": "Solutions Architect & Full-Stack Developer"
+        "fr": "Ingénieur Senior Python / Django - IA & LLM",
+        "en": "Senior Python / Django Engineer - AI & LLM"
       },
       "startDate": "2021-01",
       "endDate": "Present",
       "summary": {
-        "fr": "Développement de solutions techniques complexes pour des clients internationaux, de la conception architecturale à la livraison en production.",
-        "en": "Development of complex technical solutions for international clients, from architectural design to production delivery."
+        "fr": "Conception et livraison de backends Django pour des clients internationaux, dont plusieurs servent de couche applicative à des modèles de langage en production.",
+        "en": "Design and delivery of Django backends for international clients, several of which serve as the application layer for language models in production."
       },
       "highlights": {
         "fr": [
-          "KMB Trader - Bot de trading automatisé sur Binance avec stratégies propriétaires",
-          "WorldWide Team - Plateforme Django de géolocalisation temps réel pour équipes distribuées",
-          "Sci-X & Hydrogène Vert - Plateforme IA de synthèse d'articles scientifiques (NLP/OpenAI)",
-          "Ateliers d'Art de France - Refonte complète Django/Wagtail, 6000+ professionnels, +150% trafic organique",
-          "Assabil ERP Extractor - Application Python d'intégration ERP/Comptabilité avec dashboard",
-          "ALMA.ma - Site institutionnel Drupal 8, leader branchement eau potable Maroc"
+          "PhytochemHub (2026) - API REST Django Ninja au-dessus d'un pipeline en 5 étapes : parsing GPU des PDF, extraction par LLM auto-hébergé (Ollama), embeddings PostgreSQL/pgvector. En ligne sur phytochemhub.com",
+          "Leaders On Purpose (2026) - deux sites Wagtail livrés en production, migration depuis WordPress, infrastructure et zone DNS administrées",
+          "Sci-X & Hydrogène Vert - pipeline RAG complet : chunking sémantique, embeddings OpenAI et HuggingFace, pgvector et ChromaDB, cycle de vie géré",
+          "KMB Trader - système multi-agents orchestré par LangGraph, fonctionnement continu, surveillance et escalade vers l'humain",
+          "Ateliers d'Art de France - architecture Django/Wagtail, 6000+ professionnels, +150% de trafic organique",
+          "WorldWide Team - plateforme Django de géolocalisation temps réel, architecture événementielle WebSocket et Redis"
         ],
         "en": [
-          "KMB Trader - Automated trading bot on Binance with proprietary strategies",
-          "WorldWide Team - Django real-time geolocation platform for distributed teams",
-          "Sci-X & Green Hydrogen - AI platform for scientific article synthesis (NLP/OpenAI)",
-          "Ateliers d'Art de France - Complete Django/Wagtail redesign, 6000+ professionals, +150% organic traffic",
-          "Assabil ERP Extractor - Python ERP/Accounting integration application with dashboard",
-          "ALMA.ma - Drupal 8 institutional site, Morocco's drinking water connection market leader"
+          "PhytochemHub (2026) - Django Ninja REST API on top of a five-stage pipeline: GPU PDF parsing, extraction by a self-hosted LLM (Ollama), PostgreSQL/pgvector embeddings. Live at phytochemhub.com",
+          "Leaders On Purpose (2026) - two Wagtail sites shipped to production, migrated off WordPress, infrastructure and DNS zone administered",
+          "Sci-X & Green Hydrogen - complete RAG pipeline: semantic chunking, OpenAI and HuggingFace embeddings, pgvector and ChromaDB, managed lifecycle",
+          "KMB Trader - LangGraph-orchestrated multi-agent system, continuous operation, monitoring and human escalation",
+          "Ateliers d'Art de France - Django/Wagtail architecture, 6,000+ professionals, +150% organic traffic",
+          "WorldWide Team - real-time geolocation platform in Django, event-driven WebSocket and Redis architecture"
         ]
       },
       "stack": [
         "Python",
         "Django",
-        "Wagtail CMS",
-        "Drupal 8",
+        "Django Ninja",
+        "Wagtail",
+        "FastAPI",
         "PostgreSQL",
-        "Redis",
-        "WebSocket",
-        "TensorFlow",
-        "NLP",
+        "pgvector",
+        "Ollama",
+        "LangGraph",
         "OpenAI API",
+        "Redis",
         "Docker",
-        "Elasticsearch"
+        "Linux"
       ]
     },
     {
@@ -177,7 +178,7 @@
         "en": "Drupal Solutions Architect"
       },
       "startDate": "2015-01",
-      "endDate": "Present",
+      "endDate": "2021-12",
       "summary": {
         "fr": "Architecture et développement de plateformes Drupal complexes pour des clients institutionnels, académiques et professionnels.",
         "en": "Architecture and development of complex Drupal platforms for institutional, academic and professional clients."
@@ -239,11 +240,8 @@
         "Drupal 6",
         "PHP",
         "MySQL",
-        "Adobe Premiere Pro",
-        "After Effects",
-        "YouTube",
-        "Facebook Business",
-        "Community Management"
+        "JavaScript",
+        "Production multimédia"
       ]
     },
     {
